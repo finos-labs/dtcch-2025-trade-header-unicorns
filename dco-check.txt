@@ -1,1 +1,2 @@
 You can delete this file
+//Comment check - can be deleted"Some more text" 
