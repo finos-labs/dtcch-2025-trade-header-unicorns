@@ -30,7 +30,7 @@ See [CONTRIBUTING.md](./.github/CONTRIBUTING.md) for more information
 ](https://docs.github.com/en/github/authenticating-to-github/signing-commits)
 
 
-## License
+## License.
 
 Copyright 2025 FINOS
 
