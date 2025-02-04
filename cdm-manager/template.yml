@@ -20,6 +20,5 @@ Resources:
       Policies:
         - AWSLambdaBasicExecutionRole
       AutoPublishAlias: live
-      ProvisionedConcurrencyConfig:
-        ProvisionedConcurrentExecutions: 2
-
+      SnapStart:
+        ApplyOn: PublishedVersions
