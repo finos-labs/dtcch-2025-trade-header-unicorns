@@ -28,3 +28,39 @@ __pycache__
 
 # MSFT Office
 ~$*.*
+
+
+# Bytecode of Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# virtual environment
+tradeheader_hackathon_venv/
+.venv/
+
+# pip installations
+*.egg-info/
+*.egg
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# pytest
+.cache
+.pytest_cache/
+
+# PyCharm project files
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+test-reports/
+.aws-sam/
+/.coverage
