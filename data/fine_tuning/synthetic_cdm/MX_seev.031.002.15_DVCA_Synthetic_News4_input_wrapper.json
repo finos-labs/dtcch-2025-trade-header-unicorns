@@ -1,0 +1,23 @@
+{
+    "eventIdentifier": [
+        {
+            "assignedIdentifier": [
+                {
+                    "identifier": {"value": "DIVGLAX4598"}
+                }
+            ]
+        },
+        {
+            "assignedIdentifier": [
+                {
+                    "identifier": {"value": "BI0239587"}
+                }
+            ]
+        }
+    ],
+    "corporateAction": {
+        "corporateActionType": "CashDividend",
+        "exDate": "2025-03-05",
+        "payDate": "2025-03-20"
+    }
+}
