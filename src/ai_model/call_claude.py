@@ -8,16 +8,18 @@ def call_claude(system_instructions=None, user_instructions="", hyperparameters=
     model_id = "anthropic.claude-3-haiku-20240307-v1:0"
 
     if hyperparameters is None:
-        hyperparameters = [500, 0.1, 0.1]
+        hyperparameters = {"max_tokens" : 500,
+                           "temperature" : 0.1,
+                           "top_p" : 0.1}
 
     payload = {
         "anthropic_version": "bedrock-2023-05-31", #version of anthropic claude api
         "messages": [
             {"role": "user", "content": user_instructions}
         ],
-        "max_tokens": hyperparameters[0],
-        "temperature": hyperparameters[1],
-        "top_p": hyperparameters[2]
+        "max_tokens": hyperparameters["max_tokens"],
+        "temperature": hyperparameters["temperature"],
+        "top_p": hyperparameters["top_p"]
     }
 
     if system_instructions:
