@@ -40,6 +40,25 @@ SPDX-License-Identifier: [Apache-2.0](https://spdx.org/licenses/Apache-2.0)
 
 
 
+## Creating the Python environment: written by tradeheader 
+
+#### In Windows:
+
+    PS> python -m venv tradeheader_hackathon_venv 
+    PS> .\tradeheader_hackathon_venv\Scripts\activate
+
+#### In Linux/MacOS:
+
+    $ python -m venv tradeheader_hackathon_venv  
+    $ source tradeheader_hackathon_venv/bin/activate
+
+## Installing the dependencies  pip:
+
+### For development using
+
+    pip install -r requirements.txt 
+
+
 
 
 
