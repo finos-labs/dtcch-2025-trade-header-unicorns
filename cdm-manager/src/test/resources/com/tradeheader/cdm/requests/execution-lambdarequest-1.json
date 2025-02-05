@@ -2,8 +2,20 @@
   "action": "EXECUTION",
   "payload": {
     "proposedEvent" : {
-      "intent" : "ContractFormation",
+      "intent" : "CorporateActionAdjustment",
+      "corporateActionIntent" : "StockSplit",
       "instruction" : [ {
+        "primitiveInstruction" : {
+          "observation" : {
+            "observationEvent" : {
+              "corporateAction" : {
+                "corporateActionType" : "StockSplit",
+                "exDate" : "2025-02-20",
+                "payDate" : "2025-03-13"
+              }
+            }
+          }
+        },
         "before" : {
           "value" : {
             "trade" : {
@@ -621,25 +633,14 @@
                 "globalKey" : "c7999c1b"
               }
             },
+            "state" : {
+              "positionState" : "Formed"
+            },
             "meta" : {
               "globalKey" : "c7999c1b"
             }
           }
         }
-      } ]
-    },
-    "messageInformation" : {
-      "messageId" : {
-        "value" : "0482588",
-        "meta" : {
-          "scheme" : "http://www.amag.com/coding-scheme/message-id"
-        }
-      },
-      "sentBy" : {
-        "value" : "AMAGGB22XXX"
-      },
-      "sentTo" : [ {
-        "value" : "CCSTUS6S"
       } ]
     },
     "timestamp" : [ {
@@ -649,16 +650,127 @@
     "eventIdentifier" : [ {
       "assignedIdentifier" : [ {
         "identifier" : {
-          "value" : "0482588"
+          "value" : "DIVGLAX123"
+        }
+      } ]
+    }, {
+      "assignedIdentifier" : [ {
+        "identifier" : {
+          "value" : "BI01593212345"
+        }
+      } ]
+    } ],
+    "party" : [ {
+      "partyId" : [ {
+        "identifier" : {
+          "value" : "969500T86SHG919ON888",
+          "meta" : {
+            "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+          }
+        },
+        "identifierType" : "LEI",
+        "meta" : {
+          "globalKey" : "1dc7409f"
         }
       } ],
+      "name" : {
+        "value" : "International Bank Asset Management"
+      },
       "meta" : {
-        "globalKey" : "4713c937"
+        "globalKey" : "313f79a4",
+        "externalKey" : "AMAG"
+      }
+    }, {
+      "partyId" : [ {
+        "identifier" : {
+          "value" : "549300HTD3SZJWA5TS80",
+          "meta" : {
+            "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+          }
+        },
+        "identifierType" : "LEI",
+        "meta" : {
+          "globalKey" : "6c5e82dd"
+        }
+      } ],
+      "name" : {
+        "value" : "Sky Limited"
+      },
+      "meta" : {
+        "globalKey" : "add77cf8",
+        "externalKey" : "SKY"
+      }
+    }, {
+      "partyId" : [ {
+        "identifier" : {
+          "value" : "549300FL0LHI0TEZ8V48",
+          "meta" : {
+            "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+          }
+        },
+        "identifierType" : "LEI",
+        "meta" : {
+          "globalKey" : "f3be0079"
+        }
+      } ],
+      "name" : {
+        "value" : "Standards Slav. Int'l"
+      },
+      "meta" : {
+        "globalKey" : "e07fbce3",
+        "externalKey" : "CST"
+      }
+    }, {
+      "partyId" : [ {
+        "identifier" : {
+          "value" : "549300E0S1LZYZ9QNX81",
+          "meta" : {
+            "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+          }
+        },
+        "identifierType" : "LEI",
+        "meta" : {
+          "globalKey" : "e38eb544"
+        }
+      } ],
+      "name" : {
+        "value" : "First International Bank, MozartStrasse, Frankfurt"
+      },
+      "meta" : {
+        "globalKey" : "98985a5b",
+        "externalKey" : "FIRST"
       }
     } ],
-    "action" : "New",
-    "meta" : {
-      "globalKey" : "d510ce3d"
-    }
+    "account" : [ {
+      "accountNumber" : {
+        "value" : "1234"
+      },
+      "accountName" : {
+        "value" : "SkyAccount"
+      },
+      "accountBeneficiary" : {
+        "globalReference" : "add77cf8",
+        "externalReference" : "SKY"
+      },
+      "meta" : {
+        "globalKey" : "cc67f72f",
+        "externalKey" : "AMAGINTAC1"
+      }
+    }, {
+      "accountNumber" : {
+        "value" : "47896325"
+      },
+      "accountName" : {
+        "value" : "Sky General Account"
+      },
+      "accountBeneficiary" : {
+        "globalReference" : "add77cf8",
+        "externalReference" : "SKY"
+      },
+      "meta" : {
+        "globalKey" : "15710f9b",
+        "externalKey" : "CSTGEN478"
+      }
+    } ]
   }
 }

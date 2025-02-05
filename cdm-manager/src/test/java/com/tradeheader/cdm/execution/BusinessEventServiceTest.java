@@ -80,7 +80,7 @@ class BusinessEventServiceTest {
         Map<String, Object> actualJson = actualResponse.getAcceptedStep();
         Map<String, Object> expectedJson = ResourceUtils.asMap(expectedResponse);
 
-        System.out.println("Actual Response: " + ResourceUtils.serialiseAsJson(actualJson));
+        //System.out.println("Actual Response: " + ResourceUtils.serialiseAsJson(actualJson));
 
         // Assert: Ensure actual response matches expected JSON
         assertEquals(expectedJson, actualJson, "The actual response does not match the expected response.");

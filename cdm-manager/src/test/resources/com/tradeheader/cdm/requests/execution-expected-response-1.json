@@ -1,7 +1,18 @@
 {
   "businessEvent" : {
-    "intent" : "ContractFormation",
+    "intent" : "CorporateActionAdjustment",
     "instruction" : [ {
+      "primitiveInstruction" : {
+        "observation" : {
+          "observationEvent" : {
+            "corporateAction" : {
+              "corporateActionType" : "StockSplit",
+              "exDate" : "2025-02-20",
+              "payDate" : "2025-03-13"
+            }
+          }
+        }
+      },
       "before" : {
         "value" : {
           "trade" : {
@@ -618,6 +629,9 @@
             "meta" : {
               "globalKey" : "c7999c1b"
             }
+          },
+          "state" : {
+            "positionState" : "Formed"
           },
           "meta" : {
             "globalKey" : "c7999c1b"
@@ -1244,26 +1258,16 @@
       "state" : {
         "positionState" : "Formed"
       },
+      "observationHistory" : [ {
+        "corporateAction" : {
+          "corporateActionType" : "StockSplit",
+          "exDate" : "2025-02-20",
+          "payDate" : "2025-03-13"
+        }
+      } ],
       "meta" : {
         "globalKey" : "c7999c1b"
       }
-    } ]
-  },
-  "previousWorkflowStep" : {
-    "globalReference" : "d510ce3d"
-  },
-  "messageInformation" : {
-    "messageId" : {
-      "value" : "0482588",
-      "meta" : {
-        "scheme" : "http://www.amag.com/coding-scheme/message-id"
-      }
-    },
-    "sentBy" : {
-      "value" : "AMAGGB22XXX"
-    },
-    "sentTo" : [ {
-      "value" : "CCSTUS6S"
     } ]
   },
   "timestamp" : [ {
@@ -1273,14 +1277,16 @@
   "eventIdentifier" : [ {
     "assignedIdentifier" : [ {
       "identifier" : {
-        "value" : "0482588"
+        "value" : "DIVGLAX123"
       }
-    } ],
-    "meta" : {
-      "globalKey" : "4713c937"
-    }
+    } ]
+  }, {
+    "assignedIdentifier" : [ {
+      "identifier" : {
+        "value" : "BI01593212345"
+      }
+    } ]
   } ],
-  "action" : "New",
   "party" : [ {
     "partyId" : [ {
       "identifier" : {

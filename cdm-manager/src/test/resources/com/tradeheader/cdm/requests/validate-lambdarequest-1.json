@@ -2,8 +2,19 @@
     "action": "VALIDATION",
     "payload": {
         "businessEvent" : {
-            "intent" : "ContractFormation",
+            "intent" : "CorporateActionAdjustment",
             "instruction" : [ {
+                "primitiveInstruction" : {
+                    "observation" : {
+                        "observationEvent" : {
+                            "corporateAction" : {
+                                "corporateActionType" : "StockSplit",
+                                "exDate" : "2025-02-20",
+                                "payDate" : "2025-03-13"
+                            }
+                        }
+                    }
+                },
                 "before" : {
                     "value" : {
                         "trade" : {
@@ -60,19 +71,19 @@
                                                                     "externalReference" : "BCT1"
                                                                 },
                                                                 "meta" : {
-                                                                    "globalKey" : "a3ccd2d2"
+                                                                    "globalKey" : "1f065e"
                                                                 }
                                                             },
                                                             "meta" : {
-                                                                "globalKey" : "778e11e1"
+                                                                "globalKey" : "365a0a2f"
                                                             }
                                                         },
                                                         "meta" : {
-                                                            "globalKey" : "901eeebf"
+                                                            "globalKey" : "d83acb11"
                                                         }
                                                     },
                                                     "meta" : {
-                                                        "globalKey" : "901eeebf"
+                                                        "globalKey" : "d83acb11"
                                                     }
                                                 },
                                                 "terminationDate" : {
@@ -113,11 +124,11 @@
                                                             "externalReference" : "BCT1"
                                                         },
                                                         "meta" : {
-                                                            "globalKey" : "a3ccd2d2"
+                                                            "globalKey" : "1f065e"
                                                         }
                                                     },
                                                     "meta" : {
-                                                        "globalKey" : "778e11e1"
+                                                        "globalKey" : "365a0a2f"
                                                     }
                                                 },
                                                 "calculationPeriodFrequency" : {
@@ -129,7 +140,7 @@
                                                     "rollConvention" : "30"
                                                 },
                                                 "meta" : {
-                                                    "globalKey" : "31b6e8b4",
+                                                    "globalKey" : "b4c01db4",
                                                     "externalKey" : "CALC1"
                                                 }
                                             },
@@ -150,20 +161,20 @@
                                                             "externalReference" : "BCT1"
                                                         },
                                                         "meta" : {
-                                                            "globalKey" : "a3ccd2d2"
+                                                            "globalKey" : "1f065e"
                                                         }
                                                     },
                                                     "meta" : {
-                                                        "globalKey" : "778e11e1"
+                                                        "globalKey" : "365a0a2f"
                                                     }
                                                 },
                                                 "meta" : {
-                                                    "globalKey" : "6ede1514"
+                                                    "globalKey" : "3fe2ea5c"
                                                 }
                                             }
                                         },
                                         "meta" : {
-                                            "globalKey" : "d9797f05"
+                                            "globalKey" : "493035cb"
                                         }
                                     }, {
                                         "InterestRatePayout" : {
@@ -210,19 +221,19 @@
                                                                     "externalReference" : "BCT1"
                                                                 },
                                                                 "meta" : {
-                                                                    "globalKey" : "a3ccd2d2"
+                                                                    "globalKey" : "1f065e"
                                                                 }
                                                             },
                                                             "meta" : {
-                                                                "globalKey" : "97243c03"
+                                                                "globalKey" : "211c224d"
                                                             }
                                                         },
                                                         "meta" : {
-                                                            "globalKey" : "afb518e1"
+                                                            "globalKey" : "c2fce32f"
                                                         }
                                                     },
                                                     "meta" : {
-                                                        "globalKey" : "afb518e1"
+                                                        "globalKey" : "c2fce32f"
                                                     }
                                                 },
                                                 "terminationDate" : {
@@ -236,19 +247,19 @@
                                                                     "externalReference" : "BCT1"
                                                                 },
                                                                 "meta" : {
-                                                                    "globalKey" : "a3ccd2d2"
+                                                                    "globalKey" : "1f065e"
                                                                 }
                                                             },
                                                             "meta" : {
-                                                                "globalKey" : "778e11e1"
+                                                                "globalKey" : "365a0a2f"
                                                             }
                                                         },
                                                         "meta" : {
-                                                            "globalKey" : "6637debf"
+                                                            "globalKey" : "634fdb11"
                                                         }
                                                     },
                                                     "meta" : {
-                                                        "globalKey" : "6637debf"
+                                                        "globalKey" : "634fdb11"
                                                     }
                                                 },
                                                 "calculationPeriodDatesAdjustments" : {
@@ -259,11 +270,11 @@
                                                             "externalReference" : "BCT1"
                                                         },
                                                         "meta" : {
-                                                            "globalKey" : "a3ccd2d2"
+                                                            "globalKey" : "1f065e"
                                                         }
                                                     },
                                                     "meta" : {
-                                                        "globalKey" : "778e11e1"
+                                                        "globalKey" : "365a0a2f"
                                                     }
                                                 },
                                                 "calculationPeriodFrequency" : {
@@ -275,7 +286,7 @@
                                                     "rollConvention" : "30"
                                                 },
                                                 "meta" : {
-                                                    "globalKey" : "640a44b1",
+                                                    "globalKey" : "81e1e301",
                                                     "externalKey" : "CALC2"
                                                 }
                                             },
@@ -296,20 +307,20 @@
                                                             "externalReference" : "BCT1"
                                                         },
                                                         "meta" : {
-                                                            "globalKey" : "a3ccd2d2"
+                                                            "globalKey" : "1f065e"
                                                         }
                                                     },
                                                     "meta" : {
-                                                        "globalKey" : "778e11e1"
+                                                        "globalKey" : "365a0a2f"
                                                     }
                                                 },
                                                 "meta" : {
-                                                    "globalKey" : "43fa7543"
+                                                    "globalKey" : "b347d10d"
                                                 }
                                             },
                                             "resetDates" : {
                                                 "calculationPeriodDatesReference" : {
-                                                    "globalReference" : "640a44b1",
+                                                    "globalReference" : "81e1e301",
                                                     "externalReference" : "CALC2"
                                                 },
                                                 "fixingDates" : {
@@ -321,7 +332,7 @@
                                                     "dayType" : "Business",
                                                     "businessDayConvention" : "NONE",
                                                     "dateRelativeTo" : {
-                                                        "globalReference" : "35909c47",
+                                                        "globalReference" : "cda103d8",
                                                         "externalReference" : "RES2"
                                                     }
                                                 },
@@ -340,27 +351,27 @@
                                                             "externalReference" : "BCT1"
                                                         },
                                                         "meta" : {
-                                                            "globalKey" : "a3ccd2d2"
+                                                            "globalKey" : "1f065e"
                                                         }
                                                     },
                                                     "meta" : {
-                                                        "globalKey" : "778e11e1"
+                                                        "globalKey" : "365a0a2f"
                                                     }
                                                 },
                                                 "meta" : {
-                                                    "globalKey" : "35909c47",
+                                                    "globalKey" : "cda103d8",
                                                     "externalKey" : "RES2"
                                                 }
                                             },
                                             "compoundingMethod" : "Flat"
                                         },
                                         "meta" : {
-                                            "globalKey" : "b03d8e45"
+                                            "globalKey" : "45e87af8"
                                         }
                                     } ]
                                 },
                                 "meta" : {
-                                    "globalKey" : "6f5cab9"
+                                    "globalKey" : "59c4d8c3"
                                 }
                             },
                             "tradeLot" : [ {
@@ -496,7 +507,7 @@
                                     "version" : 1
                                 } ],
                                 "meta" : {
-                                    "globalKey" : "5059ee62"
+                                    "globalKey" : "afb2105a"
                                 }
                             } ],
                             "tradeDate" : {
@@ -598,7 +609,7 @@
                                     "externalReference" : "SKY"
                                 },
                                 "meta" : {
-                                    "globalKey" : "624ffd1b",
+                                    "globalKey" : "cc67f72f",
                                     "externalKey" : "AMAGINTAC1"
                                 }
                             }, {
@@ -613,21 +624,23 @@
                                     "externalReference" : "SKY"
                                 },
                                 "meta" : {
-                                    "globalKey" : "7c5ad32f",
+                                    "globalKey" : "15710f9b",
                                     "externalKey" : "CSTGEN478"
                                 }
                             } ],
                             "meta" : {
-                                "globalKey" : "1359461a"
+                                "globalKey" : "c7999c1b"
                             }
                         },
+                        "state" : {
+                            "positionState" : "Formed"
+                        },
                         "meta" : {
-                            "globalKey" : "1359461a"
+                            "globalKey" : "c7999c1b"
                         }
                     }
                 }
             } ],
-            "eventQualifier" : "ContractFormation",
             "after" : [ {
                 "trade" : {
                     "product" : {
@@ -683,19 +696,19 @@
                                                             "externalReference" : "BCT1"
                                                         },
                                                         "meta" : {
-                                                            "globalKey" : "a3ccd2d2"
+                                                            "globalKey" : "1f065e"
                                                         }
                                                     },
                                                     "meta" : {
-                                                        "globalKey" : "778e11e1"
+                                                        "globalKey" : "365a0a2f"
                                                     }
                                                 },
                                                 "meta" : {
-                                                    "globalKey" : "901eeebf"
+                                                    "globalKey" : "d83acb11"
                                                 }
                                             },
                                             "meta" : {
-                                                "globalKey" : "901eeebf"
+                                                "globalKey" : "d83acb11"
                                             }
                                         },
                                         "terminationDate" : {
@@ -736,11 +749,11 @@
                                                     "externalReference" : "BCT1"
                                                 },
                                                 "meta" : {
-                                                    "globalKey" : "a3ccd2d2"
+                                                    "globalKey" : "1f065e"
                                                 }
                                             },
                                             "meta" : {
-                                                "globalKey" : "778e11e1"
+                                                "globalKey" : "365a0a2f"
                                             }
                                         },
                                         "calculationPeriodFrequency" : {
@@ -752,7 +765,7 @@
                                             "rollConvention" : "30"
                                         },
                                         "meta" : {
-                                            "globalKey" : "31b6e8b4",
+                                            "globalKey" : "b4c01db4",
                                             "externalKey" : "CALC1"
                                         }
                                     },
@@ -773,20 +786,20 @@
                                                     "externalReference" : "BCT1"
                                                 },
                                                 "meta" : {
-                                                    "globalKey" : "a3ccd2d2"
+                                                    "globalKey" : "1f065e"
                                                 }
                                             },
                                             "meta" : {
-                                                "globalKey" : "778e11e1"
+                                                "globalKey" : "365a0a2f"
                                             }
                                         },
                                         "meta" : {
-                                            "globalKey" : "6ede1514"
+                                            "globalKey" : "3fe2ea5c"
                                         }
                                     }
                                 },
                                 "meta" : {
-                                    "globalKey" : "d9797f05"
+                                    "globalKey" : "493035cb"
                                 }
                             }, {
                                 "InterestRatePayout" : {
@@ -833,19 +846,19 @@
                                                             "externalReference" : "BCT1"
                                                         },
                                                         "meta" : {
-                                                            "globalKey" : "a3ccd2d2"
+                                                            "globalKey" : "1f065e"
                                                         }
                                                     },
                                                     "meta" : {
-                                                        "globalKey" : "97243c03"
+                                                        "globalKey" : "211c224d"
                                                     }
                                                 },
                                                 "meta" : {
-                                                    "globalKey" : "afb518e1"
+                                                    "globalKey" : "c2fce32f"
                                                 }
                                             },
                                             "meta" : {
-                                                "globalKey" : "afb518e1"
+                                                "globalKey" : "c2fce32f"
                                             }
                                         },
                                         "terminationDate" : {
@@ -859,19 +872,19 @@
                                                             "externalReference" : "BCT1"
                                                         },
                                                         "meta" : {
-                                                            "globalKey" : "a3ccd2d2"
+                                                            "globalKey" : "1f065e"
                                                         }
                                                     },
                                                     "meta" : {
-                                                        "globalKey" : "778e11e1"
+                                                        "globalKey" : "365a0a2f"
                                                     }
                                                 },
                                                 "meta" : {
-                                                    "globalKey" : "6637debf"
+                                                    "globalKey" : "634fdb11"
                                                 }
                                             },
                                             "meta" : {
-                                                "globalKey" : "6637debf"
+                                                "globalKey" : "634fdb11"
                                             }
                                         },
                                         "calculationPeriodDatesAdjustments" : {
@@ -882,11 +895,11 @@
                                                     "externalReference" : "BCT1"
                                                 },
                                                 "meta" : {
-                                                    "globalKey" : "a3ccd2d2"
+                                                    "globalKey" : "1f065e"
                                                 }
                                             },
                                             "meta" : {
-                                                "globalKey" : "778e11e1"
+                                                "globalKey" : "365a0a2f"
                                             }
                                         },
                                         "calculationPeriodFrequency" : {
@@ -898,7 +911,7 @@
                                             "rollConvention" : "30"
                                         },
                                         "meta" : {
-                                            "globalKey" : "640a44b1",
+                                            "globalKey" : "81e1e301",
                                             "externalKey" : "CALC2"
                                         }
                                     },
@@ -919,20 +932,20 @@
                                                     "externalReference" : "BCT1"
                                                 },
                                                 "meta" : {
-                                                    "globalKey" : "a3ccd2d2"
+                                                    "globalKey" : "1f065e"
                                                 }
                                             },
                                             "meta" : {
-                                                "globalKey" : "778e11e1"
+                                                "globalKey" : "365a0a2f"
                                             }
                                         },
                                         "meta" : {
-                                            "globalKey" : "43fa7543"
+                                            "globalKey" : "b347d10d"
                                         }
                                     },
                                     "resetDates" : {
                                         "calculationPeriodDatesReference" : {
-                                            "globalReference" : "640a44b1",
+                                            "globalReference" : "81e1e301",
                                             "externalReference" : "CALC2"
                                         },
                                         "fixingDates" : {
@@ -944,7 +957,7 @@
                                             "dayType" : "Business",
                                             "businessDayConvention" : "NONE",
                                             "dateRelativeTo" : {
-                                                "globalReference" : "35909c47",
+                                                "globalReference" : "cda103d8",
                                                 "externalReference" : "RES2"
                                             }
                                         },
@@ -963,27 +976,27 @@
                                                     "externalReference" : "BCT1"
                                                 },
                                                 "meta" : {
-                                                    "globalKey" : "a3ccd2d2"
+                                                    "globalKey" : "1f065e"
                                                 }
                                             },
                                             "meta" : {
-                                                "globalKey" : "778e11e1"
+                                                "globalKey" : "365a0a2f"
                                             }
                                         },
                                         "meta" : {
-                                            "globalKey" : "35909c47",
+                                            "globalKey" : "cda103d8",
                                             "externalKey" : "RES2"
                                         }
                                     },
                                     "compoundingMethod" : "Flat"
                                 },
                                 "meta" : {
-                                    "globalKey" : "b03d8e45"
+                                    "globalKey" : "45e87af8"
                                 }
                             } ]
                         },
                         "meta" : {
-                            "globalKey" : "6f5cab9"
+                            "globalKey" : "59c4d8c3"
                         }
                     },
                     "tradeLot" : [ {
@@ -1119,7 +1132,7 @@
                             "version" : 1
                         } ],
                         "meta" : {
-                            "globalKey" : "5059ee62"
+                            "globalKey" : "afb2105a"
                         }
                     } ],
                     "tradeDate" : {
@@ -1221,7 +1234,7 @@
                             "externalReference" : "SKY"
                         },
                         "meta" : {
-                            "globalKey" : "624ffd1b",
+                            "globalKey" : "cc67f72f",
                             "externalKey" : "AMAGINTAC1"
                         }
                     }, {
@@ -1236,40 +1249,27 @@
                             "externalReference" : "SKY"
                         },
                         "meta" : {
-                            "globalKey" : "7c5ad32f",
+                            "globalKey" : "15710f9b",
                             "externalKey" : "CSTGEN478"
                         }
                     } ],
                     "meta" : {
-                        "globalKey" : "1359461a"
+                        "globalKey" : "c7999c1b"
                     }
                 },
                 "state" : {
                     "positionState" : "Formed"
                 },
+                "observationHistory" : [ {
+                    "corporateAction" : {
+                        "corporateActionType" : "StockSplit",
+                        "exDate" : "2025-02-20",
+                        "payDate" : "2025-03-13"
+                    }
+                } ],
                 "meta" : {
-                    "globalKey" : "1e1313fd"
+                    "globalKey" : "c7999c1b"
                 }
-            } ],
-            "meta" : {
-                "globalKey" : "991500c7"
-            }
-        },
-        "previousWorkflowStep" : {
-            "globalReference" : "d510ce3d"
-        },
-        "messageInformation" : {
-            "messageId" : {
-                "value" : "0482588",
-                "meta" : {
-                    "scheme" : "http://www.amag.com/coding-scheme/message-id"
-                }
-            },
-            "sentBy" : {
-                "value" : "AMAGGB22XXX"
-            },
-            "sentTo" : [ {
-                "value" : "CCSTUS6S"
             } ]
         },
         "timestamp" : [ {
@@ -1279,14 +1279,16 @@
         "eventIdentifier" : [ {
             "assignedIdentifier" : [ {
                 "identifier" : {
-                    "value" : "0482588"
+                    "value" : "DIVGLAX123"
                 }
-            } ],
-            "meta" : {
-                "globalKey" : "4713c937"
-            }
+            } ]
+        }, {
+            "assignedIdentifier" : [ {
+                "identifier" : {
+                    "value" : "BI01593212345"
+                }
+            } ]
         } ],
-        "action" : "New",
         "party" : [ {
             "partyId" : [ {
                 "identifier" : {
@@ -1380,7 +1382,7 @@
                 "externalReference" : "SKY"
             },
             "meta" : {
-                "globalKey" : "624ffd1b",
+                "globalKey" : "cc67f72f",
                 "externalKey" : "AMAGINTAC1"
             }
         }, {
@@ -1395,12 +1397,9 @@
                 "externalReference" : "SKY"
             },
             "meta" : {
-                "globalKey" : "7c5ad32f",
+                "globalKey" : "15710f9b",
                 "externalKey" : "CSTGEN478"
             }
-        } ],
-        "meta" : {
-            "globalKey" : "11ff3531"
-        }
+        } ]
     }
 }
