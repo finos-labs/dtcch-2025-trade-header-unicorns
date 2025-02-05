@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  AWS SAM Template for deploying the CDM Manager Java Lambda function
+
+Globals:
+  Function:
+    Timeout: 120
+    MemorySize: 10240 
+
+Resources:
+  MyJavaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: CDMManager
+      Description: "CDM Manager Java Lambda function deployed using SAM"
+      Handler: com.tradeheader.cdm.LambdaHandler:handleRequest
+      Runtime: java17
+      CodeUri: target/th-corpacdm-manager-0.0.0-master-SNAPSHOT.jar
+      Policies:
+        - AWSLambdaBasicExecutionRole
+      AutoPublishAlias: live
+      SnapStart:
+        ApplyOn: PublishedVersions
