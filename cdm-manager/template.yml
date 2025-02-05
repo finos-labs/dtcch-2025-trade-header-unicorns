@@ -14,9 +14,9 @@ Resources:
     Properties:
       FunctionName: CDMManager
       Description: "CDM Manager Java Lambda function deployed using SAM"
-      Handler: com.tradeheader.cdm.LambdaHandler:handleRequest
-      Runtime: java17
-      CodeUri: target/th-corpacdm-manager-0.0.0-master-SNAPSHOT.jar
+      Handler: com.tradeheader.cdm.LambdaHandler::handleRequest
+      Runtime: java11
+      CodeUri: .
       Policies:
         - AWSLambdaBasicExecutionRole
       AutoPublishAlias: live
