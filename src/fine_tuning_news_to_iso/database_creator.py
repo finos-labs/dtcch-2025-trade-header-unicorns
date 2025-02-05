@@ -14,11 +14,21 @@ with open(system_instruction_path, "r", encoding="utf-8") as f:
 def read_text_file(filepath):
     with open(filepath, "r", encoding="utf-8") as f:
         return f.read().strip()
+    
+def strip_namespace(element):
+    """Remove namespace prefixes from an XML tree."""
+    for elem in element.iter():
+        if '}' in elem.tag:
+            elem.tag = elem.tag.split('}', 1)[1]  # Remove namespace
+    return element
 
 def read_xml_file(filepath):
     tree = ET.parse(filepath)
     root = tree.getroot()
+    root = strip_namespace(root) 
     return ET.tostring(root, encoding="unicode", method="xml").strip()
+
+
 
 dataset_entries = []
 
