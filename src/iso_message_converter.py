@@ -1,9 +1,9 @@
 from src.ai_model.call_claude import call_claude
-from src.utils import read_file
+from src.utils import read_file, isin_enrichment
 
 def lambda_handler(event, context):
     system_instruction_path = "data/instructions/instructions_gpt_iso_mapper.txt"
-    user_news_path = "data/testing_news/news_testing2.txt"
+    user_news_path = "data/testing_news/news_testing1.txt"
 
     system_instruction_content = read_file(system_instruction_path)
     user_news_content = read_file(user_news_path)
@@ -19,9 +19,13 @@ def lambda_handler(event, context):
         user_instructions=user_news_content, 
         hyperparameters=hyperparameters
     )
+    print(f"Fine tuned output {news_to_iso_response}")
+
+    news_to_iso_enriched_response = isin_enrichment(news_to_iso_response)
+
 
     # Return or process the response as needed.
     return {
         "statusCode": 200,
-        "body": news_to_iso_response
+        "body": news_to_iso_enriched_response
     }
