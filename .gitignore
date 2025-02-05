@@ -77,3 +77,6 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
+
+# AWS SAM
+.aws-sam/
