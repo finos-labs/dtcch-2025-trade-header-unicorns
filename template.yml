@@ -1,0 +1,44 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  AWS SAM Template for deploying DTCC hackathon project
+
+Globals:
+  Function:
+    Timeout: 120
+    MemorySize: 10240 
+
+Resources:
+  ISOConverterFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: ISOConverterLambda
+      Description: "Python Lambda function to generate ISO messages from news"
+      Handler: iso_message_converter.lambda_handler
+      Runtime: python3.10
+      CodeUri: .
+      Policies:
+        - AWSLambdaBasicExecutionRole
+      Events:
+        # Create API Gateway endpoint
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /generate-iso
+            Method: post
+  CDMConverterFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: CDMConverterLambda
+      Description: "Python Lambda function to generate CDM proposed events from iso messages"
+      Handler: cdm_proposedEvent_converter.lambda_handler
+      Runtime: python3.10
+      CodeUri: .
+      Policies:
+        - AWSLambdaBasicExecutionRole
+      Events:
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /generate-cdm-proposed-event
+            Method: post
