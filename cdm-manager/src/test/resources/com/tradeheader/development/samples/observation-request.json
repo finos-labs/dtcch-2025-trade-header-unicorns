@@ -1,0 +1,7 @@
+{
+  "action": "OBSERVATION",
+  "payload": {
+    "status": "pending",
+    "job_id": 456
+  }
+}
