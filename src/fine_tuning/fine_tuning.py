@@ -2,7 +2,7 @@ import boto3
 from datetime import datetime
 
 AWS_REGION = "us-west-2"
-S3_TRAINING_URI = "s3://isonews/dataset_news_to_iso.jsonl"
+S3_TRAINING_URI = "s3://isonews/dataset_iso_to_cdm.jsonl"
 S3_OUTPUT_URI = "s3://isonews/"
 IAM_ROLE_ARN = "arn:aws:iam::904233105919:role/service-role/AmazonBedrockExecutionRoleForFlows_GBMSI1O851R"
 BASE_MODEL_ID = "anthropic.claude-3-haiku-20240307-v1:0:200k"
@@ -40,4 +40,10 @@ print(training_job_response)
 job_arn = training_job_response["jobArn"]
 
 # To see the status of the fine tuning, run in the terminal: 
+
+#iso fine tuning:
 # aws bedrock get-model-customization-job --job-identifier arn:aws:bedrock:us-west-2:904233105919:model-customization-job/anthropic.claude-3-haiku-20240307-v1:0:200k/rr0idsa80cmx --region us-west-2
+
+#cdm fine tuning:
+# aws bedrock get-model-customization-job --job-identifier arn:aws:bedrock:us-west-2:904233105919:model-customization-job/anthropic.claude-3-haiku-20240307-v1:0:200k/47dvb5t1bqo7 --region us-west-2
+

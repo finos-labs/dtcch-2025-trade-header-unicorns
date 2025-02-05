@@ -21,9 +21,9 @@
 			</MndtryVlntryEvtTp>
 			<UndrlygScty>
 				<FinInstrmId>
-					<ISIN>US88160R1014</ISIN> 
+					<ISIN></ISIN> 
 					<OthrId>
-						<Id>TSLA</Id>     
+						<Id>STA</Id>     
 						<Tp>
 							<Cd>BLOM</Cd>
 						</Tp>
