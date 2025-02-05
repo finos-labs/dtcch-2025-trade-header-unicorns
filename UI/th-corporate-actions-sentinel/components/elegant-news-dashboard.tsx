@@ -103,7 +103,7 @@ export function ElegantNewsDashboard() {
           </div>
           <Button onClick={receiveFeed} className="ml-auto">
             <RefreshCw className="mr-2 h-4 w-4" />
-            Refresh Feed
+            Refresh News Feed
           </Button>
         </div>
       </CardHeader>
@@ -114,8 +114,7 @@ export function ElegantNewsDashboard() {
               <TableRow>
                 <TableHead className="w-[40%]">Headline</TableHead>
                 <TableHead>ISO Message</TableHead>
-                <TableHead>CDM Corporate Action</TableHead>
-                <TableHead>Matching CDM Trade</TableHead>
+                <TableHead>Impacted Open Trade</TableHead>
                 <TableHead>CDM Proposed Event</TableHead>
                 <TableHead>Generate CDM Accepted Event</TableHead>
               </TableRow>
@@ -128,11 +127,6 @@ export function ElegantNewsDashboard() {
                     onClick={() => openModal("text", article.content)}
                   >
                     {article.headline}
-                  </TableCell>
-                  <TableCell>
-                    <Button variant="ghost" size="sm" onClick={() => openModal("xml", article.xml)}>
-                      <FileTextIcon className="h-4 w-4" />
-                    </Button>
                   </TableCell>
                   <TableCell>
                     <Button variant="ghost" size="sm" onClick={() => openModal("xml", article.xml)}>
