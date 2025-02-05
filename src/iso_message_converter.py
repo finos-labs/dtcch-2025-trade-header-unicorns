@@ -29,9 +29,3 @@ def lambda_handler(event, context):
         "statusCode": 200,
         "body": news_to_iso_enriched_response
     }
-
-if __name__ == "__main__":
-    test_event = {}  # Puedes simular un evento si lo necesitas
-    test_context = None  # El contexto de Lambda no es necesario para probar
-    response = lambda_handler(test_event, test_context)
-    print(f"Enriched: {response["body"]}") 
