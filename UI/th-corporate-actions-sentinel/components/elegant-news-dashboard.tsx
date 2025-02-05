@@ -98,7 +98,7 @@ export function ElegantNewsDashboard() {
       <CardHeader>
         <div className="flex items-center justify-between">
           <div>
-            <CardTitle className="text-2xl">News Dashboard</CardTitle>
+            <CardTitle className="text-2xl">Corporate Actions Sentinel</CardTitle>
             <CardDescription>Latest curated news articles from around the world</CardDescription>
           </div>
           <Button onClick={receiveFeed} className="ml-auto">

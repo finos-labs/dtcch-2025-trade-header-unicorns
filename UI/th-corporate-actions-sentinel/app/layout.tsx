@@ -9,8 +9,8 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Elegant News Dashboard",
-  description: "A sophisticated dashboard displaying curated news articles with detailed information",
+  title: "Corporate Actions Sentinel",
+  description: "A dashboard displaying news articles about corporate actions, their transformation to ISO message and the matching your CDM trades to create an accepted workflow step",
 }
 
 export default function RootLayout({
