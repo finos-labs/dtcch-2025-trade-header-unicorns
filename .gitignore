@@ -29,7 +29,6 @@ __pycache__
 # MSFT Office
 ~$*.*
 
-<<<<<<< HEAD
 
 # Bytecode of Python
 __pycache__/
@@ -65,7 +64,6 @@ Pipfile.lock
 test-reports/
 .aws-sam/
 /.coverage
-=======
 # Node artifact files
 node_modules/
 dist/
@@ -117,4 +115,3 @@ Thumbs.db
 
 # AWS SAM
 .aws-sam/
->>>>>>> feature/add-cdm-manager
