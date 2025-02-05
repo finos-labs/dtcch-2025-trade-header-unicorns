@@ -22,3 +22,9 @@ Resources:
       AutoPublishAlias: live
       SnapStart:
         ApplyOn: PublishedVersions
+      Events:
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /cdm-manager
+            Method: post 
