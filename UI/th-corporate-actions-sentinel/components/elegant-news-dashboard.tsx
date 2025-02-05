@@ -99,7 +99,7 @@ export function ElegantNewsDashboard() {
         <div className="flex items-center justify-between">
           <div>
             <CardTitle className="text-2xl">Corporate Actions Sentinel</CardTitle>
-            <CardDescription>Latest curated news articles from around the world</CardDescription>
+            <CardDescription>Update your CDM Trades library from the latest news articles</CardDescription>
           </div>
           <Button onClick={receiveFeed} className="ml-auto">
             <RefreshCw className="mr-2 h-4 w-4" />
@@ -113,10 +113,11 @@ export function ElegantNewsDashboard() {
             <TableHeader>
               <TableRow>
                 <TableHead className="w-[40%]">Headline</TableHead>
-                <TableHead>Category</TableHead>
-                <TableHead>XML</TableHead>
-                <TableHead>JSON</TableHead>
-                <TableHead>Actions</TableHead>
+                <TableHead>ISO Message</TableHead>
+                <TableHead>CDM Corporate Action</TableHead>
+                <TableHead>Matching CDM Trade</TableHead>
+                <TableHead>CDM Proposed Event</TableHead>
+                <TableHead>Generate CDM Accepted Event</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -129,11 +130,18 @@ export function ElegantNewsDashboard() {
                     {article.headline}
                   </TableCell>
                   <TableCell>
-                    <Badge variant="secondary">{article.category}</Badge>
+                    <Button variant="ghost" size="sm" onClick={() => openModal("xml", article.xml)}>
+                      <FileTextIcon className="h-4 w-4" />
+                    </Button>
                   </TableCell>
                   <TableCell>
                     <Button variant="ghost" size="sm" onClick={() => openModal("xml", article.xml)}>
                       <FileTextIcon className="h-4 w-4" />
+                    </Button>
+                  </TableCell>
+                  <TableCell>
+                    <Button variant="ghost" size="sm" onClick={() => openModal("xml", article.xml)}>
+                    <Badge variant="secondary">CDM TradeName</Badge>
                     </Button>
                   </TableCell>
                   <TableCell>

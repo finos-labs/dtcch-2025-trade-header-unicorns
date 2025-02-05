@@ -28,23 +28,12 @@ export default function RootLayout({
                 <div className="container flex h-14 items-center">
                   <div className="mr-4 hidden md:flex">
                     <a className="mr-6 flex items-center space-x-2" href="/">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
+                      <img
+                        src="https://www.tradeheader.com/hs-fs/hubfs/tradeheader_logotip_web.png?width=135&height=85&name=tradeheader_logotip_web.png"
+                        alt="Tradeheader Logo"
                         className="h-6 w-6"
-                      >
-                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
-                        <polyline points="14 2 14 8 20 8" />
-                        <line x1="16" y1="13" x2="8" y2="13" />
-                        <line x1="16" y1="17" x2="8" y2="17" />
-                        <line x1="10" y1="9" x2="8" y2="9" />
-                      </svg>
-                      <span className="hidden font-bold sm:inline-block">Elegant News</span>
+                      />
+                      <span className="hidden font-bold sm:inline-block">Tradeheader</span>
                     </a>
                   </div>
                 </div>
@@ -56,7 +45,7 @@ export default function RootLayout({
                 <div className="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
                   <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
                     <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-                      Built by the Elegant News team. The source code is available on GitHub.
+                      Built by TradeHeader-Unicorns.
                     </p>
                   </div>
                 </div>
