@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemeDefinitions>
+    <scheme uri="ExternalBankTransactionDomain1Code" name="ExternalBankTransactionDomain1Code">
+        <schemeValues>
+            <schemeValue name="ACMT" schemeValueSource="ISO20022">
+                <paragraph>Account Management</paragraph>
+            </schemeValue>
+            <schemeValue name="CAMT" schemeValueSource="ISO20022">
+                <paragraph>Cash Management</paragraph>
+            </schemeValue>
+            <schemeValue name="CMDT" schemeValueSource="ISO20022">
+                <paragraph>Commodities</paragraph>
+            </schemeValue>
+            <schemeValue name="DERV" schemeValueSource="ISO20022">
+                <paragraph>Derivatives</paragraph>
+            </schemeValue>
+            <schemeValue name="XTND" schemeValueSource="ISO20022">
+                <paragraph>Extended Domain</paragraph>
+            </schemeValue>
+            <schemeValue name="FORX" schemeValueSource="ISO20022">
+                <paragraph>Foreign Exchange</paragraph>
+            </schemeValue>
+            <schemeValue name="LDAS" schemeValueSource="ISO20022">
+                <paragraph>Loans, Deposits and Syndications</paragraph>
+            </schemeValue>
+            <schemeValue name="PMNT" schemeValueSource="ISO20022">
+                <paragraph>Payments</paragraph>
+            </schemeValue>
+            <schemeValue name="PMET" schemeValueSource="ISO20022">
+                <paragraph>Precious Metal</paragraph>
+            </schemeValue>
+            <schemeValue name="SECU" schemeValueSource="ISO20022">
+                <paragraph>Securities</paragraph>
+            </schemeValue>
+            <schemeValue name="TRAD" schemeValueSource="ISO20022">
+                <paragraph>Trade Services</paragraph>
+            </schemeValue>
+        </schemeValues>
+    </scheme>
+    <scheme uri="ExternalBankTransactionFamily1Code" name="ExternalBankTransactionFamily1Code">
+        <schemeValues>
+            <schemeValue name="ACOP" schemeValueSource="ISO20022">
+                <paragraph>Additional Miscellaneous Credit Operations</paragraph>
+            </schemeValue>
+            <schemeValue name="ADOP" schemeValueSource="ISO20022">
+                <paragraph>Additional Miscellaneous Debit Operations</paragraph>
+            </schemeValue>
+            <schemeValue name="MCOP" schemeValueSource="ISO20022">
+                <paragraph>Miscellaneous Credit Operations</paragraph>
+            </schemeValue>
+            <schemeValue name="MDOP" schemeValueSource="ISO20022">
+                <paragraph>Miscellaneous Debit Operations</paragraph>
+            </schemeValue>
+            <schemeValue name="NTAV" schemeValueSource="ISO20022">
+                <paragraph>Not Available</paragraph>
+            </schemeValue>
+            <schemeValue name="OPCL" schemeValueSource="ISO20022">
+                <paragraph>Opening and Closing</paragraph>
+            </schemeValue>
+            <schemeValue name="OTHR" schemeValueSource="ISO20022">
+                <paragraph>Other</paragraph>
+            </schemeValue>
+            <schemeValue name="ACCB" schemeValueSource="ISO20022">
+                <paragraph>Account Balancing</paragraph>
+            </schemeValue>
+            <schemeValue name="CAPL" schemeValueSource="ISO20022">
+                <paragraph>Cash Pooling</paragraph>
+            </schemeValue>
+            <schemeValue name="DLVR" schemeValueSource="ISO20022">
+                <paragraph>Delivery</paragraph>
+            </schemeValue>
+            <schemeValue name="FTUR" schemeValueSource="ISO20022">
+                <paragraph>Futures</paragraph>
+            </schemeValue>
+            <schemeValue name="OPTN" schemeValueSource="ISO20022">
+                <paragraph>Options</paragraph>
+            </schemeValue>
+            <schemeValue name="SPOT" schemeValueSource="ISO20022">
+                <paragraph>Spots</paragraph>
+            </schemeValue>
+            <schemeValue name="LFUT" schemeValueSource="ISO20022">
+                <paragraph>Listed Derivatives - Futures</paragraph>
+            </schemeValue>
+            <schemeValue name="LOPT" schemeValueSource="ISO20022">
+                <paragraph>Listed Derivatives - Options</paragraph>
+            </schemeValue>
+            <schemeValue name="OBND" schemeValueSource="ISO20022">
+                <paragraph>OTC Derivatives - Bonds</paragraph>
+            </schemeValue>
+            <schemeValue name="OCRD" schemeValueSource="ISO20022">
+                <paragraph>OTC Derivatives - Credit</paragraph>
+            </schemeValue>
+            <schemeValue name="OEQT" schemeValueSource="ISO20022">
+                <paragraph>OTC Derivatives - Equity</paragraph>
+            </schemeValue>
+            <schemeValue name="OIRT" schemeValueSource="ISO20022">
+                <paragraph>OTC Derivatives - Interest Rates</paragraph>
+            </schemeValue>
+            <schemeValue name="OSED" schemeValueSource="ISO20022">
+                <paragraph>OTC Derivatives - Structured Exotic Derivatives</paragraph>
+            </schemeValue>
+            <schemeValue name="OSWP" schemeValueSource="ISO20022">
+                <paragraph>OTC Derivatives – Swaps</paragraph>
+            </schemeValue>
+            <schemeValue name="FWRD" schemeValueSource="ISO20022">
+                <paragraph>Forwards</paragraph>
+            </schemeValue>
+            <schemeValue name="NDFX" schemeValueSource="ISO20022">
+                <paragraph>Non Deliverable</paragraph>
+            </schemeValue>
+            <schemeValue name="SWAP" schemeValueSource="ISO20022">
+                <paragraph>Swaps</paragraph>
+            </schemeValue>
+            <schemeValue name="CSLN" schemeValueSource="ISO20022">
+                <paragraph>Consumer Loans</paragraph>
+            </schemeValue>
+            <schemeValue name="FTDP" schemeValueSource="ISO20022">
+                <paragraph>Fixed Term Deposits</paragraph>
+            </schemeValue>
+            <schemeValue name="FTLN" schemeValueSource="ISO20022">
+                <paragraph>Fixed Term Loans</paragraph>
+            </schemeValue>
+            <schemeValue name="MGLN" schemeValueSource="ISO20022">
+                <paragraph>Mortgage Loans</paragraph>
+            </schemeValue>
+            <schemeValue name="NTDP" schemeValueSource="ISO20022">
+                <paragraph>Notice Deposits</paragraph>
+            </schemeValue>
+            <schemeValue name="NTLN" schemeValueSource="ISO20022">
+                <paragraph>Notice Loans</paragraph>
+            </schemeValue>
+            <schemeValue name="SYDN" schemeValueSource="ISO20022">
+                <paragraph>Syndications</paragraph>
+            </schemeValue>
+            <schemeValue name="CNTR" schemeValueSource="ISO20022">
+                <paragraph>Counter Transactions</paragraph>
+            </schemeValue>
+            <schemeValue name="CCRD" schemeValueSource="ISO20022">
+                <paragraph>Customer Card Transactions</paragraph>
+            </schemeValue>
+            <schemeValue name="DRFT" schemeValueSource="ISO20022">
+                <paragraph>Drafts</paragraph>
+            </schemeValue>
+            <schemeValue name="ICCN" schemeValueSource="ISO20022">
+                <paragraph>Issued Cash Concentration Transactions</paragraph>
+            </schemeValue>
+            <schemeValue name="ICHQ" schemeValueSource="ISO20022">
+                <paragraph>Issued Cheques</paragraph>
+            </schemeValue>
+            <schemeValue name="ICDT" schemeValueSource="ISO20022">
+                <paragraph>Issued Credit Transfers</paragraph>
+            </schemeValue>
+            <schemeValue name="IDDT" schemeValueSource="ISO20022">
+                <paragraph>Issued Direct Debits</paragraph>
+            </schemeValue>
+            <schemeValue name="IRCT" schemeValueSource="ISO20022">
+                <paragraph>Issued Real-Time Credit Transfers</paragraph>
+            </schemeValue>
+            <schemeValue name="LBOX" schemeValueSource="ISO20022">
+                <paragraph>Lockbox Transactions</paragraph>
+            </schemeValue>
+            <schemeValue name="MCRD" schemeValueSource="ISO20022">
+                <paragraph>Merchant Card Transactions</paragraph>
+            </schemeValue>
+            <schemeValue name="RCCN" schemeValueSource="ISO20022">
+                <paragraph>Received Cash Concentration Transactions</paragraph>
+            </schemeValue>
+            <schemeValue name="RCHQ" schemeValueSource="ISO20022">
+                <paragraph>Received Cheques</paragraph>
+            </schemeValue>
+            <schemeValue name="RCDT" schemeValueSource="ISO20022">
+                <paragraph>Received Credit Transfers</paragraph>
+            </schemeValue>
+            <schemeValue name="RDDT" schemeValueSource="ISO20022">
+                <paragraph>Received Direct Debits</paragraph>
+            </schemeValue>
+            <schemeValue name="RRCT" schemeValueSource="ISO20022">
+                <paragraph>Received Real-Time Credit Transfers</paragraph>
+            </schemeValue>
+            <schemeValue name="BLOC" schemeValueSource="ISO20022">
+                <paragraph>Blocked Transactions</paragraph>
+            </schemeValue>
+            <schemeValue name="COLL" schemeValueSource="ISO20022">
+                <paragraph>Collateral Management</paragraph>
+            </schemeValue>
+            <schemeValue name="CORP" schemeValueSource="ISO20022">
+                <paragraph>Corporate Action</paragraph>
+            </schemeValue>
+            <schemeValue name="OTHB" schemeValueSource="ISO20022">
+                <paragraph>CSD Blocked transactions</paragraph>
+            </schemeValue>
+            <schemeValue name="CUST" schemeValueSource="ISO20022">
+                <paragraph>Custody</paragraph>
+            </schemeValue>
+            <schemeValue name="COLC" schemeValueSource="ISO20022">
+                <paragraph>Custody Collection</paragraph>
+            </schemeValue>
+            <schemeValue name="LACK" schemeValueSource="ISO20022">
+                <paragraph>Lack</paragraph>
+            </schemeValue>
+            <schemeValue name="CASH" schemeValueSource="ISO20022">
+                <paragraph>Miscellaneous Securities Operations</paragraph>
+            </schemeValue>
+            <schemeValue name="NSET" schemeValueSource="ISO20022">
+                <paragraph>Non Settled</paragraph>
+            </schemeValue>
+            <schemeValue name="SETT" schemeValueSource="ISO20022">
+                <paragraph>Trade, Clearing and Settlement</paragraph>
+            </schemeValue>
+            <schemeValue name="CLNC" schemeValueSource="ISO20022">
+                <paragraph>Clean Collection</paragraph>
+            </schemeValue>
+            <schemeValue name="DOCC" schemeValueSource="ISO20022">
+                <paragraph>Documentary Collection</paragraph>
+            </schemeValue>
+            <schemeValue name="DCCT" schemeValueSource="ISO20022">
+                <paragraph>Documentary Credit</paragraph>
+            </schemeValue>
+            <schemeValue name="GUAR" schemeValueSource="ISO20022">
+                <paragraph>Guarantees</paragraph>
+            </schemeValue>
+            <schemeValue name="LOCT" schemeValueSource="ISO20022">
+                <paragraph>Stand-By Letter Of Credit</paragraph>
+            </schemeValue>
+        </schemeValues>
+    </scheme>
+    <scheme uri="ExternalBankTransactionSubFamily1Code" name="ExternalBankTransactionSubFamily1Code">
+        <schemeValues>
+            <schemeValue name="BCKV" schemeValueSource="ISO20022">
+                <paragraph>Back Value</paragraph>
+            </schemeValue>
+            <schemeValue name="ERTA" schemeValueSource="ISO20022">
+                <paragraph>Exchange Rate Adjustment</paragraph>
+            </schemeValue>
+            <schemeValue name="FLTA" schemeValueSource="ISO20022">
+                <paragraph>Float Adjustment</paragraph>
+            </schemeValue>
+            <schemeValue name="VALD" schemeValueSource="ISO20022">
+                <paragraph>Value Date</paragraph>
+            </schemeValue>
+            <schemeValue name="YTDA" schemeValueSource="ISO20022">
+                <paragraph>YTD Adjustment</paragraph>
+            </schemeValue>
+            <schemeValue name="PSTE" schemeValueSource="ISO20022">
+                <paragraph>Posting Error</paragraph>
+            </schemeValue>
+            <schemeValue name="ADJT" schemeValueSource="ISO20022">
+                <paragraph>Adjustments (Generic)</paragraph>
+            </schemeValue>
+            <schemeValue name="CHRG" schemeValueSource="ISO20022">
+                <paragraph>Charges (Generic)</paragraph>
+            </schemeValue>
+            <schemeValue name="COMM" schemeValueSource="ISO20022">
+                <paragraph>Commission (Generic)</paragraph>
+            </schemeValue>
+            <schemeValue name="COME" schemeValueSource="ISO20022">
+                <paragraph>Commission Excluding Taxes (Generic)</paragraph>
+            </schemeValue>
+            <schemeValue name="COMI" schemeValueSource="ISO20022">
+                <paragraph>Commission Including Taxes (Generic)</paragraph>
+            </schemeValue>
+            <schemeValue name="FEES" schemeValueSource="ISO20022">
+                <paragraph>Fees (Generic)</paragraph>
+            </schemeValue>
+            <schemeValue name="INTR" schemeValueSource="ISO20022">
+                <paragraph>Interests (Generic)</paragraph>
+            </schemeValue>
+            <schemeValue name="COMT" schemeValueSource="ISO20022">
+                <paragraph>Non Taxable Commissions (Generic)</paragraph>
+            </schemeValue>
+            <schemeValue name="NTAV" schemeValueSource="ISO20022">
+                <paragraph>Not Available</paragraph>
+            </schemeValue>
+            <schemeValue name="OTHR" schemeValueSource="ISO20022">
+                <paragraph>Other</paragraph>
+            </schemeValue>
+            <schemeValue name="RIMB" schemeValueSource="ISO20022">
+                <paragraph>Reimbursement (Generic)</paragraph>
+            </schemeValue>
+            <schemeValue name="TAXE" schemeValueSource="ISO20022">
+                <paragraph>Taxes (Generic)</paragraph>
+            </schemeValue>
+            <schemeValue name="ACCC" schemeValueSource="ISO20022">
+                <paragraph>Account Closing</paragraph>
+            </schemeValue>
+            <schemeValue name="ACCO" schemeValueSource="ISO20022">
+                <paragraph>Account Opening</paragraph>
+            </schemeValue>
+            <schemeValue name="ACCT" schemeValueSource="ISO20022">
+                <paragraph>Account Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="CAJT" schemeValueSource="ISO20022">
+                <paragraph>Credit Adjustments (Generic)</paragraph>
+            </schemeValue>
+            <schemeValue name="DAJT" schemeValueSource="ISO20022">
+                <paragraph>Debit Adjustments (Generic)</paragraph>
+            </schemeValue>
+            <schemeValue name="DSBR" schemeValueSource="ISO20022">
+                <paragraph>Controlled Disbursement</paragraph>
+            </schemeValue>
+            <schemeValue name="XBRD" schemeValueSource="ISO20022">
+                <paragraph>Cross-Border</paragraph>
+            </schemeValue>
+            <schemeValue name="ODFT" schemeValueSource="ISO20022">
+                <paragraph>Overdraft</paragraph>
+            </schemeValue>
+            <schemeValue name="SWEP" schemeValueSource="ISO20022">
+                <paragraph>Sweeping</paragraph>
+            </schemeValue>
+            <schemeValue name="TOPG" schemeValueSource="ISO20022">
+                <paragraph>Topping</paragraph>
+            </schemeValue>
+            <schemeValue name="ZABA" schemeValueSource="ISO20022">
+                <paragraph>Zero Balancing</paragraph>
+            </schemeValue>
+            <schemeValue name="SWCC" schemeValueSource="ISO20022">
+                <paragraph>Client Owned Collateral</paragraph>
+            </schemeValue>
+            <schemeValue name="SWFP" schemeValueSource="ISO20022">
+                <paragraph>Final Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="SWPP" schemeValueSource="ISO20022">
+                <paragraph>Partial Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="SWRS" schemeValueSource="ISO20022">
+                <paragraph>Reset Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="SWUF" schemeValueSource="ISO20022">
+                <paragraph>Upfront Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="DDWN" schemeValueSource="ISO20022">
+                <paragraph>Drawdown</paragraph>
+            </schemeValue>
+            <schemeValue name="PPAY" schemeValueSource="ISO20022">
+                <paragraph>Principal Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="RNEW" schemeValueSource="ISO20022">
+                <paragraph>Renewal</paragraph>
+            </schemeValue>
+            <schemeValue name="DPST" schemeValueSource="ISO20022">
+                <paragraph>Deposit</paragraph>
+            </schemeValue>
+            <schemeValue name="RPMT" schemeValueSource="ISO20022">
+                <paragraph>Repayment</paragraph>
+            </schemeValue>
+            <schemeValue name="BCDP" schemeValueSource="ISO20022">
+                <paragraph>Branch Deposit</paragraph>
+            </schemeValue>
+            <schemeValue name="BCWD" schemeValueSource="ISO20022">
+                <paragraph>Branch Withdrawl</paragraph>
+            </schemeValue>
+            <schemeValue name="CDPT" schemeValueSource="ISO20022">
+                <paragraph>Cash Deposit</paragraph>
+            </schemeValue>
+            <schemeValue name="CWDL" schemeValueSource="ISO20022">
+                <paragraph>Cash Withdrawal</paragraph>
+            </schemeValue>
+            <schemeValue name="CHKD" schemeValueSource="ISO20022">
+                <paragraph>Check Deposit</paragraph>
+            </schemeValue>
+            <schemeValue name="FCDP" schemeValueSource="ISO20022">
+                <paragraph>Foreign Currencies Deposit</paragraph>
+            </schemeValue>
+            <schemeValue name="FCWD" schemeValueSource="ISO20022">
+                <paragraph>Foreign Currencies Withdrawal</paragraph>
+            </schemeValue>
+            <schemeValue name="MSCD" schemeValueSource="ISO20022">
+                <paragraph>Miscellaneous Deposit</paragraph>
+            </schemeValue>
+            <schemeValue name="MIXD" schemeValueSource="ISO20022">
+                <paragraph>Mixed Deposit</paragraph>
+            </schemeValue>
+            <schemeValue name="TCDP" schemeValueSource="ISO20022">
+                <paragraph>Travellers Cheques Deposit</paragraph>
+            </schemeValue>
+            <schemeValue name="TCWD" schemeValueSource="ISO20022">
+                <paragraph>Travellers Cheques Withdrawal</paragraph>
+            </schemeValue>
+            <schemeValue name="POSC" schemeValueSource="ISO20022">
+                <paragraph>Credit Card Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="XBCW" schemeValueSource="ISO20022">
+                <paragraph>Cross-Border Cash Withdrawal</paragraph>
+            </schemeValue>
+            <schemeValue name="XBCP" schemeValueSource="ISO20022">
+                <paragraph>Cross-Border Credit Card Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="POSD" schemeValueSource="ISO20022">
+                <paragraph>Point-of-Sale (POS) Payment - Debit Card</paragraph>
+            </schemeValue>
+            <schemeValue name="SMRT" schemeValueSource="ISO20022">
+                <paragraph>Smart-Card Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="DDFT" schemeValueSource="ISO20022">
+                <paragraph>Discounted Draft</paragraph>
+            </schemeValue>
+            <schemeValue name="UDFT" schemeValueSource="ISO20022">
+                <paragraph>Dishonoured/Unpaid Draft</paragraph>
+            </schemeValue>
+            <schemeValue name="DMCG" schemeValueSource="ISO20022">
+                <paragraph>Draft Maturity Change</paragraph>
+            </schemeValue>
+            <schemeValue name="STAM" schemeValueSource="ISO20022">
+                <paragraph>Settlement At Maturity</paragraph>
+            </schemeValue>
+            <schemeValue name="STLR" schemeValueSource="ISO20022">
+                <paragraph>Settlement Under Reserve</paragraph>
+            </schemeValue>
+            <schemeValue name="ACON" schemeValueSource="ISO20022">
+                <paragraph>ACH Concentration</paragraph>
+            </schemeValue>
+            <schemeValue name="BACT" schemeValueSource="ISO20022">
+                <paragraph>Branch Account Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="COAT" schemeValueSource="ISO20022">
+                <paragraph>Corporate Own Account Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="XICT" schemeValueSource="ISO20022">
+                <paragraph>Cross-Border Intra Company Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="FIOA" schemeValueSource="ISO20022">
+                <paragraph>Financial Institution Own Account Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="ICCT" schemeValueSource="ISO20022">
+                <paragraph>Intra Company Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="ARPD" schemeValueSource="ISO20022">
+                <paragraph>ARP Debit</paragraph>
+            </schemeValue>
+            <schemeValue name="BCHQ" schemeValueSource="ISO20022">
+                <paragraph>Bank Cheque </paragraph>
+            </schemeValue>
+            <schemeValue name="CASH" schemeValueSource="ISO20022">
+                <paragraph>Cash Letter</paragraph>
+            </schemeValue>
+            <schemeValue name="CSHA" schemeValueSource="ISO20022">
+                <paragraph>Cash Letter Adjustment</paragraph>
+            </schemeValue>
+            <schemeValue name="CCCH" schemeValueSource="ISO20022">
+                <paragraph>Certified Customer Cheque</paragraph>
+            </schemeValue>
+            <schemeValue name="CCHQ" schemeValueSource="ISO20022">
+                <paragraph>Cheque</paragraph>
+            </schemeValue>
+            <schemeValue name="CQRV" schemeValueSource="ISO20022">
+                <paragraph>Cheque Reversal</paragraph>
+            </schemeValue>
+            <schemeValue name="URCQ" schemeValueSource="ISO20022">
+                <paragraph>Cheque Under Reserve</paragraph>
+            </schemeValue>
+            <schemeValue name="CLCQ" schemeValueSource="ISO20022">
+                <paragraph>Circular Cheque</paragraph>
+            </schemeValue>
+            <schemeValue name="CDIS" schemeValueSource="ISO20022">
+                <paragraph>Controlled Disbursement</paragraph>
+            </schemeValue>
+            <schemeValue name="CRCQ" schemeValueSource="ISO20022">
+                <paragraph>Crossed Cheque</paragraph>
+            </schemeValue>
+            <schemeValue name="XBCQ" schemeValueSource="ISO20022">
+                <paragraph>Foreign Cheque</paragraph>
+            </schemeValue>
+            <schemeValue name="XRCQ" schemeValueSource="ISO20022">
+                <paragraph>Foreign Cheque Under Reserve</paragraph>
+            </schemeValue>
+            <schemeValue name="NPCC" schemeValueSource="ISO20022">
+                <paragraph>Non Presented Circular Cheques</paragraph>
+            </schemeValue>
+            <schemeValue name="OPCQ" schemeValueSource="ISO20022">
+                <paragraph>Open Cheque</paragraph>
+            </schemeValue>
+            <schemeValue name="ORCQ" schemeValueSource="ISO20022">
+                <paragraph>Order Cheque</paragraph>
+            </schemeValue>
+            <schemeValue name="UPCQ" schemeValueSource="ISO20022">
+                <paragraph>Unpaid Cheque</paragraph>
+            </schemeValue>
+            <schemeValue name="XPCQ" schemeValueSource="ISO20022">
+                <paragraph>Unpaid Foreign Cheque</paragraph>
+            </schemeValue>
+            <schemeValue name="ACOR" schemeValueSource="ISO20022">
+                <paragraph>ACH Corporate Trade</paragraph>
+            </schemeValue>
+            <schemeValue name="ACDT" schemeValueSource="ISO20022">
+                <paragraph>ACH Credit</paragraph>
+            </schemeValue>
+            <schemeValue name="ADBT" schemeValueSource="ISO20022">
+                <paragraph>ACH Debit</paragraph>
+            </schemeValue>
+            <schemeValue name="APAC" schemeValueSource="ISO20022">
+                <paragraph>ACH Pre-Authorised</paragraph>
+            </schemeValue>
+            <schemeValue name="ARET" schemeValueSource="ISO20022">
+                <paragraph>ACH Return</paragraph>
+            </schemeValue>
+            <schemeValue name="AREV" schemeValueSource="ISO20022">
+                <paragraph>ACH Reversal</paragraph>
+            </schemeValue>
+            <schemeValue name="ASET" schemeValueSource="ISO20022">
+                <paragraph>ACH Settlement</paragraph>
+            </schemeValue>
+            <schemeValue name="ATXN" schemeValueSource="ISO20022">
+                <paragraph>ACH Transaction</paragraph>
+            </schemeValue>
+            <schemeValue name="AUTT" schemeValueSource="ISO20022">
+                <paragraph>Automatic Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="VCOM" schemeValueSource="ISO20022">
+                <paragraph>Credit Transfer With Agreed Commercial Information</paragraph>
+            </schemeValue>
+            <schemeValue name="XBCT" schemeValueSource="ISO20022">
+                <paragraph>Cross-Border Credit Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="XBSA" schemeValueSource="ISO20022">
+                <paragraph>Cross-Border Payroll/Salary Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="XBST" schemeValueSource="ISO20022">
+                <paragraph>Cross-Border Standing Order</paragraph>
+            </schemeValue>
+            <schemeValue name="DMCT" schemeValueSource="ISO20022">
+                <paragraph>Domestic Credit Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="FICT" schemeValueSource="ISO20022">
+                <paragraph>Financial Institution Credit Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="BOOK" schemeValueSource="ISO20022">
+                <paragraph>Internal Book Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="ENCT" schemeValueSource="ISO20022">
+                <paragraph>Nordic Payment Council Credit Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="SALA" schemeValueSource="ISO20022">
+                <paragraph>Payroll/Salary Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="PRCT" schemeValueSource="ISO20022">
+                <paragraph>Priority Credit Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="RPCR" schemeValueSource="ISO20022">
+                <paragraph>Reversal Due To Payment Cancellation Request </paragraph>
+            </schemeValue>
+            <schemeValue name="RRTN" schemeValueSource="ISO20022">
+                <paragraph>Reversal Due To Payment Return</paragraph>
+            </schemeValue>
+            <schemeValue name="XRTN" schemeValueSource="ISO20022">
+                <paragraph>Cross Border Reversal Due to Payment Return</paragraph>
+            </schemeValue>
+            <schemeValue name="SDVA" schemeValueSource="ISO20022">
+                <paragraph>Same Day Value Credit Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="ESCT" schemeValueSource="ISO20022">
+                <paragraph>SEPA Credit Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="STDO" schemeValueSource="ISO20022">
+                <paragraph>Standing Order</paragraph>
+            </schemeValue>
+            <schemeValue name="TTLS" schemeValueSource="ISO20022">
+                <paragraph>Treasury Tax And Loan Service</paragraph>
+            </schemeValue>
+            <schemeValue name="XBDD" schemeValueSource="ISO20022">
+                <paragraph>Cross-Border Direct Debit</paragraph>
+            </schemeValue>
+            <schemeValue name="PMDD" schemeValueSource="ISO20022">
+                <paragraph>Direct Debit Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="URDD" schemeValueSource="ISO20022">
+                <paragraph>Direct Debit Under Reserve</paragraph>
+            </schemeValue>
+            <schemeValue name="FIDD" schemeValueSource="ISO20022">
+                <paragraph>Financial Institution Direct Debit Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="OODD" schemeValueSource="ISO20022">
+                <paragraph>One-Off Direct Debit</paragraph>
+            </schemeValue>
+            <schemeValue name="PADD" schemeValueSource="ISO20022">
+                <paragraph>Pre-Authorised Direct Debit</paragraph>
+            </schemeValue>
+            <schemeValue name="RCDD" schemeValueSource="ISO20022">
+                <paragraph>Reversal Due To Payment Cancellation Request</paragraph>
+            </schemeValue>
+            <schemeValue name="PRDD" schemeValueSource="ISO20022">
+                <paragraph>Reversal Due To Payment Reversal </paragraph>
+            </schemeValue>
+            <schemeValue name="UPDD" schemeValueSource="ISO20022">
+                <paragraph>Reversal Due To Return/Unpaid Direct Debit</paragraph>
+            </schemeValue>
+            <schemeValue name="BBDD" schemeValueSource="ISO20022">
+                <paragraph>SEPA B2B Direct Debit</paragraph>
+            </schemeValue>
+            <schemeValue name="ESDD" schemeValueSource="ISO20022">
+                <paragraph>SEPA Core Direct Debit</paragraph>
+            </schemeValue>
+            <schemeValue name="LBCA" schemeValueSource="ISO20022">
+                <paragraph>Credit Adjustment</paragraph>
+            </schemeValue>
+            <schemeValue name="LBDB" schemeValueSource="ISO20022">
+                <paragraph>Debit</paragraph>
+            </schemeValue>
+            <schemeValue name="LBDP" schemeValueSource="ISO20022">
+                <paragraph>Deposit</paragraph>
+            </schemeValue>
+            <schemeValue name="POSP" schemeValueSource="ISO20022">
+                <paragraph>Point-of-Sale (POS) Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="SMCD" schemeValueSource="ISO20022">
+                <paragraph>Smart-Card Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="UPCT" schemeValueSource="ISO20022">
+                <paragraph>Unpaid Card Transaction</paragraph>
+            </schemeValue>
+            <schemeValue name="IADD" schemeValueSource="ISO20022">
+                <paragraph>Invoice Accepted with Differed Due Date</paragraph>
+            </schemeValue>
+            <schemeValue name="XCHG" schemeValueSource="ISO20022">
+                <paragraph>Exchange Traded</paragraph>
+            </schemeValue>
+            <schemeValue name="XCHC" schemeValueSource="ISO20022">
+                <paragraph>Exchange Traded CCP</paragraph>
+            </schemeValue>
+            <schemeValue name="XCHN" schemeValueSource="ISO20022">
+                <paragraph>Exchange Traded Non-CCP</paragraph>
+            </schemeValue>
+            <schemeValue name="OTCG" schemeValueSource="ISO20022">
+                <paragraph>OTC</paragraph>
+            </schemeValue>
+            <schemeValue name="OTCC" schemeValueSource="ISO20022">
+                <paragraph>OTC CCP</paragraph>
+            </schemeValue>
+            <schemeValue name="OTCN" schemeValueSource="ISO20022">
+                <paragraph>OTC Non-CCP</paragraph>
+            </schemeValue>
+            <schemeValue name="CMBO" schemeValueSource="ISO20022">
+                <paragraph>Corporate Mark Broker Owned</paragraph>
+            </schemeValue>
+            <schemeValue name="CMCO" schemeValueSource="ISO20022">
+                <paragraph>Corporate Mark Client Owned</paragraph>
+            </schemeValue>
+            <schemeValue name="CPRB" schemeValueSource="ISO20022">
+                <paragraph>Corporate Rebate</paragraph>
+            </schemeValue>
+            <schemeValue name="EQBO" schemeValueSource="ISO20022">
+                <paragraph>Equity Mark Broker Owned</paragraph>
+            </schemeValue>
+            <schemeValue name="EQCO" schemeValueSource="ISO20022">
+                <paragraph>Equity Mark Client Owned</paragraph>
+            </schemeValue>
+            <schemeValue name="FWBC" schemeValueSource="ISO20022">
+                <paragraph>Forwards Broker Owned Collateral</paragraph>
+            </schemeValue>
+            <schemeValue name="FWCC" schemeValueSource="ISO20022">
+                <paragraph>Forwards Client Owned Collateral</paragraph>
+            </schemeValue>
+            <schemeValue name="SLBC" schemeValueSource="ISO20022">
+                <paragraph>Lending Broker Owned Cash Collateral</paragraph>
+            </schemeValue>
+            <schemeValue name="SLCC" schemeValueSource="ISO20022">
+                <paragraph>Lending Client Owned Cash Collateral</paragraph>
+            </schemeValue>
+            <schemeValue name="MGCC" schemeValueSource="ISO20022">
+                <paragraph>Margin Client Owned Cash Collateral</paragraph>
+            </schemeValue>
+            <schemeValue name="MARG" schemeValueSource="ISO20022">
+                <paragraph>Margin Payments</paragraph>
+            </schemeValue>
+            <schemeValue name="OPBC" schemeValueSource="ISO20022">
+                <paragraph>Option Broker Owned Collateral</paragraph>
+            </schemeValue>
+            <schemeValue name="OPCC" schemeValueSource="ISO20022">
+                <paragraph>Option Client Owned Collateral</paragraph>
+            </schemeValue>
+            <schemeValue name="REPU" schemeValueSource="ISO20022">
+                <paragraph>Repo</paragraph>
+            </schemeValue>
+            <schemeValue name="SECB" schemeValueSource="ISO20022">
+                <paragraph>Securities Borrowing</paragraph>
+            </schemeValue>
+            <schemeValue name="SECL" schemeValueSource="ISO20022">
+                <paragraph>Securities Lending</paragraph>
+            </schemeValue>
+            <schemeValue name="SWBC" schemeValueSource="ISO20022">
+                <paragraph>Swap Broker Owned Collateral</paragraph>
+            </schemeValue>
+            <schemeValue name="TRPO" schemeValueSource="ISO20022">
+                <paragraph>Triparty Repo</paragraph>
+            </schemeValue>
+            <schemeValue name="BONU" schemeValueSource="ISO20022">
+                <paragraph>Bonus Issue/Capitalisation Issue</paragraph>
+            </schemeValue>
+            <schemeValue name="EXRI" schemeValueSource="ISO20022">
+                <paragraph>Call On Intermediate Securities</paragraph>
+            </schemeValue>
+            <schemeValue name="CAPG" schemeValueSource="ISO20022">
+                <paragraph>Capital Gains Distribution</paragraph>
+            </schemeValue>
+            <schemeValue name="DVCA" schemeValueSource="ISO20022">
+                <paragraph>Cash Dividend</paragraph>
+            </schemeValue>
+            <schemeValue name="CSLI" schemeValueSource="ISO20022">
+                <paragraph>Cash In Lieu</paragraph>
+            </schemeValue>
+            <schemeValue name="CONV" schemeValueSource="ISO20022">
+                <paragraph>Conversion</paragraph>
+            </schemeValue>
+            <schemeValue name="DECR" schemeValueSource="ISO20022">
+                <paragraph>Decrease in Value</paragraph>
+            </schemeValue>
+            <schemeValue name="DVOP" schemeValueSource="ISO20022">
+                <paragraph>Dividend Option</paragraph>
+            </schemeValue>
+            <schemeValue name="DRIP" schemeValueSource="ISO20022">
+                <paragraph>Dividend Reinvestment</paragraph>
+            </schemeValue>
+            <schemeValue name="DRAW" schemeValueSource="ISO20022">
+                <paragraph>Drawing</paragraph>
+            </schemeValue>
+            <schemeValue name="DTCH" schemeValueSource="ISO20022">
+                <paragraph>Dutch Auction</paragraph>
+            </schemeValue>
+            <schemeValue name="SHPR" schemeValueSource="ISO20022">
+                <paragraph>Equity Premium Reserve</paragraph>
+            </schemeValue>
+            <schemeValue name="EXOF" schemeValueSource="ISO20022">
+                <paragraph>Exchange</paragraph>
+            </schemeValue>
+            <schemeValue name="REDM" schemeValueSource="ISO20022">
+                <paragraph>Final Maturity</paragraph>
+            </schemeValue>
+            <schemeValue name="MCAL" schemeValueSource="ISO20022">
+                <paragraph>Full Call / Early Redemption</paragraph>
+            </schemeValue>
+            <schemeValue name="PRII" schemeValueSource="ISO20022">
+                <paragraph>Interest Payment with Principles</paragraph>
+            </schemeValue>
+            <schemeValue name="LIQU" schemeValueSource="ISO20022">
+                <paragraph>Liquidation Dividend / Liquidation Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="MRGR" schemeValueSource="ISO20022">
+                <paragraph>Merger</paragraph>
+            </schemeValue>
+            <schemeValue name="ODLT" schemeValueSource="ISO20022">
+                <paragraph>Odd Lot Sale/Purchase</paragraph>
+            </schemeValue>
+            <schemeValue name="PCAL" schemeValueSource="ISO20022">
+                <paragraph>Partial Redemption With Reduction Of Nominal Value</paragraph>
+            </schemeValue>
+            <schemeValue name="PRED" schemeValueSource="ISO20022">
+                <paragraph>Partial Redemption Without Reduction Of Nominal Value</paragraph>
+            </schemeValue>
+            <schemeValue name="PRIO" schemeValueSource="ISO20022">
+                <paragraph>Priority Issue</paragraph>
+            </schemeValue>
+            <schemeValue name="BPUT" schemeValueSource="ISO20022">
+                <paragraph>Put Redemption</paragraph>
+            </schemeValue>
+            <schemeValue name="RWPL" schemeValueSource="ISO20022">
+                <paragraph>Redemption Withdrawing Plan</paragraph>
+            </schemeValue>
+            <schemeValue name="BIDS" schemeValueSource="ISO20022">
+                <paragraph>Repurchase Offer/Issuer Bid/Reverse Rights.</paragraph>
+            </schemeValue>
+            <schemeValue name="RHTS" schemeValueSource="ISO20022">
+                <paragraph>Rights Issue/Subscription Rights/Rights Offer</paragraph>
+            </schemeValue>
+            <schemeValue name="SSPL" schemeValueSource="ISO20022">
+                <paragraph>Subscription Savings Plan</paragraph>
+            </schemeValue>
+            <schemeValue name="TREC" schemeValueSource="ISO20022">
+                <paragraph>Tax Reclaim</paragraph>
+            </schemeValue>
+            <schemeValue name="TEND" schemeValueSource="ISO20022">
+                <paragraph>Tender</paragraph>
+            </schemeValue>
+            <schemeValue name="EXWA" schemeValueSource="ISO20022">
+                <paragraph>Warrant Exercise/Warrant Conversion</paragraph>
+            </schemeValue>
+            <schemeValue name="BKFE" schemeValueSource="ISO20022">
+                <paragraph>Bank Fees</paragraph>
+            </schemeValue>
+            <schemeValue name="ERWI" schemeValueSource="ISO20022">
+                <paragraph>Borrowing Fee</paragraph>
+            </schemeValue>
+            <schemeValue name="BROK" schemeValueSource="ISO20022">
+                <paragraph>Brokerage Fee</paragraph>
+            </schemeValue>
+            <schemeValue name="CPEN" schemeValueSource="ISO20022">
+                <paragraph>Cash Penalties</paragraph>
+            </schemeValue>
+            <schemeValue name="CHAR" schemeValueSource="ISO20022">
+                <paragraph>Charge/Fees</paragraph>
+            </schemeValue>
+            <schemeValue name="CLAI" schemeValueSource="ISO20022">
+                <paragraph>Compensation/Claims</paragraph>
+            </schemeValue>
+            <schemeValue name="GEN2" schemeValueSource="ISO20022">
+                <paragraph>Deposit/Contribution</paragraph>
+            </schemeValue>
+            <schemeValue name="INFD" schemeValueSource="ISO20022">
+                <paragraph>Fixed Deposit Interest Amount</paragraph>
+            </schemeValue>
+            <schemeValue name="FUTU" schemeValueSource="ISO20022">
+                <paragraph>Future Variation Margin</paragraph>
+            </schemeValue>
+            <schemeValue name="FUCO" schemeValueSource="ISO20022">
+                <paragraph>Futures Commission</paragraph>
+            </schemeValue>
+            <schemeValue name="RESI" schemeValueSource="ISO20022">
+                <paragraph>Futures Residual Amount</paragraph>
+            </schemeValue>
+            <schemeValue name="PRIN" schemeValueSource="ISO20022">
+                <paragraph>Interest Payment with Principles</paragraph>
+            </schemeValue>
+            <schemeValue name="ERWA" schemeValueSource="ISO20022">
+                <paragraph>Lending Income</paragraph>
+            </schemeValue>
+            <schemeValue name="MNFE" schemeValueSource="ISO20022">
+                <paragraph>Management Fees</paragraph>
+            </schemeValue>
+            <schemeValue name="OVCH" schemeValueSource="ISO20022">
+                <paragraph>Overdraft Charge</paragraph>
+            </schemeValue>
+            <schemeValue name="SWAP" schemeValueSource="ISO20022">
+                <paragraph>Swap Payment</paragraph>
+            </schemeValue>
+            <schemeValue name="TRFE" schemeValueSource="ISO20022">
+                <paragraph>Transaction Fees</paragraph>
+            </schemeValue>
+            <schemeValue name="UNCO" schemeValueSource="ISO20022">
+                <paragraph>Underwriting Commission</paragraph>
+            </schemeValue>
+            <schemeValue name="GEN1" schemeValueSource="ISO20022">
+                <paragraph>Withdrawal/Distribution</paragraph>
+            </schemeValue>
+            <schemeValue name="WITH" schemeValueSource="ISO20022">
+                <paragraph>Withholding Tax</paragraph>
+            </schemeValue>
+            <schemeValue name="BSBO" schemeValueSource="ISO20022">
+                <paragraph>Buy Sell Back</paragraph>
+            </schemeValue>
+            <schemeValue name="CROS" schemeValueSource="ISO20022">
+                <paragraph>Cross Trade</paragraph>
+            </schemeValue>
+            <schemeValue name="ISSU" schemeValueSource="ISO20022">
+                <paragraph>Depositary Receipt Issue</paragraph>
+            </schemeValue>
+            <schemeValue name="OWNE" schemeValueSource="ISO20022">
+                <paragraph>External Account Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="FCTA" schemeValueSource="ISO20022">
+                <paragraph>Factor Update</paragraph>
+            </schemeValue>
+            <schemeValue name="INSP" schemeValueSource="ISO20022">
+                <paragraph>Inspeci/Share Exchange</paragraph>
+            </schemeValue>
+            <schemeValue name="OWNI" schemeValueSource="ISO20022">
+                <paragraph>Internal Account Transfer</paragraph>
+            </schemeValue>
+            <schemeValue name="NETT" schemeValueSource="ISO20022">
+                <paragraph>Netting</paragraph>
+            </schemeValue>
+            <schemeValue name="NSYN" schemeValueSource="ISO20022">
+                <paragraph>Non Syndicated</paragraph>
+            </schemeValue>
+            <schemeValue name="PAIR" schemeValueSource="ISO20022">
+                <paragraph>Pair-Off</paragraph>
+            </schemeValue>
+            <schemeValue name="PLAC" schemeValueSource="ISO20022">
+                <paragraph>Placement</paragraph>
+            </schemeValue>
+            <schemeValue name="PORT" schemeValueSource="ISO20022">
+                <paragraph>Portfolio Move</paragraph>
+            </schemeValue>
+            <schemeValue name="PRUD" schemeValueSource="ISO20022">
+                <paragraph>Principal Pay-down/pay-up</paragraph>
+            </schemeValue>
+            <schemeValue name="REAA" schemeValueSource="ISO20022">
+                <paragraph>Redemption Asset Allocation</paragraph>
+            </schemeValue>
+            <schemeValue name="RVPO" schemeValueSource="ISO20022">
+                <paragraph>Reverse Repo</paragraph>
+            </schemeValue>
+            <schemeValue name="BSBC" schemeValueSource="ISO20022">
+                <paragraph>Sell Buy Back</paragraph>
+            </schemeValue>
+            <schemeValue name="SUBS" schemeValueSource="ISO20022">
+                <paragraph>Subscription</paragraph>
+            </schemeValue>
+            <schemeValue name="SUAA" schemeValueSource="ISO20022">
+                <paragraph>Subscription Asset Allocation</paragraph>
+            </schemeValue>
+            <schemeValue name="SWIC" schemeValueSource="ISO20022">
+                <paragraph>Switch</paragraph>
+            </schemeValue>
+            <schemeValue name="SYND" schemeValueSource="ISO20022">
+                <paragraph>Syndicated</paragraph>
+            </schemeValue>
+            <schemeValue name="TBAC" schemeValueSource="ISO20022">
+                <paragraph>TBA closing</paragraph>
+            </schemeValue>
+            <schemeValue name="TRAD" schemeValueSource="ISO20022">
+                <paragraph>Trade</paragraph>
+            </schemeValue>
+            <schemeValue name="TRIN" schemeValueSource="ISO20022">
+                <paragraph>Transfer In</paragraph>
+            </schemeValue>
+            <schemeValue name="TOUT" schemeValueSource="ISO20022">
+                <paragraph>Transfer Out</paragraph>
+            </schemeValue>
+            <schemeValue name="TRVO" schemeValueSource="ISO20022">
+                <paragraph>Triparty Reverse Repo</paragraph>
+            </schemeValue>
+            <schemeValue name="TURN" schemeValueSource="ISO20022">
+                <paragraph>Turnaround</paragraph>
+            </schemeValue>
+            <schemeValue name="STAC" schemeValueSource="ISO20022">
+                <paragraph>Settlement After Collection</paragraph>
+            </schemeValue>
+            <schemeValue name="FRZF" schemeValueSource="ISO20022">
+                <paragraph>Freeze Of Funds</paragraph>
+            </schemeValue>
+            <schemeValue name="SABG" schemeValueSource="ISO20022">
+                <paragraph>Settlement Against Bank Guarantee</paragraph>
+            </schemeValue>
+            <schemeValue name="SOSE" schemeValueSource="ISO20022">
+                <paragraph>Settlement Of Sight Export Document</paragraph>
+            </schemeValue>
+            <schemeValue name="SOSI" schemeValueSource="ISO20022">
+                <paragraph>Settlement Of Sight Import Document</paragraph>
+            </schemeValue>
+            <schemeValue name="STLM" schemeValueSource="ISO20022">
+                <paragraph>Settlement</paragraph>
+            </schemeValue>
+        </schemeValues>
+    </scheme>
+</schemeDefinitions>
+
+<!--<fpml:schemes>ExternalCodeSets.xml</fpml:schemes>
+<fpml:schemes>ExternalBankTransactionCodeSets.xml</fpml:schemes>-->

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TradeHeader ISO20022 Toolkit Envelope -->
+<xs:schema xmlns="urn:tradeheader:xsd:toolkit:envelope" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:bah_01="urn:iso:std:iso:20022:tech:xsd:head.001.001.01"
+    xmlns:bah_02="urn:iso:std:iso:20022:tech:xsd:head.001.001.02"
+    xmlns:bah_03="urn:iso:std:iso:20022:tech:xsd:head.001.001.03"
+    xmlns:doc="urn:iso:std:iso:20022:tech:xsd:DRAFT1seev.031.002.15" elementFormDefault="qualified"
+    targetNamespace="urn:tradeheader:xsd:toolkit:envelope">
+    <xs:import namespace="urn:iso:std:iso:20022:tech:xsd:head.001.001.01"
+        schemaLocation="./bah_01.xsd"/>
+    <xs:import namespace="urn:iso:std:iso:20022:tech:xsd:head.001.001.02"
+        schemaLocation="./bah_02.xsd"/>
+    <xs:import namespace="urn:iso:std:iso:20022:tech:xsd:head.001.001.03"
+        schemaLocation="./bah_03.xsd"/>
+    <xs:import namespace="urn:iso:std:iso:20022:tech:xsd:DRAFT1seev.031.002.15" schemaLocation="./doc.xsd"/>
+    <xs:element name="TlkitEnvlp" type="ToolkitEnvelope"/>
+    <xs:complexType name="ToolkitEnvelope">
+        <xs:sequence>
+            <xs:element name="TlkitRefId" type="TlkitRefIdType" minOccurs="1"/>
+            <xs:element name="BizMsgEnvlp" type="BusinessMessageEnvelope" minOccurs="1"
+                maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="BusinessMessageEnvelope">
+        <xs:sequence>
+            <xs:choice minOccurs="0">
+                <xs:element ref="bah_01:AppHdr"/>
+                <xs:element ref="bah_02:AppHdr"/>
+                <xs:element ref="bah_03:AppHdr"/>
+            </xs:choice>
+            <xs:element ref="doc:Document"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TlkitRefIdType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="version" type="xs:string" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:schema>
