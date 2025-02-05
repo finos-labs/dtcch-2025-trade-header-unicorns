@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemaRelease xmlns="urn:HandCoded:Releases" xmlns:fpml="urn:HandCoded:FpML-Releases" id="securities_base_sr2025-seev.031.002.15">
+   <classLoader platform="Java" class="com.tradeheader.iso20022.meta.isoToolkitEnvelope.ISOToolkitEnvelopeSchemaReleaseLoader"/>
+   <version>1-0</version>
+   <identifier>securities_base_sr2025-seev.031.002.15</identifier>
+   <namespaceUri>urn:tradeheader:xsd:toolkit:envelope</namespaceUri>
+   <schemaLocation>envelope.xsd</schemaLocation>
+   <fpml:schemes>ExternalCodeSets.xml</fpml:schemes>
+   <fpml:schemes>ExternalBankTransactionCodeSets.xml</fpml:schemes>
+   <fpml:schemes>additionalDefinitions.xml</fpml:schemes>
+   <rootElement>TlkitEnvlp</rootElement>
+
+</schemaRelease>

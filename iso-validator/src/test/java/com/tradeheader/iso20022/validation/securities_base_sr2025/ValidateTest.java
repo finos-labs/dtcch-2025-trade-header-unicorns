@@ -1,0 +1,186 @@
+package com.tradeheader.iso20022.validation.securities_base_sr2025;
+
+import com.handcoded.validation.RuleSet;
+import com.tradeheader.iso20022.testUtils.Sample;
+import com.tradeheader.iso20022.testUtils.SamplePile;
+import org.junit.Assert;
+import org.junit.Test;
+
+public class ValidateTest {
+
+    private static String ruleSetName = "Seev_031_002_15_Rules";
+    private static String catalogName = "files-fpml/catalog-iso20022_corporateActions.xml";
+
+    @Test
+    public void should_validate_securities_base_sr2025_seev_031_002_15 () {
+
+        SamplePile samplePile = null;
+        try {
+            samplePile = new SamplePile(new Sample[] {
+                    // VALID
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_GenericValid_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccount1Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccount2Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_OtherEventRule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_OtherEventRule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_IntermediateSecurity1Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_IntermediateSecurity2Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_NotificationIdentificationRule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_NotificationIdentificationRule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_IntermediateSecuritiesDistribution1Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_InformationEventRule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_DeclaredRateRule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_FirstBidIncrementPrice1Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_FirstBidIncrementPrice2Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_LastBidIncrementPrice1Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_LastBidIncrementPrice2Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_FirstBidIncrementPriceEventType1Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_FirstBidIncrementPriceEventType1Rule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_FirstBidIncrementPriceEventType1Rule_POS_03.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_LastBidIncrementPriceEventType1Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_LastBidIncrementPriceEventType1Rule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_LastBidIncrementPriceEventType1Rule_POS_03.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_FirstBidIncrementPriceEventType2Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_FirstBidIncrementPriceEventType2Rule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_FirstBidIncrementPriceEventType2Rule_POS_03.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_LastBidIncrementPriceEventType2Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_LastBidIncrementPriceEventType2Rule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_LastBidIncrementPriceEventType2Rule_POS_03.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_MinimumPrice1Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_MinimumPrice2Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_MaximumPrice1Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_MaximumPrice2Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_BidInterval1Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_BidInterval2Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_BeneficialOwnerBreakdownRequestRule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_DissenterRights3Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_DissenterRights3Rule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_IncentivePremiumEventType1Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_PaymentDateRule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_PaymentDateRule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_DescriptionPresenceRule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_DescriptionPresenceRule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_DescriptionPresenceRule_POS_03.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_OtherIdentificationPresenceRule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_OtherIdentificationPresenceRule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_OtherIdentificationPresenceRule_POS_03.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_ISINPresenceRule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_ISINPresenceRule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_ISINPresenceRule_POS_03.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccountOrBlockChainAddress2Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccountOrBlockChainAddress3Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccountOrBlockChainAddress1Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccountOrBlockChainAddress1Rule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnDtls_DissenterRights1Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnDtls_DissenterRights1Rule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnDtls_DissenterRights2Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnDtls_DissenterRights2Rule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_AdditionalTextRule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_InstructCashAmountRule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_InstructCashAmountRule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnOptnDtls_DissenterRights1Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnOptnDtls_DissenterRights1Rule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnOptnDtls_DissenterRights2Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnOptnDtls_DissenterRights2Rule_POS_02.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SecondLevelTax3Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_IncomeType1Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_IncomeType2Rule_POS_01.xml", ""),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_Rate36_SecondLevelTax3Rule_POS_01.xml", ""),
+
+                    // INVALID
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SyntaxError_NEG_01.xml", "syntaxError"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccount1Rule_NEG_01.xml", "X00158"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccount1Rule_NEG_02.xml", "X00158"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccount1Rule_NEG_03.xml", "X00158"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccount1Rule_NEG_04.xml", "X00158"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccount1Rule_NEG_05.xml", "X00158"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccount1Rule_NEG_06.xml", "X00158"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccount2Rule_NEG_01.xml", "X00159"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccount2Rule_NEG_02.xml", "X00159"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccount2Rule_NEG_03.xml", "X00159"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_OtherEventRule_NEG_01.xml", "X00161"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_OtherEventRule_NEG_02.xml", "X00161"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_IntermediateSecurity1Rule_NEG_01.xml", "X00162"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_IntermediateSecurity2Rule_NEG_01.xml", "X00163"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_NotificationIdentificationRule_NEG_01.xml", "X00164"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_NotificationIdentificationRule_NEG_02.xml", "X00164"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_IntermediateSecuritiesDistribution1Rule_NEG_01.xml", "X00166"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_InformationEventRule_NEG_01.xml", "X00301"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_InformationEventRule_NEG_02.xml", "X00301"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_DeclaredRateRule_NEG_01.xml", "X00302"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_FirstBidIncrementPrice1Rule_NEG_01.xml", "X00524,X00525"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_FirstBidIncrementPrice1Rule_NEG_02.xml", "X00524,X00525"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_FirstBidIncrementPrice2Rule_NEG_01.xml", "X00524,X00525"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_FirstBidIncrementPrice2Rule_NEG_02.xml", "X00524,X00525"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_LastBidIncrementPrice1Rule_NEG_01.xml", "X00526,X00527"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_LastBidIncrementPrice1Rule_NEG_02.xml", "X00526,X00527"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_LastBidIncrementPrice2Rule_NEG_01.xml", "X00526,X00527"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_LastBidIncrementPrice2Rule_NEG_02.xml", "X00526,X00527"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_FirstBidIncrementPriceEventType1Rule_NEG_01.xml", "X00528"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_LastBidIncrementPriceEventType1Rule_NEG_01.xml", "X00529"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_FirstBidIncrementPriceEventType2Rule_NEG_01.xml", "X00530"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_FirstBidIncrementPriceEventType2Rule_NEG_02.xml", "X00530"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_LastBidIncrementPriceEventType2Rule_NEG_01.xml", "X00531"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_LastBidIncrementPriceEventType2Rule_NEG_02.xml", "X00531"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_MinimumPrice1Rule_NEG_01.xml", "X00532,X00533"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_MinimumPrice1Rule_NEG_02.xml", "X00532,X00533"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_MinimumPrice2Rule_NEG_01.xml", "X00532,X00533"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_MinimumPrice2Rule_NEG_02.xml", "X00532,X00533"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_MaximumPrice1Rule_NEG_01.xml", "X00534,X00535"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_MaximumPrice1Rule_NEG_02.xml", "X00534,X00535"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_MaximumPrice2Rule_NEG_01.xml", "X00534,X00535"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_MaximumPrice2Rule_NEG_02.xml", "X00534,X00535"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_BidInterval1Rule_NEG_01.xml", "X00536,X00537"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_BidInterval1Rule_NEG_02.xml", "X00536,X00537"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_BidInterval2Rule_NEG_01.xml", "X00536,X00537"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_BidInterval2Rule_NEG_02.xml", "X00536,X00537"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_BeneficialOwnerBreakdownRequestRule_NEG_01.xml", "X00487"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_BeneficialOwnerBreakdownRequestRule_NEG_02.xml", "X00487"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_DissenterRights3Rule_NEG_01.xml", "X00543"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_DissenterRights3Rule_NEG_02.xml", "X00543"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_DissenterRights3Rule_NEG_03.xml", "X00543"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_DissenterRights3Rule_NEG_04.xml", "X00543"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_DissenterRights3Rule_NEG_05.xml", "X00543"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_IncentivePremiumEventType1Rule_NEG_01.xml", "X00538"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_IncentivePremiumEventType1Rule_NEG_02.xml", "X00538"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_PaymentDateRule_NEG_01.xml", "X00168"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_PaymentDateRule_NEG_02.xml", "X00168"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_PaymentDateRule_NEG_03.xml", "X00168"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_DescriptionPresenceRule_NEG_01.xml", "X00192,X00193,X00194"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_OtherIdentificationPresenceRule_NEG_01.xml", "X00192,X00193,X00194"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_ISINPresenceRule_NEG_01.xml", "X00192,X00193,X00194"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccountOrBlockChainAddress2Rule_NEG_01.xml", "X00551,X00565,X00566"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccountOrBlockChainAddress3Rule_NEG_01.xml", "X00551,X00565,X00566"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SafekeepingAccountOrBlockChainAddress1Rule_NEG_01.xml", "X00551"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnDtls_DissenterRights1Rule_NEG_01.xml", "X00541,X00562"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnDtls_DissenterRights1Rule_NEG_02.xml", "X00541,X00562"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnDtls_DissenterRights2Rule_NEG_01.xml", "X00541,X00562"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnDtls_DissenterRights2Rule_NEG_02.xml", "X00541,X00562"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_AdditionalTextRule_NEG_01.xml", "X00176"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_InstructCashAmountRule_NEG_01.xml", "X00417"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_InstructCashAmountRule_NEG_02.xml", "X00417"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_InstructCashAmountRule_NEG_03.xml", "X00417"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_InstructCashAmountRule_NEG_04.xml", "X00417"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnOptnDtls_DissenterRights1Rule_NEG_01.xml", "X00541,X00562"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnOptnDtls_DissenterRights1Rule_NEG_02.xml", "X00541,X00562"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnOptnDtls_DissenterRights2Rule_NEG_01.xml", "X00541,X00562"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_CorpActnOptnDtls_DissenterRights2Rule_NEG_02.xml", "X00541,X00562"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SecondLevelTax3Rule_NEG_01.xml", "X00385"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_SecondLevelTax3Rule_NEG_02.xml", "X00385"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_IncomeType1Rule_NEG_01.xml", "X00544"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_IncomeType2Rule_NEG_01.xml", "X00545"),
+                    new Sample ("src/test/resources/iso20022/securities_base_sr2025/seev.031.002.15/MX_seev.031.002.15_Rate36_SecondLevelTax3Rule_NEG_01.xml", "X00388"),
+            }, catalogName, ruleSetName);
+        } catch (Exception e) {
+            Assert.fail("Test cases not terminated: error initializing a Validator for all the samples: " + e.getMessage());
+        }
+
+        try {
+            samplePile.process();
+        } catch (Exception e) {
+            Assert.fail("Test cases not terminated: error in the validation process: " + e.getMessage());
+        }
+        boolean result = samplePile.checkResults();
+        Assert.assertTrue("Validation failed. See console logs.", result);
+    }
+}
