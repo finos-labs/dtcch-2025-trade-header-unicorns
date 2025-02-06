@@ -85,13 +85,14 @@ export function ElegantNewsDashboard() {
                         JSON.stringify(article.isoValidation, null, 2)
                       )}
                     >
-
-                      <FileTextIcon className="h-4 w-4" />
+                      <FileTextIcon className="h-4 w-4 text-green-700" />
                     </Button>
                   </TableCell>
                   <TableCell>
                     <Button variant="ghost" size="sm" onClick={() => openModal("impactedOpenTrade", JSON.stringify(article.impactedOpenTrade, null, 2))}>
-                    <Badge variant="secondary">{article.impactedTradeName}</Badge>
+                      <Badge variant="secondary" className="bg-yellow-100 hover:bg-yellow-200 text-yellow-900 border-yellow-200">
+                        {article.impactedTradeName}
+                      </Badge>
                     </Button>
                   </TableCell>
                   <TableCell>
