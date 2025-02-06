@@ -8,9 +8,10 @@ interface NewsModalProps {
   onClose: () => void
   content: string
   contentType: "isoMessage" | "acceptedWorkflowStep" | "impactedOpenTrade" | "proposedEvent" | "json" | "text"
+  isoValidation?: string
 }
 
-export function NewsModal({ isOpen, onClose, content, contentType }: NewsModalProps) {
+export function NewsModal({ isOpen, onClose, content, contentType, isoValidation }: NewsModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-3xl max-h-[80vh] overflow-hidden">
@@ -26,9 +27,22 @@ export function NewsModal({ isOpen, onClose, content, contentType }: NewsModalPr
           {contentType === "text" ? (
             <p className="text-sm">{content}</p>
           ) : (
-            <pre className="text-sm bg-muted p-4 rounded-md overflow-x-auto">
-              <code>{content}</code>
-            </pre>
+            <div className="space-y-4">
+              <div>
+                <h4 className="text-sm font-medium mb-2">Content</h4>
+                <pre className="text-sm bg-muted p-4 rounded-md overflow-x-auto">
+                  <code>{content}</code>
+                </pre>
+              </div>
+              {contentType === "isoMessage" && isoValidation && (
+                <div>
+                  <h4 className="text-sm font-medium mb-2">ISO Validation</h4>
+                  <pre className="text-sm bg-muted p-4 rounded-md overflow-x-auto">
+                    <code>{isoValidation}</code>
+                  </pre>
+                </div>
+              )}
+            </div>
           )}
         </div>
         <DialogFooter>

@@ -11,10 +11,18 @@ import { Badge } from "@/components/ui/badge"
 import { newsArticles } from "@/data/news-articles"
 
 export function ElegantNewsDashboard() {
-  const [modalContent, setModalContent] = useState<{ type: "isoMessage" | "acceptedWorkflowStep" | "impactedOpenTrade" | "proposedEvent" | "json" | "text"; content: string } | null>(null)
+  const [modalContent, setModalContent] = useState<{
+    type: "isoMessage" | "acceptedWorkflowStep" | "impactedOpenTrade" | "proposedEvent" | "json" | "text"
+    content: string
+    isoValidation?: string
+  } | null>(null)
 
-  const openModal = (type: "isoMessage" | "acceptedWorkflowStep" | "impactedOpenTrade" | "proposedEvent" | "json" | "text", content: string) => {
-    setModalContent({ type, content })
+  const openModal = (
+    type: "isoMessage" | "acceptedWorkflowStep" | "impactedOpenTrade" | "proposedEvent" | "json" | "text",
+    content: string,
+    isoValidation?: string
+  ) => {
+    setModalContent({ type, content, isoValidation })
   }
 
   const receiveFeed = () => {
@@ -68,7 +76,16 @@ export function ElegantNewsDashboard() {
                     {article.headline}
                   </TableCell>
                   <TableCell>
-                    <Button variant="ghost" size="sm" onClick={() => openModal("isoMessage", article.isoMessage)}>
+                    <Button 
+                      variant="ghost" 
+                      size="sm" 
+                      onClick={() => openModal(
+                        "isoMessage", 
+                        article.isoMessage, 
+                        JSON.stringify(article.isoValidation, null, 2)
+                      )}
+                    >
+
                       <FileTextIcon className="h-4 w-4" />
                     </Button>
                   </TableCell>
@@ -104,6 +121,7 @@ export function ElegantNewsDashboard() {
           onClose={() => setModalContent(null)}
           content={modalContent.content}
           contentType={modalContent.type}
+          isoValidation={modalContent.isoValidation}
         />
       )}
     </Card>

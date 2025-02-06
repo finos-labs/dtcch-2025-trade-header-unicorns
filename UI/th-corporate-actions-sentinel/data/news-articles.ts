@@ -1,6 +1,23 @@
 export const newsArticles = [
   {
     id: 1,
+    isoValidation: {
+      "success": true,
+      "info": [
+          {
+              "type": "VALIDATION",
+              "status": "succeed",
+              "message": "Message is valid."
+          }
+      ],
+      "errors": {
+          "validationErrors": {
+              "syntaxErrors": [],
+              "businessErrors": []
+          },
+          "systemErrors": []
+      }
+  },
     impactedTradeName: "equity-option-price-return-stock-ex01-american-call-input.json",
     headline: "Apple Inc. Announces Increased Quarterly Dividend Amid Strong Financial Performance",
     content: `Cupertino, CA – February 3, 2025 – Apple Inc. (NASDAQ: AAPL) today announced that its Board of Directors has approved a quarterly cash dividend of $0.28 per share, reflecting a 7.7% increase from the previous dividend. This marks the company's continued commitment to returning value to shareholders amid sustained growth in revenue and profitability.
@@ -1900,6 +1917,23 @@ impactedOpenTrade: {
   },
   {
     id:2,
+    isoValidation: {
+      "success": true,
+      "info": [
+          {
+              "type": "VALIDATION",
+              "status": "succeed",
+              "message": "Message is valid."
+          }
+      ],
+      "errors": {
+          "validationErrors": {
+              "syntaxErrors": [],
+              "businessErrors": []
+          },
+          "systemErrors": []
+      }
+  },
     headline: "ExxonMobil Increases Dividend to $0.95 Amid Strong Energy Market",
     impactedTradeName: "equity-swap-parameter-return-dividend-single-name-ex01-new-input.json",
     content: `Irving, TX – February 3, 2025 – ExxonMobil (NYSE: XOM) has announced an increase in its quarterly dividend to $0.95 per share, up 4.4% from the previous payout. The dividend will be payable on March 10, 2025, to shareholders on record as of February 28, 2025, with an ex-dividend date of February 27, 2025.
@@ -3320,6 +3354,23 @@ For further details, visit ExxonMobil Investor Relations.`,
 },
 {
   id:3,
+  isoValidation: {
+    "success": true,
+    "info": [
+        {
+            "type": "VALIDATION",
+            "status": "succeed",
+            "message": "Message is valid."
+        }
+    ],
+    "errors": {
+        "validationErrors": {
+            "syntaxErrors": [],
+            "businessErrors": []
+        },
+        "systemErrors": []
+    }
+},
   impactedTradeName: "equity-swap-price-return-single-name-ex01-amend-input.json",
   headline: "Johnson & Johnson Increases Quarterly Dividend to $1.24 as Earnings Show Strong Growth",
   content: `New Brunswick, NJ – February 3, 2025 – Johnson & Johnson (NYSE: JNJ) announced today that its Board of Directors has approved a quarterly cash dividend of $1.24 per share, marking a 5% increase from the previous payout of $1.18. The dividend is set to be paid on March 12, 2025, to shareholders of record as of February 26, with an ex-dividend date of February 25.
@@ -4609,6 +4660,23 @@ For more details on the company’s financial performance, visit Johnson & Johns
 },
 {
   id:4,
+  isoValidation: {
+    "success": true,
+    "info": [
+        {
+            "type": "VALIDATION",
+            "status": "succeed",
+            "message": "Message is valid."
+        }
+    ],
+    "errors": {
+        "validationErrors": {
+            "syntaxErrors": [],
+            "businessErrors": []
+        },
+        "systemErrors": []
+    }
+},
   impactedTradeName: "equity-option-price-return-stock-ex03-european-call-averaging-input.json",
   headline: "Microsoft Announces $0.75 Quarterly Dividend as Cloud Revenue Surges",
   content: `Redmond, WA – February 3, 2025 – Microsoft Corporation (NASDAQ: MSFT) has declared a quarterly dividend of $0.75 per share, reinforcing its commitment to returning capital to shareholders amid record-breaking revenue from its cloud and AI segments.
@@ -6050,6 +6118,23 @@ For more details on Microsoft’s earnings and investor updates, visit Microsoft
 },
 {
     id:5,
+    isoValidation: {
+      "success": true,
+      "info": [
+          {
+              "type": "VALIDATION",
+              "status": "succeed",
+              "message": "Message is valid."
+          }
+      ],
+      "errors": {
+          "validationErrors": {
+              "syntaxErrors": [],
+              "businessErrors": []
+          },
+          "systemErrors": []
+      }
+  },
     impactedTradeName: "equity-option-price-return-basket-ex01-new-input.json",
     headline: "JPMorgan Chase Boosts Dividend Amid Strong Earnings, Signals Confidence in Market Outlook",
     content: `New York, NY – February 3, 2025 – JPMorgan Chase & Co. (NYSE: JPM) has announced a quarterly dividend increase to $1.10 per share, up from the previous $1.05, reflecting continued confidence in the bank’s financial strength and long-term strategy.
