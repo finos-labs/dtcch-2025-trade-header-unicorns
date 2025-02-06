@@ -28,11 +28,8 @@ def lambda_handler(event, context):
     #Calling CDM API______________________________________________________________________
     
     proposedevent = observation_call(trade_matching_path[0], iso_to_cdm_json)['payload']
-    print(f"ProposedEvent: {proposedevent}")
     acceptedworkflowstep = execution_call(proposedevent)['payload']
-    print(f"AcceptedWorkFlowStep: {acceptedworkflowstep}")
     validation_result = validation_call(acceptedworkflowstep['acceptedStep'])
-    print(f"Validation Result: {validation_result['payload']}")
 
 
     return {

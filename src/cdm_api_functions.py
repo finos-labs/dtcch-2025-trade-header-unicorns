@@ -42,7 +42,7 @@ def validation_call(accepted_workflow_step):
 def load_file(file_path):
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
-            return json.load(file)  # Directly parse the JSON content and return it as a dictionary
+            return json.load(file)  
     except FileNotFoundError:
         print(f"Error: The file {file_path} was not found.")
         return None
@@ -51,7 +51,6 @@ def load_file(file_path):
         return None
 
 def create_envelope_observation(wrapper_data, open_trade_data):
-    # Create the envelope structure
     envelope = {
         "action": "OBSERVATION",
         "payload": {

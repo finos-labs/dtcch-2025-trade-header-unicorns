@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 import pandas as pd
-from src.trades_matching.trades_matching import find_cdm_trades_matching_with_isin
+import os
+import json
 
 def read_file(file_path):
     try:
@@ -60,6 +61,25 @@ def isin_enrichment(xml_string):
     return insert_isin_into_xml(xml_string, isin)
 
 # Matching CDM Trades with GPT Wrappers CDM through ISIN search____________________________________
+
+def find_cdm_trades_matching_with_isin(isin, directory="data/cdm_trades_workflowstep"):
+    matching_files = []
+    
+    for filename in os.listdir(directory):
+        if filename.endswith(".json"):
+            filepath = os.path.join(directory, filename)
+            
+
+            with open(filepath, 'r') as file:
+                try:
+                    data = json.load(file)
+
+                    if isin in json.dumps(data):  
+                        matching_files.append(filepath)
+                except json.JSONDecodeError:
+                    print(f"Error reading {filename}")
+    
+    return matching_files
 
 def cdm_trades_matching(xml_string):
     ticker = extract_ticker_from_xml(xml_string)
