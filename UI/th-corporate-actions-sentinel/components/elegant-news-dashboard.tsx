@@ -74,10 +74,11 @@ export function ElegantNewsDashboard() {
                   </TableCell>
                   <TableCell>
                     <Button variant="ghost" size="sm" onClick={() => openModal("impactedOpenTrade", JSON.stringify(article.impactedOpenTrade, null, 2))}>
-                    <Badge variant="secondary">article.</Badge>
+                    <Badge variant="secondary">{article.impactedTradeName}</Badge>
                     </Button>
                   </TableCell>
                   <TableCell>
+
                     <Button
                       variant="ghost"
                       size="sm"

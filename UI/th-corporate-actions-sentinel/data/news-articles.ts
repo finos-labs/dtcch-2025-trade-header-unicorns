@@ -13,6 +13,7 @@ export const newsArticles = [
   },
   {
     id: 2,
+    impactedTradeName: "equity-option-price-return-stock-ex01-american-call-input.json",
     headline: "Apple Inc. Announces Increased Quarterly Dividend Amid Strong Financial Performance",
     content: `Cupertino, CA – February 3, 2025 – Apple Inc. (NASDAQ: AAPL) today announced that its Board of Directors has approved a quarterly cash dividend of $0.28 per share, reflecting a 7.7% increase from the previous dividend. This marks the company's continued commitment to returning value to shareholders amid sustained growth in revenue and profitability.
 
