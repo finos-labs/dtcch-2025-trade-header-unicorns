@@ -32,14 +32,6 @@ export function ElegantNewsDashboard() {
     })
   }
 
-  const executeAction = (article: typeof newsArticles[0]) => {
-    openModal("json", JSON.stringify(article.acceptedWorkflowStep, null, 2))
-    toast({
-      title: "Action Executed",
-      description: `Additional action executed for article ${article.id}.`,
-    })
-  }
-
   return (
     <Card className="animate-in">
       <CardHeader>
@@ -127,4 +119,3 @@ export function ElegantNewsDashboard() {
     </Card>
   )
 }
-
