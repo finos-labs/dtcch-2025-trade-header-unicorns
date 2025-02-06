@@ -7346,5 +7346,100 @@ For full earnings details and investor insights, visit JPMorgan Chase Investor R
     }
   }},
     acceptedWorkflowStep: {},
+},
+{
+  id:6,
+  isoValidation: {
+    "success": false,
+    "info": [
+        {
+            "type": "VALIDATION",
+            "status": "failed",
+            "message": "Message is not valid."
+        }
+    ],
+    "errors": {
+        "validationErrors": {
+            "syntaxErrors": [
+                {
+                    "level": "FATAL",
+                    "message": "Element type \"eader:xsd\" must be followed by either attribute specifications, \">\" or \"/>\"."
+                }
+            ],
+            "businessErrors": [{
+              "level": "ERROR",
+              "code": "305",
+              "rule": "iso-scheme-20",
+              "context": "/TlkitEnvlp/BizMsgEnvlp/Document/CorpActnNtfctn/NtfctnGnlInf/NtfctnTp",
+              "description": "The code value is not valid in scheme"
+          }]
+        },
+        "systemErrors": []
+    }
+},
+  impactedTradeName: "NONE",
+  headline: "Company Announces New Executive Role Focused on Proxy and Corporate Actions",
+  content: `Global fintech company Broadridge Financial Solutions has recently named Larry Conover to the position of Vice President, Special Advisor for Proxy & Corporate Actions. In this role, Conover will lead initiatives to enhance value for clients across Broadridge’s international network and offer insights to drive the evolution of the firm’s products and services. He is also set to oversee industry projects, including efforts to streamline confirmation processes during proxy contests.
+
+Conover brings over 25 years of experience in the financial services industry. His previous tenure at Fidelity Investments included a leadership position in which he managed operations and services for the Asset Services Division, covering both domestic and global corporate actions and proxy matters. Additionally, he has been actively involved in various industry advisory groups focused on navigating legislative and regulatory developments, as well as establishing best practices.
+
+Based in New York, Conover’s extensive expertise is expected to play a crucial role in advancing Broadridge’s strategies to support client innovation, operational efficiency, and growth. He will report directly to Swatika Rajaram, Senior Vice President and Head of US Proxy and Post Sale`,
+  impactedOpenTrade: {},
+  isoMessage: `<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:DRAFT1seev.031.002.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:swift:xsd:envelope ./../XSDSchemas/MX_seev_031_002_15_enriched.xsd">
+	<CorpActnNtfctn>
+		<NtfctnGnlInf>
+			<NtfctnTp>NEWM</NtfctnTp>
+			<PrcgSts>
+				<Cd>
+					<EvtCmpltnsSts>COMP</EvtCmpltnsSts>
+					<EvtConfSts>CONF</EvtConfSts>
+				</Cd>
+			</PrcgSts>
+		</NtfctnGnlInf>
+		<CorpActnGnlInf>
+			<CorpActnEvtId>EXAPBR001234</CorpActnEvtId>
+			<OffclCorpActnEvtId>BRAPPT20250203</OffclCorpActnEvtId>
+			<EvtTp>
+				<Cd>EXAP</Cd>
+			</EvtTp>
+			<MndtryVlntryEvtTp>
+				<Cd>MAND</Cd>
+			</MndtryVlntryEvtTp>
+			<UndrlygScty>
+				<FinInstrmId>
+					<ISIN>US12468Q1081</ISIN>
+					<OthrId>
+						<Id>BR</Id>
+						<Tp>
+							<Cd>BROD</Cd>
+						</Tp>
+					</OthrId>
+				</FinInstrmId>
+			</UndrlygScty>
+		</CorpActnGnlInf>
+		<AcctDtls>
+			<ForAllAccts>
+				<IdCd>GENR</IdCd>
+			</ForAllAccts>
+		</AcctDtls>
+		<CorpActnDtls>
+			<DtDtls>
+				<EvtDt>
+					<Dt>2025-02-03</Dt>
+				</EvtDt>
+			</DtDtls>
+			<Text>
+				<Dscrptn>
+					Appointment of Larry Conover as Vice President, Special Advisor for Proxy &amp; Corporate Actions. Larry will spearhead initiatives to enhance client value across Broadridge’s global network, drive product and service evolution, and oversee projects such as streamlining proxy contest confirmation processes. Conover brings over 25 years of financial services experience, including a notable tenure at Fidelity Investments. He is based in New York and will report to Swatika Rajaram, Senior VP, Head of US Proxy and Post Sale.
+				</Dscrptn>
+			</Text>
+		</CorpActnDtls>
+	</CorpActnNtfctn>
+</Document>
+`,
+  proposedEvent: {},
+  acceptedWorkflowStep: {},
 }
+
 ]

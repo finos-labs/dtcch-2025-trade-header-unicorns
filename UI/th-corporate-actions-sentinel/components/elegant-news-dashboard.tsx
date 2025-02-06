@@ -85,7 +85,7 @@ export function ElegantNewsDashboard() {
                         JSON.stringify(article.isoValidation, null, 2)
                       )}
                     >
-                      <FileTextIcon className="h-4 w-4 text-green-700" />
+                      <FileTextIcon className={`h-4 w-4 ${article.isoValidation?.success ? 'text-green-700' : 'text-red-700'}`} />
                     </Button>
                   </TableCell>
                   <TableCell>
@@ -96,18 +96,17 @@ export function ElegantNewsDashboard() {
                     </Button>
                   </TableCell>
                   <TableCell>
-
                     <Button
                       variant="ghost"
                       size="sm"
                       onClick={() => openModal("proposedEvent", JSON.stringify(article.proposedEvent, null, 2))}
                     >
-                      <FileIcon className="h-4 w-4" />
+                      <FileIcon className={`h-4 w-4 ${Object.keys(article.proposedEvent || {}).length === 0 ? 'text-gray-300' : ''}`} />
                     </Button>
                   </TableCell>
                   <TableCell>
                     <Button variant="ghost" size="sm" onClick={() => openModal("acceptedWorkflowStep", JSON.stringify(article.acceptedWorkflowStep, null, 2))}>
-                      <PlayIcon className="h-4 w-4" />
+                      <PlayIcon className={`h-4 w-4 ${Object.keys(article.proposedEvent || {}).length === 0 ? 'text-gray-300' : ''}`} />
                     </Button>
                   </TableCell>
                 </TableRow>
