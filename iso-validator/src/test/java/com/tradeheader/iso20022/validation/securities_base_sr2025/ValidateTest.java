@@ -1,6 +1,5 @@
 package com.tradeheader.iso20022.validation.securities_base_sr2025;
 
-import com.handcoded.validation.RuleSet;
 import com.tradeheader.iso20022.testUtils.Sample;
 import com.tradeheader.iso20022.testUtils.SamplePile;
 import org.junit.Assert;
