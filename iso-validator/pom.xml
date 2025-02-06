@@ -2,18 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>com.tradeheader</groupId>
-        <artifactId>th-parent-pom</artifactId>
-        <version>1.0.1</version>
-    </parent>
-
-    <groupId>com.tradeheader.validation.iso</groupId>
-    <artifactId>tradeheader-iso-validator</artifactId>
-    <version>1.0.5-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <name>Tradeheader :: ISO20022 Validation</name>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -25,22 +13,7 @@
         <thtoolkit.version>0.4.30</thtoolkit.version>
     </properties>
 
-    <scm>
-        <connection>scm:git:https://bitbucket.org/tradeheader/tradeheader-iso-validator.git</connection>
-        <developerConnection>scm:git:https://bitbucket.org/tradeheader/tradeheader-iso-validator.git
-        </developerConnection>
-        <url>https://bitbucket.org/tradeheader/tradeheader-iso-validator</url>
-        <tag>HEAD</tag>
-    </scm>
-
     <dependencies>
-
-        <!-- Toolkit Validator Core -->
-        <dependency>
-            <groupId>com.tradeheader.validation</groupId>
-            <artifactId>tradeheader-fpmltoolkit-validator</artifactId>
-            <version>${thtoolkit.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
@@ -130,11 +103,6 @@
                     <descriptors>
                         <descriptor>assembly.xml</descriptor>
                     </descriptors>
-                    <archive>
-                        <manifest>
-                            <mainClass>demo.com.tradeheader.Validate</mainClass>
-                        </manifest>
-                    </archive>
                 </configuration>
                 <executions>
                     <execution>
