@@ -1,7 +1,7 @@
 import os
 import json
 
-def find_cdm_trades_matching_with_isin(isin, directory="data/cdm_trades"):
+def find_cdm_trades_matching_with_isin(isin, directory="data/cdm_trades_workflowstep"):
     """
     This function searches through all JSON files in the specified directory, by default data/cdm_trades, and 
     returns a list of file paths that contain the given ISIN as part of their content.
@@ -26,7 +26,6 @@ def find_cdm_trades_matching_with_isin(isin, directory="data/cdm_trades"):
             with open(filepath, 'r') as file:
                 try:
                     data = json.load(file)
-                    
                     # Check if ISIN appears anywhere in the file
                     if isin in json.dumps(data):  # Convert JSON to string and check for ISIN
                         matching_files.append(filepath)
@@ -36,25 +35,3 @@ def find_cdm_trades_matching_with_isin(isin, directory="data/cdm_trades"):
     return matching_files
 
 
-"""
-EXAMPLE OF USE
-=================================
-
-# Import the function from your script (assuming it's in 'trades-matching.py')
-from trades_matching import find_isin_in_json
-
-# Define the ISIN you want to search for
-isin_to_search = "US46625H1005" #This ISIN corresponds to the sample data/cdm_trades\5_6_JPM_KO_equity-option-price-return-basket-ex01-new-input.json
-                                #The function should return "Matching files found: data\cdm_trades\5_6_JPM_KO_equity-option-price-return-basket-ex01-new-input.json"
-
-# Call the function with the test ISIN
-matching_files = find_isin_in_json(isin_to_search, directory="data/cdm_trades")
-
-# Print the results
-if matching_files:
-    print("Matching files found:")
-    for file in matching_files:
-        print(file)
-else:
-    print("No matching files found.")
-"""

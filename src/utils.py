@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 import pandas as pd
+from src.trades_matching.trades_matching import find_cdm_trades_matching_with_isin
 
 def read_file(file_path):
     try:
@@ -53,6 +54,16 @@ def isin_enrichment(xml_string):
     ticker = extract_ticker_from_xml(xml_string)
     isin = get_isin_from_ticker(ticker)
     return insert_isin_into_xml(xml_string, isin)
+
+def cdm_trades_matching(xml_string):
+    ticker = extract_ticker_from_xml(xml_string)
+    isin = get_isin_from_ticker(ticker)
+    return find_cdm_trades_matching_with_isin(isin)
+    
+
+
+
+
 
 
 
