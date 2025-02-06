@@ -1,0 +1,301 @@
+{
+"proposedWorkflowStep":
+{
+  "proposedEvent" : {
+    "intent" : "CorporateActionAdjustment",
+    "corporateActionIntent" : "CashDividend",
+    "instruction" : [ {
+      "primitiveInstruction" : {
+        "observation" : {
+          "observationEvent" : {
+            "corporateAction" : {
+              "corporateActionType" : "CashDividend",
+              "exDate" : "2025-02-27",
+              "payDate" : "2025-03-14"
+            }
+          }
+        }
+      },
+      "before" : {
+        "value" : {
+          "trade" : {
+            "tradeIdentifier" : [ {
+              "issuerReference" : {
+                "globalReference" : "f0d36be0",
+                "externalReference" : "party1"
+              },
+              "assignedIdentifier" : [ {
+                "identifier" : {
+                  "value" : "EQUITYOPTIONPRICER02R17E16C15I14R13P12N11O10I9T8P7O6",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+                  }
+                }
+              } ],
+              "meta" : {
+                "globalKey" : "e38feb88"
+              },
+              "identifierType" : "UniqueTransactionIdentifier"
+            }, {
+              "issuerReference" : {
+                "globalReference" : "f0d36be0",
+                "externalReference" : "party1"
+              },
+              "assignedIdentifier" : [ {
+                "identifier" : {
+                  "value" : "EQUITYOPTIONPRICER01",
+                  "meta" : {
+                    "scheme" : "http://www.PartyA.com/eqd-trade-id"
+                  }
+                }
+              } ],
+              "meta" : {
+                "globalKey" : "8c698b79"
+              }
+            } ],
+            "tradeDate" : {
+              "value" : "2001-07-13",
+              "meta" : {
+                "globalKey" : "3e89cd",
+                "externalKey" : "TradeDate"
+              }
+            },
+            "party" : [ {
+              "partyId" : [ {
+                "identifier" : {
+                  "value" : "Party A",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/dummy-party-id"
+                  }
+                },
+                "meta" : {
+                  "globalKey" : "33f59567"
+                }
+              }, {
+                "identifier" : {
+                  "value" : "DUMMY0000000000LEI01",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                  }
+                },
+                "identifierType" : "LEI",
+                "meta" : {
+                  "globalKey" : "60fe4ea7"
+                }
+              } ],
+              "meta" : {
+                "globalKey" : "f0d36be0",
+                "externalKey" : "party1"
+              }
+            }, {
+              "partyId" : [ {
+                "identifier" : {
+                  "value" : "Party B",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/dummy-party-id"
+                  }
+                },
+                "meta" : {
+                  "globalKey" : "33f59568"
+                }
+              }, {
+                "identifier" : {
+                  "value" : "DUMMY0000000000LEI02",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                  }
+                },
+                "identifierType" : "LEI",
+                "meta" : {
+                  "globalKey" : "60fe4ec6"
+                }
+              } ],
+              "meta" : {
+                "globalKey" : "f0d3e05e",
+                "externalKey" : "party2"
+              }
+            } ],
+            "contractDetails" : {
+              "documentation" : [ {
+                "legalAgreementIdentification" : {
+                  "agreementName" : {
+                    "agreementType" : "MasterAgreement",
+                    "masterAgreementType" : {
+                      "value" : "ISDAMaster"
+                    }
+                  },
+                  "vintage" : 2002
+                },
+                "contractualParty" : [ {
+                  "globalReference" : "f0d3e05e",
+                  "externalReference" : "party2"
+                }, {
+                  "globalReference" : "f0d36be0",
+                  "externalReference" : "party1"
+                } ],
+                "meta" : {
+                  "globalKey" : "32602a28"
+                }
+              }, {
+                "legalAgreementIdentification" : {
+                  "agreementName" : {
+                    "agreementType" : "Confirmation",
+                    "contractualDefinitionsType" : [ {
+                      "value" : "ISDA2002EquityDerivatives"
+                    } ]
+                  }
+                },
+                "contractualParty" : [ {
+                  "globalReference" : "f0d3e05e",
+                  "externalReference" : "party2"
+                }, {
+                  "globalReference" : "f0d36be0",
+                  "externalReference" : "party1"
+                } ],
+                "meta" : {
+                  "globalKey" : "f1ff3e6b"
+                }
+              } ],
+              "governingLaw" : {
+                "value" : "GBEN"
+              },
+              "meta" : {
+                "globalKey" : "acc95347"
+              }
+            },
+            "meta" : {
+              "globalKey" : "cf422db6"
+            }
+          },
+          "state" : {
+            "positionState" : "Formed"
+          },
+          "transferHistory" : [ {
+            "transfer" : {
+              "quantity" : {
+                "value" : 405000,
+                "unit" : {
+                  "currency" : {
+                    "value" : "EUR"
+                  }
+                }
+              },
+              "settlementDate" : {
+                "unadjustedDate" : "2001-07-17",
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE",
+                  "meta" : {
+                    "globalKey" : "24a738"
+                  }
+                }
+              },
+              "payerReceiver" : {
+                "payerPartyReference" : {
+                  "globalReference" : "f0d3e05e",
+                  "externalReference" : "party2"
+                },
+                "receiverPartyReference" : {
+                  "globalReference" : "f0d36be0",
+                  "externalReference" : "party1"
+                }
+              },
+              "transferExpression" : {
+                "priceTransfer" : "Premium"
+              }
+            },
+            "meta" : {
+              "globalKey" : "aa78f85c"
+            }
+          } ],
+          "meta" : {
+            "globalKey" : "904316b5"
+          }
+        }
+      }
+    } ]
+  },
+  "timestamp" : [ {
+    "dateTime" : "2001-07-13T16:42:16Z",
+    "qualification" : "eventCreationDateTime"
+  }, {
+    "dateTime" : "2001-07-13T16:20:47Z",
+    "qualification" : "executionDateTime"
+  } ],
+  "eventIdentifier" : [ {
+    "assignedIdentifier" : [ {
+      "identifier" : {
+        "value" : "DIVGLAX945843"
+      }
+    } ],
+    "meta" : {
+      "globalKey" : "4983f80a"
+    }
+  }, {
+    "assignedIdentifier" : [ {
+      "identifier" : {
+        "value" : "BI0159323322"
+      }
+    } ],
+    "meta" : {
+      "globalKey" : "42a33fab"
+    }
+  } ],
+  "party" : [ {
+    "partyId" : [ {
+      "identifier" : {
+        "value" : "Party A",
+        "meta" : {
+          "scheme" : "http://www.fpml.org/coding-scheme/dummy-party-id"
+        }
+      },
+      "meta" : {
+        "globalKey" : "33f59567"
+      }
+    }, {
+      "identifier" : {
+        "value" : "DUMMY0000000000LEI01",
+        "meta" : {
+          "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+        }
+      },
+      "identifierType" : "LEI",
+      "meta" : {
+        "globalKey" : "60fe4ea7"
+      }
+    } ],
+    "meta" : {
+      "globalKey" : "f0d36be0",
+      "externalKey" : "party1"
+    }
+  }, {
+    "partyId" : [ {
+      "identifier" : {
+        "value" : "Party B",
+        "meta" : {
+          "scheme" : "http://www.fpml.org/coding-scheme/dummy-party-id"
+        }
+      },
+      "meta" : {
+        "globalKey" : "33f59568"
+      }
+    }, {
+      "identifier" : {
+        "value" : "DUMMY0000000000LEI02",
+        "meta" : {
+          "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+        }
+      },
+      "identifierType" : "LEI",
+      "meta" : {
+        "globalKey" : "60fe4ec6"
+      }
+    } ],
+    "meta" : {
+      "globalKey" : "f0d3e05e",
+      "externalKey" : "party2"
+    }
+  } ],
+  "meta" : {
+    "globalKey" : "962c9243"
+  }
+}}

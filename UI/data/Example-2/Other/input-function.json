@@ -1,5 +1,29 @@
 {
-  "originatingWorkflowStep" : {
+    "inputData": {
+    "eventIdentifier": [
+        {
+            "assignedIdentifier": [
+                {
+                    "identifier": {"value": "DIVGLAX123234"}
+                }
+            ]
+        },
+        {
+            "assignedIdentifier": [
+                {
+                    "identifier": {"value": "BI015932134564"}
+                }
+            ]
+        }
+    ],
+    "corporateAction": {
+        "corporateActionType": "CashDividend",
+        "exDate": "2025-02-27",
+        "payDate": "2025-03-10"
+    }
+}
+,
+    "openAcceptedWorkflowStep": {
     "businessEvent" : {
       "intent" : "ContractFormation",
       "eventDate" : "2020-03-17",
@@ -419,12 +443,12 @@
                       "productIdentifier" : [ {
                         "value" : {
                           "identifier" : {
-                            "value" : "MFCTO",
+                            "value" : "XOM",
                             "meta" : {
-                              "scheme" : "http://www.fpml.org/spec/2002/instrument-id-SingleOther"
+                              "scheme" : "http://www.fpml.org/coding-scheme/external/instrument-id-Bloomberg"
                             }
                           },
-                          "source" : "Other",
+                          "source" : "BBGTICKER",
                           "meta" : {
                             "globalKey" : "8bdfd5cb"
                           }
@@ -438,7 +462,7 @@
                       }, {
                         "value" : {
                           "identifier" : {
-                            "value" : "CA56501R1064",
+                            "value" : "US30231G1022",
                             "meta" : {
                               "scheme" : "http://www.fpml.org/spec/2002/instrument-id-ISIN"
                             }
@@ -932,9 +956,9 @@
                   "productIdentifier" : [ {
                     "value" : {
                       "identifier" : {
-                        "value" : "MFCTO",
+                        "value" : "XOM",
                         "meta" : {
-                          "scheme" : "http://www.fpml.org/spec/2002/instrument-id-SingleOther"
+                          "scheme" : "http://www.fpml.org/coding-scheme/external/instrument-id-Bloomberg"
                         }
                       },
                       "source" : "Other",
@@ -951,7 +975,7 @@
                   }, {
                     "value" : {
                       "identifier" : {
-                        "value" : "CA56501R1064",
+                        "value" : "US30231G1022",
                         "meta" : {
                           "scheme" : "http://www.fpml.org/spec/2002/instrument-id-ISIN"
                         }
@@ -1151,132 +1175,5 @@
         "externalKey" : "PartyB"
       }
     } ]
-  },
-  "reportableInformation" : {
-    "confirmationMethod" : "NotConfirmed",
-    "executionVenueType" : "OffFacility",
-    "intragroup" : false,
-    "partyInformation" : [ {
-      "partyReference" : {
-        "globalReference" : "60fe4ea7",
-        "externalReference" : "PartyA"
-      },
-      "regimeInformation" : [ {
-        "supervisoryBody" : {
-          "value" : "SEC"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "reportingRole" : "ReportingParty"
-      }, {
-        "regimeName" : {
-          "value" : "EMIR"
-        },
-        "supervisoryBody" : {
-          "value" : "ESMA"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "esmaPartyInformation" : {
-          "natureOfParty" : "Financial",
-          "corporateSector" : {
-            "financialSector" : [ "INUN" ]
-          },
-          "exceedsClearingThreshold" : true
-        },
-        "reportingRole" : "ReportingParty"
-      }, {
-        "regimeName" : {
-          "value" : "UKEMIR"
-        },
-        "supervisoryBody" : {
-          "value" : "FCA"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "fcaPartyInformation" : {
-          "natureOfParty" : "Financial",
-          "corporateSector" : {
-            "financialSector" : [ "INUN" ]
-          },
-          "exceedsClearingThreshold" : true
-        },
-        "reportingRole" : "ReportingParty"
-      }, {
-        "regimeName" : {
-          "value" : "JFSA"
-        },
-        "supervisoryBody" : {
-          "value" : "JFSA"
-        },
-        "reportingRole" : "ReportingParty",
-        "technicalRecordId" : {
-          "value" : "745ec9f9271945d49e6915e9076ad6c9",
-          "meta" : {
-            "scheme" : "http://www.fpml.org/coding-scheme/external/technical-record-id"
-          }
-        }
-      } ]
-    }, {
-      "partyReference" : {
-        "globalReference" : "60fe4ec6",
-        "externalReference" : "PartyB"
-      },
-      "regimeInformation" : [ {
-        "regimeName" : {
-          "value" : "EMIR"
-        },
-        "supervisoryBody" : {
-          "value" : "ESMA"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "esmaPartyInformation" : {
-          "natureOfParty" : "Financial",
-          "corporateSector" : {
-            "financialSector" : [ "INVF" ]
-          },
-          "exceedsClearingThreshold" : true
-        },
-        "reportingRole" : "ReportingParty"
-      }, {
-        "regimeName" : {
-          "value" : "UKEMIR"
-        },
-        "supervisoryBody" : {
-          "value" : "FCA"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "fcaPartyInformation" : {
-          "natureOfParty" : "Financial",
-          "corporateSector" : {
-            "financialSector" : [ "INVF" ]
-          },
-          "exceedsClearingThreshold" : true
-        },
-        "reportingRole" : "ReportingParty"
-      }, {
-        "regimeName" : {
-          "value" : "JFSA"
-        },
-        "supervisoryBody" : {
-          "value" : "JFSA"
-        },
-        "reportingRole" : "ReportingParty",
-        "technicalRecordId" : {
-          "value" : "745ec9f9271945d49e6915e9076ad6c9",
-          "meta" : {
-            "scheme" : "http://www.fpml.org/coding-scheme/external/technical-record-id"
-          }
-        }
-      } ]
-    } ],
-    "originalExecutionTimestamp" : "2020-03-17T08:03:27Z"
-  },
-  "reportingSide" : {
-    "reportingParty" : {
-      "globalReference" : "60fe4ec6",
-      "externalReference" : "PartyB"
-    },
-    "reportingCounterparty" : {
-      "globalReference" : "60fe4ea7",
-      "externalReference" : "PartyA"
-    }
   }
 }

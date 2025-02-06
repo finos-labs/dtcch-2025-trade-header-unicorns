@@ -678,12 +678,12 @@
                       "productIdentifier" : [ {
                         "value" : {
                           "identifier" : {
-                            "value" : "AZPN.OQ",
+                            "value" : "DE0005140008",
                             "meta" : {
-                              "scheme" : "http://www.fpml.org/spec/2003/instrument-id-Reuters-RIC"
+                              "scheme" : "http://www.fpml.org/coding-scheme/external/instrument-id-ISIN"
                             }
                           },
-                          "source" : "RIC",
+                          "source" : "ISIN",
                           "meta" : {
                             "globalKey" : "86036cd3"
                           }
@@ -707,12 +707,12 @@
                       "productIdentifier" : [ {
                         "value" : {
                           "identifier" : {
-                            "value" : "CA.OQ",
+                            "value" : "DE0007236101",
                             "meta" : {
-                              "scheme" : "http://www.fpml.org/spec/2003/instrument-id-Reuters-RIC"
+                              "scheme" : "http://www.fpml.org/coding-scheme/external/instrument-id-ISIN"
                             }
                           },
-                          "source" : "RIC",
+                          "source" : "ISIN",
                           "meta" : {
                             "globalKey" : "760001ba"
                           }
@@ -736,12 +736,12 @@
                       "productIdentifier" : [ {
                         "value" : {
                           "identifier" : {
-                            "value" : "CACI.N",
+                            "value" : "GB00B10RZP78",
                             "meta" : {
-                              "scheme" : "http://www.fpml.org/spec/2003/instrument-id-Reuters-RIC"
+                              "scheme" : "http://www.fpml.org/coding-scheme/external/instrument-id-ISIN"
                             }
                           },
-                          "source" : "RIC",
+                          "source" : "ISIN",
                           "meta" : {
                             "globalKey" : "4affcb48"
                           }
@@ -765,12 +765,12 @@
                       "productIdentifier" : [ {
                         "value" : {
                           "identifier" : {
-                            "value" : "CDW.OQ",
+                            "value" : "GB0031348658",
                             "meta" : {
-                              "scheme" : "http://www.fpml.org/spec/2003/instrument-id-Reuters-RIC"
+                              "scheme" : "http://www.fpml.org/coding-scheme/external/instrument-id-ISIN"
                             }
                           },
-                          "source" : "RIC",
+                          "source" : "ISIN",
                           "meta" : {
                             "globalKey" : "512c6172"
                           }
@@ -2109,12 +2109,12 @@
                   "productIdentifier" : [ {
                     "value" : {
                       "identifier" : {
-                        "value" : "AZPN.OQ",
+                        "value" : "DE0005140008",
                         "meta" : {
-                          "scheme" : "http://www.fpml.org/spec/2003/instrument-id-Reuters-RIC"
+                          "scheme" : "http://www.fpml.org/coding-scheme/external/instrument-id-ISIN"
                         }
                       },
-                      "source" : "RIC",
+                      "source" : "ISIN",
                       "meta" : {
                         "globalKey" : "86036cd3"
                       }
@@ -2138,12 +2138,12 @@
                   "productIdentifier" : [ {
                     "value" : {
                       "identifier" : {
-                        "value" : "CA.OQ",
+                        "value" : "DE0007236101",
                         "meta" : {
-                          "scheme" : "http://www.fpml.org/spec/2003/instrument-id-Reuters-RIC"
+                          "scheme" : "http://www.fpml.org/coding-scheme/external/instrument-id-ISIN"
                         }
                       },
-                      "source" : "RIC",
+                      "source" : "ISIN",
                       "meta" : {
                         "globalKey" : "760001ba"
                       }
@@ -2167,12 +2167,12 @@
                   "productIdentifier" : [ {
                     "value" : {
                       "identifier" : {
-                        "value" : "CACI.N",
+                        "value" : "GB00B10RZP78",
                         "meta" : {
-                          "scheme" : "http://www.fpml.org/spec/2003/instrument-id-Reuters-RIC"
+                          "scheme" : "http://www.fpml.org/coding-scheme/external/instrument-id-ISIN"
                         }
                       },
-                      "source" : "RIC",
+                      "source" : "ISIN",
                       "meta" : {
                         "globalKey" : "4affcb48"
                       }
@@ -2196,12 +2196,12 @@
                   "productIdentifier" : [ {
                     "value" : {
                       "identifier" : {
-                        "value" : "CDW.OQ",
+                        "value" : "GB0031348658",
                         "meta" : {
-                          "scheme" : "http://www.fpml.org/spec/2003/instrument-id-Reuters-RIC"
+                          "scheme" : "http://www.fpml.org/coding-scheme/external/instrument-id-ISIN"
                         }
                       },
-                      "source" : "RIC",
+                      "source" : "ISIN",
                       "meta" : {
                         "globalKey" : "512c6172"
                       }
