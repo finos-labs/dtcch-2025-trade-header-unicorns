@@ -1,0 +1,216 @@
+{
+    "proposedWorkflowStep":{
+  "proposedEvent" : {
+    "intent" : "CorporateActionAdjustment",
+    "corporateActionIntent" : "CashDividend",
+    "instruction" : [ {
+      "primitiveInstruction" : {
+        "observation" : {
+          "observationEvent" : {
+            "corporateAction" : {
+              "corporateActionType" : "CashDividend",
+              "exDate" : "2025-03-14",
+              "payDate" : "2025-04-01"
+            }
+          }
+        }
+      },
+      "before" : {
+        "value" : {
+          "trade" : {
+            "tradeIdentifier" : [ {
+              "issuer" : {
+                "value" : "DUMMY0000000000LEI01",
+                "meta" : {
+                  "scheme" : "http://www.fpml.org/coding-scheme/external/issuer-identifier"
+                }
+              },
+              "assignedIdentifier" : [ {
+                "identifier" : {
+                  "value" : "EQUITYOPTIONPRICER01",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+                  }
+                }
+              } ],
+              "meta" : {
+                "globalKey" : "4114fdd"
+              },
+              "identifierType" : "UniqueTransactionIdentifier"
+            } ],
+            "tradeDate" : {
+              "value" : "2020-09-17",
+              "meta" : {
+                "globalKey" : "3f2251"
+              }
+            },
+            "party" : [ {
+              "partyId" : [ {
+                "identifier" : {
+                  "value" : "DUMMY0000000000LEI01",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                  }
+                },
+                "identifierType" : "LEI",
+                "meta" : {
+                  "globalKey" : "60fe4ea7"
+                }
+              } ],
+              "meta" : {
+                "globalKey" : "60fe4ea7",
+                "externalKey" : "PartyA"
+              }
+            }, {
+              "partyId" : [ {
+                "identifier" : {
+                  "value" : "DUMMY0000000000LEI02",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                  }
+                },
+                "identifierType" : "LEI",
+                "meta" : {
+                  "globalKey" : "60fe4ec6"
+                }
+              } ],
+              "meta" : {
+                "globalKey" : "60fe4ec6",
+                "externalKey" : "PartyB"
+              }
+            } ],
+            "contractDetails" : {
+              "documentation" : [ {
+                "legalAgreementIdentification" : {
+                  "agreementName" : {
+                    "agreementType" : "MasterAgreement",
+                    "masterAgreementType" : {
+                      "value" : "ISDAMaster"
+                    }
+                  },
+                  "vintage" : 2002
+                },
+                "contractualParty" : [ {
+                  "globalReference" : "60fe4ea7",
+                  "externalReference" : "PartyA"
+                }, {
+                  "globalReference" : "60fe4ec6",
+                  "externalReference" : "PartyB"
+                } ],
+                "meta" : {
+                  "globalKey" : "2c0fab95"
+                }
+              } ],
+              "meta" : {
+                "globalKey" : "2c0fab95"
+              }
+            },
+            "meta" : {
+              "globalKey" : "e669599f"
+            }
+          },
+          "state" : {
+            "positionState" : "Formed"
+          },
+          "transferHistory" : [ {
+            "transfer" : {
+              "quantity" : {
+                "value" : 48011.94,
+                "unit" : {
+                  "currency" : {
+                    "value" : "EUR"
+                  }
+                }
+              },
+              "settlementDate" : {
+                "unadjustedDate" : "2020-09-21"
+              },
+              "payerReceiver" : {
+                "payerPartyReference" : {
+                  "globalReference" : "60fe4ea7",
+                  "externalReference" : "PartyA"
+                }
+              },
+              "transferExpression" : {
+                "priceTransfer" : "Premium"
+              }
+            },
+            "meta" : {
+              "globalKey" : "afbf43c5"
+            }
+          } ],
+          "meta" : {
+            "globalKey" : "2fe9ee43"
+          }
+        }
+      }
+    } ]
+  },
+  "timestamp" : [ {
+    "dateTime" : "2020-10-05T15:20:38.7635176Z",
+    "qualification" : "eventCreationDateTime"
+  }, {
+    "dateTime" : "2020-09-17T16:25:19Z",
+    "qualification" : "executionDateTime"
+  }, {
+    "dateTime" : "2020-09-17T16:25:19Z",
+    "qualification" : "executionDateTime"
+  } ],
+  "eventIdentifier" : [ {
+    "assignedIdentifier" : [ {
+      "identifier" : {
+        "value" : "DIVGLAX459844"
+      }
+    } ],
+    "meta" : {
+      "globalKey" : "410ba5ed"
+    }
+  }, {
+    "assignedIdentifier" : [ {
+      "identifier" : {
+        "value" : "BI023958345"
+      }
+    } ],
+    "meta" : {
+      "globalKey" : "10de0d22"
+    }
+  } ],
+  "party" : [ {
+    "partyId" : [ {
+      "identifier" : {
+        "value" : "DUMMY0000000000LEI01",
+        "meta" : {
+          "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+        }
+      },
+      "identifierType" : "LEI",
+      "meta" : {
+        "globalKey" : "60fe4ea7"
+      }
+    } ],
+    "meta" : {
+      "globalKey" : "60fe4ea7",
+      "externalKey" : "PartyA"
+    }
+  }, {
+    "partyId" : [ {
+      "identifier" : {
+        "value" : "DUMMY0000000000LEI02",
+        "meta" : {
+          "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+        }
+      },
+      "identifierType" : "LEI",
+      "meta" : {
+        "globalKey" : "60fe4ec6"
+      }
+    } ],
+    "meta" : {
+      "globalKey" : "60fe4ec6",
+      "externalKey" : "PartyB"
+    }
+  } ],
+  "meta" : {
+    "globalKey" : "ce15057d"
+  }
+}}

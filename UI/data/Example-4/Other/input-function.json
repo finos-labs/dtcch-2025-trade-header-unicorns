@@ -1,5 +1,29 @@
 {
-  "originatingWorkflowStep" : {
+    "inputData": {
+    "eventIdentifier": [
+        {
+            "assignedIdentifier": [
+                {
+                    "identifier": {"value": "DIVGLAX4598"}
+                }
+            ]
+        },
+        {
+            "assignedIdentifier": [
+                {
+                    "identifier": {"value": "BI0239587"}
+                }
+            ]
+        }
+    ],
+    "corporateAction": {
+        "corporateActionType": "CashDividend",
+        "exDate": "2025-03-05",
+        "payDate": "2025-03-20"
+    }
+}
+,
+    "openAcceptedWorkflowStep": {
     "businessEvent" : {
       "intent" : "ContractFormation",
       "eventDate" : "2021-12-06",
@@ -1026,156 +1050,5 @@
         "externalKey" : "party2"
       }
     } ]
-  },
-  "reportableInformation" : {
-    "confirmationMethod" : "NotConfirmed",
-    "executionVenueType" : "OffFacility",
-    "intragroup" : false,
-    "partyInformation" : [ {
-      "partyReference" : {
-        "globalReference" : "ab6fd453",
-        "externalReference" : "party1"
-      },
-      "relatedParty" : [ {
-        "partyReference" : {
-          "globalReference" : "ab6fd453",
-          "externalReference" : "party1"
-        }
-      }, {
-        "partyReference" : {
-          "globalReference" : "63bc007e",
-          "externalReference" : "party2"
-        },
-        "role" : "Buyer"
-      }, {
-        "partyReference" : {
-          "globalReference" : "ab6fd453",
-          "externalReference" : "party1"
-        },
-        "role" : "Seller"
-      }, {
-        "partyReference" : {
-          "globalReference" : "ab6fd453",
-          "externalReference" : "party1"
-        },
-        "role" : "Beneficiary"
-      } ],
-      "regimeInformation" : [ {
-        "supervisoryBody" : {
-          "value" : "CFTC"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "reportingRole" : "ReportingParty"
-      }, {
-        "regimeName" : {
-          "value" : "EMIR"
-        },
-        "supervisoryBody" : {
-          "value" : "ESMA"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "esmaPartyInformation" : {
-          "natureOfParty" : "Financial",
-          "corporateSector" : {
-            "financialSector" : [ "CSDS" ]
-          },
-          "exceedsClearingThreshold" : true
-        },
-        "reportingRole" : "ReportingParty"
-      }, {
-        "regimeName" : {
-          "value" : "UKEMIR"
-        },
-        "supervisoryBody" : {
-          "value" : "FCA"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "fcaPartyInformation" : {
-          "natureOfParty" : "Financial",
-          "corporateSector" : {
-            "financialSector" : [ "CSDS" ]
-          },
-          "exceedsClearingThreshold" : true
-        },
-        "reportingRole" : "ReportingParty"
-      }, {
-        "regimeName" : {
-          "value" : "JFSA"
-        },
-        "supervisoryBody" : {
-          "value" : "JFSA"
-        },
-        "reportingRole" : "ReportingParty",
-        "technicalRecordId" : {
-          "value" : "056282018555123459991234569BR777123456789",
-          "meta" : {
-            "scheme" : "http://www.fpml.org/coding-scheme/external/technical-record-id"
-          }
-        }
-      } ]
-    }, {
-      "partyReference" : {
-        "globalReference" : "63bc007e",
-        "externalReference" : "party2"
-      },
-      "regimeInformation" : [ {
-        "regimeName" : {
-          "value" : "EMIR"
-        },
-        "supervisoryBody" : {
-          "value" : "ESMA"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "esmaPartyInformation" : {
-          "natureOfParty" : "Financial",
-          "corporateSector" : {
-            "financialSector" : [ "CDTI" ]
-          },
-          "exceedsClearingThreshold" : true
-        },
-        "reportingRole" : "ReportingParty"
-      }, {
-        "regimeName" : {
-          "value" : "UKEMIR"
-        },
-        "supervisoryBody" : {
-          "value" : "FCA"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "fcaPartyInformation" : {
-          "natureOfParty" : "Financial",
-          "corporateSector" : {
-            "financialSector" : [ "CDTI" ]
-          },
-          "exceedsClearingThreshold" : true
-        },
-        "reportingRole" : "ReportingParty"
-      }, {
-        "regimeName" : {
-          "value" : "JFSA"
-        },
-        "supervisoryBody" : {
-          "value" : "JFSA"
-        },
-        "reportingRole" : "ReportingParty",
-        "technicalRecordId" : {
-          "value" : "056282018555123459991234569BR777123456789",
-          "meta" : {
-            "scheme" : "http://www.fpml.org/coding-scheme/external/technical-record-id"
-          }
-        }
-      } ]
-    } ],
-    "originalExecutionTimestamp" : "2021-12-06T17:09:12Z"
-  },
-  "reportingSide" : {
-    "reportingParty" : {
-      "globalReference" : "63bc007e",
-      "externalReference" : "party2"
-    },
-    "reportingCounterparty" : {
-      "globalReference" : "ab6fd453",
-      "externalReference" : "party1"
-    }
   }
 }

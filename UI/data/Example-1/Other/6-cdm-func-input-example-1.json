@@ -1,5 +1,28 @@
 {
-  "originatingWorkflowStep" : {
+    "inputData":{
+    "eventIdentifier": [
+        {
+            "assignedIdentifier": [
+                {
+                    "identifier": {"value": "DIVGLAX945843"}
+                }
+            ]
+        },
+        {
+            "assignedIdentifier": [
+                {
+                    "identifier": {"value": "BI0159323322"}
+                }
+            ]
+        }
+    ],
+    "corporateAction": {
+        "corporateActionType": "CashDividend",
+        "exDate": "2025-02-27",
+        "payDate": "2025-03-14"
+    }
+},
+    "openAcceptedWorkflowStep": {
     "businessEvent" : {
       "intent" : "ContractFormation",
       "eventDate" : "2001-07-13",
@@ -292,12 +315,12 @@
                       "productIdentifier" : [ {
                         "value" : {
                           "identifier" : {
-                            "value" : "STM-FP",
+                            "value" : "US0378331005",
                             "meta" : {
-                              "scheme" : "http://www.fpml.org/schemes/4.1/instrumentId"
+                              "scheme" : "http://www.fpml.org/coding-scheme/external/instrument-id-ISIN"
                             }
                           },
-                          "source" : "Other",
+                          "source" : "ISIN",
                           "meta" : {
                             "globalKey" : "becf6825"
                           }
@@ -311,9 +334,9 @@
                       }, {
                         "value" : {
                           "identifier" : {
-                            "value" : "STMicroelectronics N.V. ordinary shares"
+                            "value" : "AAPL"
                           },
-                          "source" : "Name",
+                          "source" : "BBGTICKER",
                           "meta" : {
                             "globalKey" : "b53aabd5"
                           }
@@ -708,12 +731,12 @@
                   "productIdentifier" : [ {
                     "value" : {
                       "identifier" : {
-                        "value" : "STM-FP",
+                        "value" : "US0378331005",
                         "meta" : {
-                          "scheme" : "http://www.fpml.org/schemes/4.1/instrumentId"
+                          "scheme" : "http://www.fpml.org/coding-scheme/external/instrument-id-ISIN"
                         }
                       },
-                      "source" : "Other",
+                      "source" : "ISIN",
                       "meta" : {
                         "globalKey" : "becf6825"
                       }
@@ -727,9 +750,9 @@
                   }, {
                     "value" : {
                       "identifier" : {
-                        "value" : "STMicroelectronics N.V. ordinary shares"
+                        "value" : "AAPL"
                       },
-                      "source" : "Name",
+                      "source" : "BBGTICKER",
                       "meta" : {
                         "globalKey" : "b53aabd5"
                       }
@@ -1013,138 +1036,5 @@
         "externalKey" : "party2"
       }
     } ]
-  },
-  "reportableInformation" : {
-    "confirmationMethod" : "Electronic",
-    "executionVenueType" : "SEF",
-    "largeSizeTrade" : false,
-    "partyInformation" : [ {
-      "partyReference" : {
-        "globalReference" : "f0d36be0",
-        "externalReference" : "party1"
-      },
-      "regimeInformation" : [ {
-        "supervisoryBody" : {
-          "value" : "CFTC"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "reportingRole" : "ReportingParty"
-      }, {
-        "supervisoryBody" : {
-          "value" : "SEC"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "reportingRole" : "ReportingParty"
-      }, {
-        "regimeName" : {
-          "value" : "EMIR"
-        },
-        "supervisoryBody" : {
-          "value" : "ESMA"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "esmaPartyInformation" : {
-          "natureOfParty" : "Financial",
-          "corporateSector" : {
-            "financialSector" : [ "CDTI" ]
-          },
-          "exceedsClearingThreshold" : true
-        },
-        "reportingRole" : "ReportingParty"
-      }, {
-        "regimeName" : {
-          "value" : "UKEMIR"
-        },
-        "supervisoryBody" : {
-          "value" : "FCA"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "fcaPartyInformation" : {
-          "natureOfParty" : "Financial",
-          "corporateSector" : {
-            "financialSector" : [ "CDTI" ]
-          },
-          "exceedsClearingThreshold" : true
-        },
-        "reportingRole" : "ReportingParty"
-      }, {
-        "regimeName" : {
-          "value" : "JFSA"
-        },
-        "supervisoryBody" : {
-          "value" : "JFSA"
-        },
-        "reportingRole" : "ReportingParty",
-        "technicalRecordId" : {
-          "value" : "SEF123",
-          "meta" : {
-            "scheme" : "http://www.fpml.org/coding-scheme/external/technical-record-id"
-          }
-        }
-      } ]
-    }, {
-      "partyReference" : {
-        "globalReference" : "f0d3e05e",
-        "externalReference" : "party2"
-      },
-      "regimeInformation" : [ {
-        "regimeName" : {
-          "value" : "EMIR"
-        },
-        "supervisoryBody" : {
-          "value" : "ESMA"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "esmaPartyInformation" : {
-          "natureOfParty" : "Financial",
-          "corporateSector" : {
-            "financialSector" : [ "CSDS" ]
-          },
-          "exceedsClearingThreshold" : true
-        },
-        "reportingRole" : "ReportingParty"
-      }, {
-        "regimeName" : {
-          "value" : "UKEMIR"
-        },
-        "supervisoryBody" : {
-          "value" : "FCA"
-        },
-        "mandatorilyClearable" : "ProductMandatoryButNotCpty",
-        "fcaPartyInformation" : {
-          "natureOfParty" : "Financial",
-          "corporateSector" : {
-            "financialSector" : [ "CSDS" ]
-          },
-          "exceedsClearingThreshold" : true
-        },
-        "reportingRole" : "ReportingParty"
-      }, {
-        "regimeName" : {
-          "value" : "JFSA"
-        },
-        "supervisoryBody" : {
-          "value" : "JFSA"
-        },
-        "reportingRole" : "ReportingParty",
-        "technicalRecordId" : {
-          "value" : "SEF123",
-          "meta" : {
-            "scheme" : "http://www.fpml.org/coding-scheme/external/technical-record-id"
-          }
-        }
-      } ]
-    } ],
-    "originalExecutionTimestamp" : "2001-07-13T16:20:47Z"
-  },
-  "reportingSide" : {
-    "reportingParty" : {
-      "globalReference" : "f0d3e05e",
-      "externalReference" : "party2"
-    },
-    "reportingCounterparty" : {
-      "globalReference" : "f0d36be0",
-      "externalReference" : "party1"
-    }
   }
 }
