@@ -3166,23 +3166,312 @@ For further details, visit ExxonMobil Investor Relations.`,
     } ]
   },
     proposedEvent: {
-  "proposedEvent" : {
-    "intent" : "CorporateActionAdjustment",
-    "corporateActionIntent" : "CashDividend",
-    "instruction" : [ {
-      "primitiveInstruction" : {
-        "observation" : {
-          "observationEvent" : {
-            "corporateAction" : {
-              "corporateActionType" : "CashDividend",
-              "exDate" : "2025-02-27",
-              "payDate" : "2025-03-10"
+      "proposedWorkflowStep": {
+    "proposedEvent" : {
+      "intent" : "CorporateActionAdjustment",
+      "corporateActionIntent" : "CashDividend",
+      "instruction" : [ {
+        "primitiveInstruction" : {
+          "observation" : {
+            "observationEvent" : {
+              "corporateAction" : {
+                "corporateActionType" : "CashDividend",
+                "exDate" : "2025-02-27",
+                "payDate" : "2025-03-10"
+              }
+            }
+          }
+        },
+        "before" : {
+          "value" : {
+            "trade" : {
+              "tradeIdentifier" : [ {
+                "issuer" : {
+                  "value" : "DUMMY0000000000LEI01",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/issuer-identifier"
+                  }
+                },
+                "assignedIdentifier" : [ {
+                  "identifier" : {
+                    "value" : "EQUITYSWAPPARAMETE01",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+                    }
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "6240739f"
+                },
+                "identifierType" : "UniqueTransactionIdentifier"
+              } ],
+              "tradeDate" : {
+                "value" : "2019-01-10",
+                "meta" : {
+                  "globalKey" : "3f184a"
+                }
+              },
+              "party" : [ {
+                "partyId" : [ {
+                  "identifier" : {
+                    "value" : "DUMMY0000000000LEI01",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                    }
+                  },
+                  "identifierType" : "LEI",
+                  "meta" : {
+                    "globalKey" : "60fe4ea7"
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "60fe4ea7",
+                  "externalKey" : "PartyA"
+                }
+              }, {
+                "partyId" : [ {
+                  "identifier" : {
+                    "value" : "DUMMY0000000000LEI02",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                    }
+                  },
+                  "identifierType" : "LEI",
+                  "meta" : {
+                    "globalKey" : "60fe4ec6"
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "60fe4ec6",
+                  "externalKey" : "PartyB"
+                }
+              } ],
+              "contractDetails" : {
+                "documentation" : [ {
+                  "legalAgreementIdentification" : {
+                    "agreementName" : {
+                      "agreementType" : "MasterAgreement",
+                      "masterAgreementType" : {
+                        "value" : "ISDAMaster"
+                      }
+                    },
+                    "vintage" : 2002
+                  },
+                  "contractualParty" : [ {
+                    "globalReference" : "60fe4ec6",
+                    "externalReference" : "PartyB"
+                  }, {
+                    "globalReference" : "60fe4ea7",
+                    "externalReference" : "PartyA"
+                  } ],
+                  "meta" : {
+                    "globalKey" : "f53a5215"
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "f53a5215"
+                }
+              },
+              "meta" : {
+                "globalKey" : "6df39be1"
+              }
+            },
+            "state" : {
+              "positionState" : "Formed"
+            },
+            "meta" : {
+              "globalKey" : "3b6f1404"
             }
           }
         }
-      },
-      "before" : {
-        "value" : {
+      } ]
+    },
+    "timestamp" : [ {
+      "dateTime" : "2021-11-09T07:47:51.4265352Z",
+      "qualification" : "eventCreationDateTime"
+    }, {
+      "dateTime" : "2020-03-17T08:03:27Z",
+      "qualification" : "executionDateTime"
+    } ],
+    "eventIdentifier" : [ {
+      "assignedIdentifier" : [ {
+        "identifier" : {
+          "value" : "DIVGLAX123234"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "3bc004ae"
+      }
+    }, {
+      "assignedIdentifier" : [ {
+        "identifier" : {
+          "value" : "BI015932134564"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "23694a6c"
+      }
+    } ],
+    "party" : [ {
+      "partyId" : [ {
+        "identifier" : {
+          "value" : "DUMMY0000000000LEI01",
+          "meta" : {
+            "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+          }
+        },
+        "identifierType" : "LEI",
+        "meta" : {
+          "globalKey" : "60fe4ea7"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "60fe4ea7",
+        "externalKey" : "PartyA"
+      }
+    }, {
+      "partyId" : [ {
+        "identifier" : {
+          "value" : "DUMMY0000000000LEI02",
+          "meta" : {
+            "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+          }
+        },
+        "identifierType" : "LEI",
+        "meta" : {
+          "globalKey" : "60fe4ec6"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "60fe4ec6",
+        "externalKey" : "PartyB"
+      }
+    } ],
+    "meta" : {
+      "globalKey" : "d53d2f4"
+    }
+  }}
+,
+    acceptedWorkflowStep: {
+      "businessEvent" : {
+        "intent" : "CorporateActionAdjustment",
+        "instruction" : [ {
+          "primitiveInstruction" : {
+            "observation" : {
+              "observationEvent" : {
+                "corporateAction" : {
+                  "corporateActionType" : "CashDividend",
+                  "exDate" : "2025-02-27",
+                  "payDate" : "2025-03-10"
+                }
+              }
+            }
+          },
+          "before" : {
+            "value" : {
+              "trade" : {
+                "tradeIdentifier" : [ {
+                  "issuer" : {
+                    "value" : "DUMMY0000000000LEI01",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/issuer-identifier"
+                    }
+                  },
+                  "assignedIdentifier" : [ {
+                    "identifier" : {
+                      "value" : "EQUITYSWAPPARAMETE01",
+                      "meta" : {
+                        "scheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+                      }
+                    }
+                  } ],
+                  "meta" : {
+                    "globalKey" : "6240739f"
+                  },
+                  "identifierType" : "UniqueTransactionIdentifier"
+                } ],
+                "tradeDate" : {
+                  "value" : "2019-01-10",
+                  "meta" : {
+                    "globalKey" : "3f184a"
+                  }
+                },
+                "party" : [ {
+                  "partyId" : [ {
+                    "identifier" : {
+                      "value" : "DUMMY0000000000LEI01",
+                      "meta" : {
+                        "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                      }
+                    },
+                    "identifierType" : "LEI",
+                    "meta" : {
+                      "globalKey" : "60fe4ea7"
+                    }
+                  } ],
+                  "meta" : {
+                    "globalKey" : "60fe4ea7",
+                    "externalKey" : "PartyA"
+                  }
+                }, {
+                  "partyId" : [ {
+                    "identifier" : {
+                      "value" : "DUMMY0000000000LEI02",
+                      "meta" : {
+                        "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                      }
+                    },
+                    "identifierType" : "LEI",
+                    "meta" : {
+                      "globalKey" : "60fe4ec6"
+                    }
+                  } ],
+                  "meta" : {
+                    "globalKey" : "60fe4ec6",
+                    "externalKey" : "PartyB"
+                  }
+                } ],
+                "contractDetails" : {
+                  "documentation" : [ {
+                    "legalAgreementIdentification" : {
+                      "agreementName" : {
+                        "agreementType" : "MasterAgreement",
+                        "masterAgreementType" : {
+                          "value" : "ISDAMaster"
+                        }
+                      },
+                      "vintage" : 2002
+                    },
+                    "contractualParty" : [ {
+                      "globalReference" : "60fe4ec6",
+                      "externalReference" : "PartyB"
+                    }, {
+                      "globalReference" : "60fe4ea7",
+                      "externalReference" : "PartyA"
+                    } ],
+                    "meta" : {
+                      "globalKey" : "f53a5215"
+                    }
+                  } ],
+                  "meta" : {
+                    "globalKey" : "f53a5215"
+                  }
+                },
+                "meta" : {
+                  "globalKey" : "6df39be1"
+                }
+              },
+              "state" : {
+                "positionState" : "Formed"
+              },
+              "meta" : {
+                "globalKey" : "3b6f1404"
+              }
+            }
+          }
+        } ],
+        "eventQualifier" : "CorporateActionDetermined",
+        "after" : [ {
           "trade" : {
             "tradeIdentifier" : [ {
               "issuer" : {
@@ -3278,79 +3567,89 @@ For further details, visit ExxonMobil Investor Relations.`,
           "state" : {
             "positionState" : "Formed"
           },
+          "observationHistory" : [ {
+            "corporateAction" : {
+              "corporateActionType" : "CashDividend",
+              "exDate" : "2025-02-27",
+              "payDate" : "2025-03-10"
+            }
+          } ],
           "meta" : {
-            "globalKey" : "3b6f1404"
+            "globalKey" : "fcf2d6c6"
           }
-        }
-      }
-    } ]
-  },
-  "timestamp" : [ {
-    "dateTime" : "2021-11-09T07:47:51.4265352Z",
-    "qualification" : "eventCreationDateTime"
-  }, {
-    "dateTime" : "2020-03-17T08:03:27Z",
-    "qualification" : "executionDateTime"
-  } ],
-  "eventIdentifier" : [ {
-    "assignedIdentifier" : [ {
-      "identifier" : {
-        "value" : "DIVGLAX123234"
-      }
-    } ],
-    "meta" : {
-      "globalKey" : "3bc004ae"
-    }
-  }, {
-    "assignedIdentifier" : [ {
-      "identifier" : {
-        "value" : "BI015932134564"
-      }
-    } ],
-    "meta" : {
-      "globalKey" : "23694a6c"
-    }
-  } ],
-  "party" : [ {
-    "partyId" : [ {
-      "identifier" : {
-        "value" : "DUMMY0000000000LEI01",
+        } ],
         "meta" : {
-          "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+          "globalKey" : "2fcd53b0"
         }
       },
-      "identifierType" : "LEI",
-      "meta" : {
-        "globalKey" : "60fe4ea7"
-      }
-    } ],
-    "meta" : {
-      "globalKey" : "60fe4ea7",
-      "externalKey" : "PartyA"
-    }
-  }, {
-    "partyId" : [ {
-      "identifier" : {
-        "value" : "DUMMY0000000000LEI02",
-        "meta" : {
-          "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
-        }
+      "previousWorkflowStep" : {
+        "globalReference" : "d53d2f4"
       },
-      "identifierType" : "LEI",
+      "timestamp" : [ {
+        "dateTime" : "2021-11-09T07:47:51.4265352Z",
+        "qualification" : "eventCreationDateTime"
+      }, {
+        "dateTime" : "2020-03-17T08:03:27Z",
+        "qualification" : "executionDateTime"
+      } ],
+      "eventIdentifier" : [ {
+        "assignedIdentifier" : [ {
+          "identifier" : {
+            "value" : "DIVGLAX123234"
+          }
+        } ],
+        "meta" : {
+          "globalKey" : "3bc004ae"
+        }
+      }, {
+        "assignedIdentifier" : [ {
+          "identifier" : {
+            "value" : "BI015932134564"
+          }
+        } ],
+        "meta" : {
+          "globalKey" : "23694a6c"
+        }
+      } ],
+      "party" : [ {
+        "partyId" : [ {
+          "identifier" : {
+            "value" : "DUMMY0000000000LEI01",
+            "meta" : {
+              "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+            }
+          },
+          "identifierType" : "LEI",
+          "meta" : {
+            "globalKey" : "60fe4ea7"
+          }
+        } ],
+        "meta" : {
+          "globalKey" : "60fe4ea7",
+          "externalKey" : "PartyA"
+        }
+      }, {
+        "partyId" : [ {
+          "identifier" : {
+            "value" : "DUMMY0000000000LEI02",
+            "meta" : {
+              "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+            }
+          },
+          "identifierType" : "LEI",
+          "meta" : {
+            "globalKey" : "60fe4ec6"
+          }
+        } ],
+        "meta" : {
+          "globalKey" : "60fe4ec6",
+          "externalKey" : "PartyB"
+        }
+      } ],
       "meta" : {
-        "globalKey" : "60fe4ec6"
+        "globalKey" : "a17e6717"
       }
-    } ],
-    "meta" : {
-      "globalKey" : "60fe4ec6",
-      "externalKey" : "PartyB"
-    }
-  } ],
-  "meta" : {
-    "globalKey" : "d53d2f4"
-  }
-},
-    acceptedWorkflowStep: {},
+    },
 },
 {
   id:3,
@@ -4656,7 +4955,307 @@ For more details on the company’s financial performance, visit Johnson & Johns
   "globalKey" : "33a91631"
 }
 }},
-  acceptedWorkflowStep: {}
+  acceptedWorkflowStep: {
+    "businessEvent" : {
+      "intent" : "CorporateActionAdjustment",
+      "instruction" : [ {
+        "primitiveInstruction" : {
+          "observation" : {
+            "observationEvent" : {
+              "corporateAction" : {
+                "corporateActionType" : "CashDividend",
+                "exDate" : "2025-02-25",
+                "payDate" : "2025-03-12"
+              }
+            }
+          }
+        },
+        "before" : {
+          "value" : {
+            "trade" : {
+              "tradeIdentifier" : [ {
+                "issuer" : {
+                  "value" : "DUMMY0000000000LEI02",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/issuer-identifier"
+                  }
+                },
+                "assignedIdentifier" : [ {
+                  "identifier" : {
+                    "value" : "EQUITYSWAPPRICERET01",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+                    }
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "a2ba17f1"
+                },
+                "identifierType" : "UniqueTransactionIdentifier"
+              } ],
+              "tradeDate" : {
+                "value" : "2020-12-10",
+                "meta" : {
+                  "globalKey" : "3f230a"
+                }
+              },
+              "party" : [ {
+                "partyId" : [ {
+                  "identifier" : {
+                    "value" : "DUMMY0000000000LEI02",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                    }
+                  },
+                  "identifierType" : "LEI",
+                  "meta" : {
+                    "globalKey" : "60fe4ec6"
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "60fe4ec6",
+                  "externalKey" : "PartyA"
+                }
+              }, {
+                "partyId" : [ {
+                  "identifier" : {
+                    "value" : "DUMMY0000000000LEI01",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                    }
+                  },
+                  "identifierType" : "LEI",
+                  "meta" : {
+                    "globalKey" : "60fe4ea7"
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "60fe4ea7",
+                  "externalKey" : "PartyB"
+                }
+              } ],
+              "contractDetails" : {
+                "documentation" : [ {
+                  "legalAgreementIdentification" : {
+                    "agreementName" : {
+                      "agreementType" : "MasterAgreement",
+                      "masterAgreementType" : {
+                        "value" : "ISDAMaster"
+                      }
+                    },
+                    "vintage" : 2002
+                  },
+                  "contractualParty" : [ {
+                    "globalReference" : "60fe4ea7",
+                    "externalReference" : "PartyB"
+                  }, {
+                    "globalReference" : "60fe4ec6",
+                    "externalReference" : "PartyA"
+                  } ],
+                  "meta" : {
+                    "globalKey" : "60f5e6d5"
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "60f5e6d5"
+                }
+              },
+              "meta" : {
+                "globalKey" : "6e828573"
+              }
+            },
+            "state" : {
+              "positionState" : "Formed"
+            },
+            "meta" : {
+              "globalKey" : "53e9e116"
+            }
+          }
+        }
+      } ],
+      "eventQualifier" : "CorporateActionDetermined",
+      "after" : [ {
+        "trade" : {
+          "tradeIdentifier" : [ {
+            "issuer" : {
+              "value" : "DUMMY0000000000LEI02",
+              "meta" : {
+                "scheme" : "http://www.fpml.org/coding-scheme/external/issuer-identifier"
+              }
+            },
+            "assignedIdentifier" : [ {
+              "identifier" : {
+                "value" : "EQUITYSWAPPRICERET01",
+                "meta" : {
+                  "scheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+                }
+              }
+            } ],
+            "meta" : {
+              "globalKey" : "a2ba17f1"
+            },
+            "identifierType" : "UniqueTransactionIdentifier"
+          } ],
+          "tradeDate" : {
+            "value" : "2020-12-10",
+            "meta" : {
+              "globalKey" : "3f230a"
+            }
+          },
+          "party" : [ {
+            "partyId" : [ {
+              "identifier" : {
+                "value" : "DUMMY0000000000LEI02",
+                "meta" : {
+                  "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                }
+              },
+              "identifierType" : "LEI",
+              "meta" : {
+                "globalKey" : "60fe4ec6"
+              }
+            } ],
+            "meta" : {
+              "globalKey" : "60fe4ec6",
+              "externalKey" : "PartyA"
+            }
+          }, {
+            "partyId" : [ {
+              "identifier" : {
+                "value" : "DUMMY0000000000LEI01",
+                "meta" : {
+                  "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                }
+              },
+              "identifierType" : "LEI",
+              "meta" : {
+                "globalKey" : "60fe4ea7"
+              }
+            } ],
+            "meta" : {
+              "globalKey" : "60fe4ea7",
+              "externalKey" : "PartyB"
+            }
+          } ],
+          "contractDetails" : {
+            "documentation" : [ {
+              "legalAgreementIdentification" : {
+                "agreementName" : {
+                  "agreementType" : "MasterAgreement",
+                  "masterAgreementType" : {
+                    "value" : "ISDAMaster"
+                  }
+                },
+                "vintage" : 2002
+              },
+              "contractualParty" : [ {
+                "globalReference" : "60fe4ea7",
+                "externalReference" : "PartyB"
+              }, {
+                "globalReference" : "60fe4ec6",
+                "externalReference" : "PartyA"
+              } ],
+              "meta" : {
+                "globalKey" : "60f5e6d5"
+              }
+            } ],
+            "meta" : {
+              "globalKey" : "60f5e6d5"
+            }
+          },
+          "meta" : {
+            "globalKey" : "6e828573"
+          }
+        },
+        "state" : {
+          "positionState" : "Formed"
+        },
+        "observationHistory" : [ {
+          "corporateAction" : {
+            "corporateActionType" : "CashDividend",
+            "exDate" : "2025-02-25",
+            "payDate" : "2025-03-12"
+          }
+        } ],
+        "meta" : {
+          "globalKey" : "10e764b8"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "1411d478"
+      }
+    },
+    "previousWorkflowStep" : {
+      "globalReference" : "33a91631"
+    },
+    "timestamp" : [ {
+      "dateTime" : "2022-01-29T06:39:48.0169097Z",
+      "qualification" : "eventCreationDateTime"
+    }, {
+      "dateTime" : "2020-12-16T23:11:47Z",
+      "qualification" : "executionDateTime"
+    }, {
+      "dateTime" : "2021-02-05T21:52:08Z",
+      "qualification" : "confirmationDateTime"
+    } ],
+    "eventIdentifier" : [ {
+      "assignedIdentifier" : [ {
+        "identifier" : {
+          "value" : "DIVGLAX17566"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "8e52d222"
+      }
+    }, {
+      "assignedIdentifier" : [ {
+        "identifier" : {
+          "value" : "BI0159327655"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "42a51cca"
+      }
+    } ],
+    "party" : [ {
+      "partyId" : [ {
+        "identifier" : {
+          "value" : "DUMMY0000000000LEI02",
+          "meta" : {
+            "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+          }
+        },
+        "identifierType" : "LEI",
+        "meta" : {
+          "globalKey" : "60fe4ec6"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "60fe4ec6",
+        "externalKey" : "PartyA"
+      }
+    }, {
+      "partyId" : [ {
+        "identifier" : {
+          "value" : "DUMMY0000000000LEI01",
+          "meta" : {
+            "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+          }
+        },
+        "identifierType" : "LEI",
+        "meta" : {
+          "globalKey" : "60fe4ea7"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "60fe4ea7",
+        "externalKey" : "PartyB"
+      }
+    } ],
+    "meta" : {
+      "globalKey" : "1627bc8c"
+    }
+  }
 },
 {
   id:4,
@@ -6114,7 +6713,548 @@ For more details on Microsoft’s earnings and investor updates, visit Microsoft
       "globalKey" : "5de48703"
     }
   }},
-  acceptedWorkflowStep: {},
+  acceptedWorkflowStep: {
+    "businessEvent" : {
+      "intent" : "CorporateActionAdjustment",
+      "instruction" : [ {
+        "primitiveInstruction" : {
+          "observation" : {
+            "observationEvent" : {
+              "corporateAction" : {
+                "corporateActionType" : "CashDividend",
+                "exDate" : "2025-03-05",
+                "payDate" : "2025-03-20"
+              }
+            }
+          }
+        },
+        "before" : {
+          "value" : {
+            "trade" : {
+              "tradeIdentifier" : [ {
+                "issuer" : {
+                  "value" : "213800WWTABZ1GOJHH37",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/issuer-identifier"
+                  }
+                },
+                "assignedIdentifier" : [ {
+                  "identifier" : {
+                    "value" : "EQUITYOPTIONPRICER02",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+                    }
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "ddfffad1"
+                },
+                "identifierType" : "UniqueTransactionIdentifier"
+              }, {
+                "issuerReference" : {
+                  "globalReference" : "ab6fd453",
+                  "externalReference" : "party1"
+                },
+                "assignedIdentifier" : [ {
+                  "identifier" : {
+                    "value" : "EQUITYOPTIONPRICER01",
+                    "meta" : {
+                      "scheme" : "http://www.dtcc.com/internal_Referenceid"
+                    }
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "58e6826c"
+                }
+              } ],
+              "tradeDate" : {
+                "value" : "2021-12-06",
+                "meta" : {
+                  "globalKey" : "3f2b06"
+                }
+              },
+              "party" : [ {
+                "partyId" : [ {
+                  "identifier" : {
+                    "value" : "213800IV9PCAC364HN60",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                    }
+                  },
+                  "identifierType" : "LEI",
+                  "meta" : {
+                    "globalKey" : "365954bc"
+                  }
+                } ],
+                "name" : {
+                  "value" : "Broadridge MessageAutomation"
+                },
+                "businessUnit" : [ {
+                  "contactInformation" : {
+                    "address" : [ {
+                      "country" : {
+                        "value" : "GB"
+                      }
+                    } ]
+                  },
+                  "meta" : {
+                    "globalKey" : "8db"
+                  }
+                } ],
+                "contactInformation" : {
+                  "address" : [ {
+                    "country" : {
+                      "value" : "GB",
+                      "meta" : {
+                        "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+                      }
+                    }
+                  } ]
+                },
+                "meta" : {
+                  "globalKey" : "ab6fd453",
+                  "externalKey" : "party1"
+                }
+              }, {
+                "partyId" : [ {
+                  "identifier" : {
+                    "value" : "213800WWTABZ1GOJHH37",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                    }
+                  },
+                  "identifierType" : "LEI",
+                  "meta" : {
+                    "globalKey" : "fdb29bf2"
+                  }
+                } ],
+                "name" : {
+                  "value" : "Broadridge Financial Solutions Limited"
+                },
+                "businessUnit" : [ {
+                  "contactInformation" : {
+                    "address" : [ {
+                      "country" : {
+                        "value" : "GB"
+                      }
+                    } ]
+                  },
+                  "meta" : {
+                    "globalKey" : "8db"
+                  }
+                } ],
+                "contactInformation" : {
+                  "address" : [ {
+                    "country" : {
+                      "value" : "GB",
+                      "meta" : {
+                        "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+                      }
+                    }
+                  } ]
+                },
+                "meta" : {
+                  "globalKey" : "63bc007e",
+                  "externalKey" : "party2"
+                }
+              } ],
+              "contractDetails" : {
+                "documentation" : [ {
+                  "legalAgreementIdentification" : {
+                    "agreementName" : {
+                      "agreementType" : "MasterAgreement",
+                      "masterAgreementType" : {
+                        "value" : "ISDAMaster"
+                      }
+                    },
+                    "vintage" : 2002
+                  },
+                  "contractualParty" : [ {
+                    "globalReference" : "63bc007e",
+                    "externalReference" : "party2"
+                  }, {
+                    "globalReference" : "ab6fd453",
+                    "externalReference" : "party1"
+                  } ],
+                  "meta" : {
+                    "globalKey" : "e0400035"
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "e0400035"
+                }
+              },
+              "meta" : {
+                "globalKey" : "707a33b"
+              }
+            },
+            "state" : {
+              "positionState" : "Formed"
+            },
+            "transferHistory" : [ {
+              "transfer" : {
+                "quantity" : {
+                  "value" : 86308.02,
+                  "unit" : {
+                    "currency" : {
+                      "value" : "USD"
+                    }
+                  }
+                },
+                "settlementDate" : {
+                  "unadjustedDate" : "2019-05-01"
+                },
+                "payerReceiver" : {
+                  "payerPartyReference" : {
+                    "globalReference" : "63bc007e",
+                    "externalReference" : "party2"
+                  },
+                  "receiverPartyReference" : {
+                    "globalReference" : "ab6fd453",
+                    "externalReference" : "party1"
+                  }
+                },
+                "transferExpression" : {
+                  "priceTransfer" : "Premium"
+                }
+              },
+              "meta" : {
+                "globalKey" : "95a312e9"
+              }
+            } ],
+            "meta" : {
+              "globalKey" : "8e0d4bc7"
+            }
+          }
+        }
+      } ],
+      "eventQualifier" : "CorporateActionDetermined",
+      "after" : [ {
+        "trade" : {
+          "tradeIdentifier" : [ {
+            "issuer" : {
+              "value" : "213800WWTABZ1GOJHH37",
+              "meta" : {
+                "scheme" : "http://www.fpml.org/coding-scheme/external/issuer-identifier"
+              }
+            },
+            "assignedIdentifier" : [ {
+              "identifier" : {
+                "value" : "EQUITYOPTIONPRICER02",
+                "meta" : {
+                  "scheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+                }
+              }
+            } ],
+            "meta" : {
+              "globalKey" : "ddfffad1"
+            },
+            "identifierType" : "UniqueTransactionIdentifier"
+          }, {
+            "issuerReference" : {
+              "globalReference" : "ab6fd453",
+              "externalReference" : "party1"
+            },
+            "assignedIdentifier" : [ {
+              "identifier" : {
+                "value" : "EQUITYOPTIONPRICER01",
+                "meta" : {
+                  "scheme" : "http://www.dtcc.com/internal_Referenceid"
+                }
+              }
+            } ],
+            "meta" : {
+              "globalKey" : "58e6826c"
+            }
+          } ],
+          "tradeDate" : {
+            "value" : "2021-12-06",
+            "meta" : {
+              "globalKey" : "3f2b06"
+            }
+          },
+          "party" : [ {
+            "partyId" : [ {
+              "identifier" : {
+                "value" : "213800IV9PCAC364HN60",
+                "meta" : {
+                  "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                }
+              },
+              "identifierType" : "LEI",
+              "meta" : {
+                "globalKey" : "365954bc"
+              }
+            } ],
+            "name" : {
+              "value" : "Broadridge MessageAutomation"
+            },
+            "businessUnit" : [ {
+              "contactInformation" : {
+                "address" : [ {
+                  "country" : {
+                    "value" : "GB"
+                  }
+                } ]
+              },
+              "meta" : {
+                "globalKey" : "8db"
+              }
+            } ],
+            "contactInformation" : {
+              "address" : [ {
+                "country" : {
+                  "value" : "GB",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+                  }
+                }
+              } ]
+            },
+            "meta" : {
+              "globalKey" : "ab6fd453",
+              "externalKey" : "party1"
+            }
+          }, {
+            "partyId" : [ {
+              "identifier" : {
+                "value" : "213800WWTABZ1GOJHH37",
+                "meta" : {
+                  "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                }
+              },
+              "identifierType" : "LEI",
+              "meta" : {
+                "globalKey" : "fdb29bf2"
+              }
+            } ],
+            "name" : {
+              "value" : "Broadridge Financial Solutions Limited"
+            },
+            "businessUnit" : [ {
+              "contactInformation" : {
+                "address" : [ {
+                  "country" : {
+                    "value" : "GB"
+                  }
+                } ]
+              },
+              "meta" : {
+                "globalKey" : "8db"
+              }
+            } ],
+            "contactInformation" : {
+              "address" : [ {
+                "country" : {
+                  "value" : "GB",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+                  }
+                }
+              } ]
+            },
+            "meta" : {
+              "globalKey" : "63bc007e",
+              "externalKey" : "party2"
+            }
+          } ],
+          "contractDetails" : {
+            "documentation" : [ {
+              "legalAgreementIdentification" : {
+                "agreementName" : {
+                  "agreementType" : "MasterAgreement",
+                  "masterAgreementType" : {
+                    "value" : "ISDAMaster"
+                  }
+                },
+                "vintage" : 2002
+              },
+              "contractualParty" : [ {
+                "globalReference" : "63bc007e",
+                "externalReference" : "party2"
+              }, {
+                "globalReference" : "ab6fd453",
+                "externalReference" : "party1"
+              } ],
+              "meta" : {
+                "globalKey" : "e0400035"
+              }
+            } ],
+            "meta" : {
+              "globalKey" : "e0400035"
+            }
+          },
+          "meta" : {
+            "globalKey" : "707a33b"
+          }
+        },
+        "state" : {
+          "positionState" : "Formed"
+        },
+        "transferHistory" : [ {
+          "transfer" : {
+            "quantity" : {
+              "value" : 86308.02,
+              "unit" : {
+                "currency" : {
+                  "value" : "USD"
+                }
+              }
+            },
+            "settlementDate" : {
+              "unadjustedDate" : "2019-05-01"
+            },
+            "payerReceiver" : {
+              "payerPartyReference" : {
+                "globalReference" : "63bc007e",
+                "externalReference" : "party2"
+              },
+              "receiverPartyReference" : {
+                "globalReference" : "ab6fd453",
+                "externalReference" : "party1"
+              }
+            },
+            "transferExpression" : {
+              "priceTransfer" : "Premium"
+            }
+          },
+          "meta" : {
+            "globalKey" : "95a312e9"
+          }
+        } ],
+        "observationHistory" : [ {
+          "corporateAction" : {
+            "corporateActionType" : "CashDividend",
+            "exDate" : "2025-03-05",
+            "payDate" : "2025-03-20"
+          }
+        } ],
+        "meta" : {
+          "globalKey" : "c4600603"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "ef1ab10"
+      }
+    },
+    "previousWorkflowStep" : {
+      "globalReference" : "5de48703"
+    },
+    "timestamp" : [ {
+      "dateTime" : "2021-12-06T17:09:12Z",
+      "qualification" : "eventCreationDateTime"
+    }, {
+      "dateTime" : "2021-12-06T17:09:12Z",
+      "qualification" : "executionDateTime"
+    } ],
+    "eventIdentifier" : [ {
+      "assignedIdentifier" : [ {
+        "identifier" : {
+          "value" : "DIVGLAX4598"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "fc5696ad"
+      }
+    }, {
+      "assignedIdentifier" : [ {
+        "identifier" : {
+          "value" : "BI0239587"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "1c413ae5"
+      }
+    } ],
+    "party" : [ {
+      "partyId" : [ {
+        "identifier" : {
+          "value" : "213800IV9PCAC364HN60",
+          "meta" : {
+            "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+          }
+        },
+        "identifierType" : "LEI",
+        "meta" : {
+          "globalKey" : "365954bc"
+        }
+      } ],
+      "name" : {
+        "value" : "Broadridge MessageAutomation"
+      },
+      "businessUnit" : [ {
+        "contactInformation" : {
+          "address" : [ {
+            "country" : {
+              "value" : "GB"
+            }
+          } ]
+        },
+        "meta" : {
+          "globalKey" : "8db"
+        }
+      } ],
+      "contactInformation" : {
+        "address" : [ {
+          "country" : {
+            "value" : "GB",
+            "meta" : {
+              "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+            }
+          }
+        } ]
+      },
+      "meta" : {
+        "globalKey" : "ab6fd453",
+        "externalKey" : "party1"
+      }
+    }, {
+      "partyId" : [ {
+        "identifier" : {
+          "value" : "213800WWTABZ1GOJHH37",
+          "meta" : {
+            "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+          }
+        },
+        "identifierType" : "LEI",
+        "meta" : {
+          "globalKey" : "fdb29bf2"
+        }
+      } ],
+      "name" : {
+        "value" : "Broadridge Financial Solutions Limited"
+      },
+      "businessUnit" : [ {
+        "contactInformation" : {
+          "address" : [ {
+            "country" : {
+              "value" : "GB"
+            }
+          } ]
+        },
+        "meta" : {
+          "globalKey" : "8db"
+        }
+      } ],
+      "contactInformation" : {
+        "address" : [ {
+          "country" : {
+            "value" : "GB",
+            "meta" : {
+              "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+            }
+          }
+        } ]
+      },
+      "meta" : {
+        "globalKey" : "63bc007e",
+        "externalKey" : "party2"
+      }
+    } ],
+    "meta" : {
+      "globalKey" : "557cf023"
+    }
+  },
 },
 {
     id:5,
@@ -7345,7 +8485,361 @@ For full earnings details and investor insights, visit JPMorgan Chase Investor R
       "globalKey" : "ce15057d"
     }
   }},
-    acceptedWorkflowStep: {},
+    acceptedWorkflowStep: {
+      "businessEvent" : {
+        "intent" : "CorporateActionAdjustment",
+        "instruction" : [ {
+          "primitiveInstruction" : {
+            "observation" : {
+              "observationEvent" : {
+                "corporateAction" : {
+                  "corporateActionType" : "CashDividend",
+                  "exDate" : "2025-03-14",
+                  "payDate" : "2025-04-01"
+                }
+              }
+            }
+          },
+          "before" : {
+            "value" : {
+              "trade" : {
+                "tradeIdentifier" : [ {
+                  "issuer" : {
+                    "value" : "DUMMY0000000000LEI01",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/issuer-identifier"
+                    }
+                  },
+                  "assignedIdentifier" : [ {
+                    "identifier" : {
+                      "value" : "EQUITYOPTIONPRICER01",
+                      "meta" : {
+                        "scheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+                      }
+                    }
+                  } ],
+                  "meta" : {
+                    "globalKey" : "4114fdd"
+                  },
+                  "identifierType" : "UniqueTransactionIdentifier"
+                } ],
+                "tradeDate" : {
+                  "value" : "2020-09-17",
+                  "meta" : {
+                    "globalKey" : "3f2251"
+                  }
+                },
+                "party" : [ {
+                  "partyId" : [ {
+                    "identifier" : {
+                      "value" : "DUMMY0000000000LEI01",
+                      "meta" : {
+                        "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                      }
+                    },
+                    "identifierType" : "LEI",
+                    "meta" : {
+                      "globalKey" : "60fe4ea7"
+                    }
+                  } ],
+                  "meta" : {
+                    "globalKey" : "60fe4ea7",
+                    "externalKey" : "PartyA"
+                  }
+                }, {
+                  "partyId" : [ {
+                    "identifier" : {
+                      "value" : "DUMMY0000000000LEI02",
+                      "meta" : {
+                        "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                      }
+                    },
+                    "identifierType" : "LEI",
+                    "meta" : {
+                      "globalKey" : "60fe4ec6"
+                    }
+                  } ],
+                  "meta" : {
+                    "globalKey" : "60fe4ec6",
+                    "externalKey" : "PartyB"
+                  }
+                } ],
+                "contractDetails" : {
+                  "documentation" : [ {
+                    "legalAgreementIdentification" : {
+                      "agreementName" : {
+                        "agreementType" : "MasterAgreement",
+                        "masterAgreementType" : {
+                          "value" : "ISDAMaster"
+                        }
+                      },
+                      "vintage" : 2002
+                    },
+                    "contractualParty" : [ {
+                      "globalReference" : "60fe4ea7",
+                      "externalReference" : "PartyA"
+                    }, {
+                      "globalReference" : "60fe4ec6",
+                      "externalReference" : "PartyB"
+                    } ],
+                    "meta" : {
+                      "globalKey" : "2c0fab95"
+                    }
+                  } ],
+                  "meta" : {
+                    "globalKey" : "2c0fab95"
+                  }
+                },
+                "meta" : {
+                  "globalKey" : "e669599f"
+                }
+              },
+              "state" : {
+                "positionState" : "Formed"
+              },
+              "transferHistory" : [ {
+                "transfer" : {
+                  "quantity" : {
+                    "value" : 48011.94,
+                    "unit" : {
+                      "currency" : {
+                        "value" : "EUR"
+                      }
+                    }
+                  },
+                  "settlementDate" : {
+                    "unadjustedDate" : "2020-09-21"
+                  },
+                  "payerReceiver" : {
+                    "payerPartyReference" : {
+                      "globalReference" : "60fe4ea7",
+                      "externalReference" : "PartyA"
+                    }
+                  },
+                  "transferExpression" : {
+                    "priceTransfer" : "Premium"
+                  }
+                },
+                "meta" : {
+                  "globalKey" : "afbf43c5"
+                }
+              } ],
+              "meta" : {
+                "globalKey" : "2fe9ee43"
+              }
+            }
+          }
+        } ],
+        "eventQualifier" : "CorporateActionDetermined",
+        "after" : [ {
+          "trade" : {
+            "tradeIdentifier" : [ {
+              "issuer" : {
+                "value" : "DUMMY0000000000LEI01",
+                "meta" : {
+                  "scheme" : "http://www.fpml.org/coding-scheme/external/issuer-identifier"
+                }
+              },
+              "assignedIdentifier" : [ {
+                "identifier" : {
+                  "value" : "EQUITYOPTIONPRICER01",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+                  }
+                }
+              } ],
+              "meta" : {
+                "globalKey" : "4114fdd"
+              },
+              "identifierType" : "UniqueTransactionIdentifier"
+            } ],
+            "tradeDate" : {
+              "value" : "2020-09-17",
+              "meta" : {
+                "globalKey" : "3f2251"
+              }
+            },
+            "party" : [ {
+              "partyId" : [ {
+                "identifier" : {
+                  "value" : "DUMMY0000000000LEI01",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                  }
+                },
+                "identifierType" : "LEI",
+                "meta" : {
+                  "globalKey" : "60fe4ea7"
+                }
+              } ],
+              "meta" : {
+                "globalKey" : "60fe4ea7",
+                "externalKey" : "PartyA"
+              }
+            }, {
+              "partyId" : [ {
+                "identifier" : {
+                  "value" : "DUMMY0000000000LEI02",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                  }
+                },
+                "identifierType" : "LEI",
+                "meta" : {
+                  "globalKey" : "60fe4ec6"
+                }
+              } ],
+              "meta" : {
+                "globalKey" : "60fe4ec6",
+                "externalKey" : "PartyB"
+              }
+            } ],
+            "contractDetails" : {
+              "documentation" : [ {
+                "legalAgreementIdentification" : {
+                  "agreementName" : {
+                    "agreementType" : "MasterAgreement",
+                    "masterAgreementType" : {
+                      "value" : "ISDAMaster"
+                    }
+                  },
+                  "vintage" : 2002
+                },
+                "contractualParty" : [ {
+                  "globalReference" : "60fe4ea7",
+                  "externalReference" : "PartyA"
+                }, {
+                  "globalReference" : "60fe4ec6",
+                  "externalReference" : "PartyB"
+                } ],
+                "meta" : {
+                  "globalKey" : "2c0fab95"
+                }
+              } ],
+              "meta" : {
+                "globalKey" : "2c0fab95"
+              }
+            },
+            "meta" : {
+              "globalKey" : "e669599f"
+            }
+          },
+          "state" : {
+            "positionState" : "Formed"
+          },
+          "transferHistory" : [ {
+            "transfer" : {
+              "quantity" : {
+                "value" : 48011.94,
+                "unit" : {
+                  "currency" : {
+                    "value" : "EUR"
+                  }
+                }
+              },
+              "settlementDate" : {
+                "unadjustedDate" : "2020-09-21"
+              },
+              "payerReceiver" : {
+                "payerPartyReference" : {
+                  "globalReference" : "60fe4ea7",
+                  "externalReference" : "PartyA"
+                }
+              },
+              "transferExpression" : {
+                "priceTransfer" : "Premium"
+              }
+            },
+            "meta" : {
+              "globalKey" : "afbf43c5"
+            }
+          } ],
+          "observationHistory" : [ {
+            "corporateAction" : {
+              "corporateActionType" : "CashDividend",
+              "exDate" : "2025-03-14",
+              "payDate" : "2025-04-01"
+            }
+          } ],
+          "meta" : {
+            "globalKey" : "30b1924b"
+          }
+        } ],
+        "meta" : {
+          "globalKey" : "73cad2f2"
+        }
+      },
+      "previousWorkflowStep" : {
+        "globalReference" : "ce15057d"
+      },
+      "timestamp" : [ {
+        "dateTime" : "2020-10-05T15:20:38.7635176Z",
+        "qualification" : "eventCreationDateTime"
+      }, {
+        "dateTime" : "2020-09-17T16:25:19Z",
+        "qualification" : "executionDateTime"
+      }, {
+        "dateTime" : "2020-09-17T16:25:19Z",
+        "qualification" : "executionDateTime"
+      } ],
+      "eventIdentifier" : [ {
+        "assignedIdentifier" : [ {
+          "identifier" : {
+            "value" : "DIVGLAX459844"
+          }
+        } ],
+        "meta" : {
+          "globalKey" : "410ba5ed"
+        }
+      }, {
+        "assignedIdentifier" : [ {
+          "identifier" : {
+            "value" : "BI023958345"
+          }
+        } ],
+        "meta" : {
+          "globalKey" : "10de0d22"
+        }
+      } ],
+      "party" : [ {
+        "partyId" : [ {
+          "identifier" : {
+            "value" : "DUMMY0000000000LEI01",
+            "meta" : {
+              "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+            }
+          },
+          "identifierType" : "LEI",
+          "meta" : {
+            "globalKey" : "60fe4ea7"
+          }
+        } ],
+        "meta" : {
+          "globalKey" : "60fe4ea7",
+          "externalKey" : "PartyA"
+        }
+      }, {
+        "partyId" : [ {
+          "identifier" : {
+            "value" : "DUMMY0000000000LEI02",
+            "meta" : {
+              "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+            }
+          },
+          "identifierType" : "LEI",
+          "meta" : {
+            "globalKey" : "60fe4ec6"
+          }
+        } ],
+        "meta" : {
+          "globalKey" : "60fe4ec6",
+          "externalKey" : "PartyB"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "39c146c5"
+      }
+    },
 },
 {
   id:6,
