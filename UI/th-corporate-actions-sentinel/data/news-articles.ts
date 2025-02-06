@@ -4606,5 +4606,1446 @@ For more details on the company’s financial performance, visit Johnson & Johns
 }
 }},
   acceptedWorkflowStep: {}
+},
+{
+  id:4,
+  impactedTradeName: "equity-option-price-return-stock-ex03-european-call-averaging-input.json",
+  headline: "Microsoft Announces $0.75 Quarterly Dividend as Cloud Revenue Surges",
+  content: `Redmond, WA – February 3, 2025 – Microsoft Corporation (NASDAQ: MSFT) has declared a quarterly dividend of $0.75 per share, reinforcing its commitment to returning capital to shareholders amid record-breaking revenue from its cloud and AI segments.
+
+The dividend will be payable on March 20, 2025, to shareholders of record as of March 6, 2025, with an ex-dividend date of March 5, 2025.
+
+CEO Statement
+
+Satya Nadella, CEO of Microsoft, stated:
+
+"With continued strong demand for our AI-powered cloud services and enterprise solutions, we are pleased to reward our shareholders with another dividend increase. Microsoft's commitment to innovation and responsible growth ensures long-term value creation."
+
+Market Performance & Future Outlook
+
+Microsoft’s stock has surged 23% over the past 12 months, fueled by growing adoption of Azure AI services and Copilot integrations across its product suite. The company’s dividend yield now stands at 0.85%, maintaining its position as a key dividend player in the tech sector.
+
+Analysts expect Microsoft’s aggressive investments in AI infrastructure and cybersecurity to drive further revenue growth in 2025, with its cloud division continuing to outperform expectations.
+
+For more details on Microsoft’s earnings and investor updates, visit Microsoft Investor Relations.`,
+  impactedOpenTrade: {
+  "businessEvent" : {
+    "intent" : "ContractFormation",
+    "eventDate" : "2021-12-06",
+    "instruction" : [ {
+      "primitiveInstruction" : {
+        "contractFormation" : {
+          "legalAgreement" : [ {
+            "legalAgreementIdentification" : {
+              "agreementName" : {
+                "agreementType" : "MasterAgreement",
+                "masterAgreementType" : {
+                  "value" : "ISDAMaster"
+                }
+              },
+              "vintage" : 2002
+            },
+            "contractualParty" : [ {
+              "globalReference" : "63bc007e",
+              "externalReference" : "party2"
+            }, {
+              "globalReference" : "ab6fd453",
+              "externalReference" : "party1"
+            } ],
+            "meta" : {
+              "globalKey" : "55a4012a"
+            }
+          } ]
+        }
+      },
+      "before" : {
+        "value" : {
+          "trade" : {
+            "tradeIdentifier" : [ {
+              "issuer" : {
+                "value" : "213800WWTABZ1GOJHH37",
+                "meta" : {
+                  "scheme" : "http://www.fpml.org/coding-scheme/external/issuer-identifier"
+                }
+              },
+              "assignedIdentifier" : [ {
+                "identifier" : {
+                  "value" : "EQUITYOPTIONPRICER02",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+                  }
+                }
+              } ],
+              "meta" : {
+                "globalKey" : "ddfffad1"
+              },
+              "identifierType" : "UniqueTransactionIdentifier"
+            }, {
+              "issuerReference" : {
+                "globalReference" : "ab6fd453",
+                "externalReference" : "party1"
+              },
+              "assignedIdentifier" : [ {
+                "identifier" : {
+                  "value" : "EQUITYOPTIONPRICER01",
+                  "meta" : {
+                    "scheme" : "http://www.dtcc.com/internal_Referenceid"
+                  }
+                }
+              } ],
+              "meta" : {
+                "globalKey" : "4cef0f99"
+              }
+            } ],
+            "tradeDate" : {
+              "value" : "2021-12-06",
+              "meta" : {
+                "globalKey" : "3f2b06"
+              }
+            },
+            "tradableProduct" : {
+              "product" : {
+                "contractualProduct" : {
+                  "productTaxonomy" : [ {
+                    "primaryAssetClass" : {
+                      "value" : "Equity"
+                    }
+                  }, {
+                    "source" : "CFI",
+                    "value" : {
+                      "name" : {
+                        "value" : "HESPXX",
+                        "meta" : {
+                          "scheme" : "http://www.fpml.org/coding-scheme/external/product-classification/iso10962"
+                        }
+                      }
+                    }
+                  }, {
+                    "source" : "EMIR",
+                    "value" : {
+                      "name" : {
+                        "value" : "OT",
+                        "meta" : {
+                          "scheme" : "http://www.dtcc.com/coding-scheme/external/product-classification/emir-contract-type"
+                        }
+                      }
+                    }
+                  }, {
+                    "source" : "ISDA",
+                    "productQualifier" : "EquityOption_PriceReturnBasicPerformance_SingleName"
+                  } ],
+                  "productIdentifier" : [ {
+                    "value" : {
+                      "identifier" : {
+                        "value" : "Equity:Option:PriceReturnBasicPerformance:SingleName",
+                        "meta" : {
+                          "scheme" : "http://www.fpml.org/coding-scheme/product-taxonomy"
+                        }
+                      },
+                      "source" : "Other",
+                      "meta" : {
+                        "globalKey" : "b460058e"
+                      }
+                    }
+                  }, {
+                    "value" : {
+                      "identifier" : {
+                        "value" : "US5949181045",
+                        "meta" : {
+                          "scheme" : "http://www.dtcc.com/coding-scheme/external/underlying-id/ISIN"
+                        }
+                      },
+                      "source" : "ISIN",
+                      "meta" : {
+                        "globalKey" : "6acd261e"
+                      }
+                    }
+                  } ],
+                  "economicTerms" : {
+                    "payout" : {
+                      "optionPayout" : [ {
+                        "payerReceiver" : {
+                          "payer" : "Party2",
+                          "receiver" : "Party1"
+                        },
+                        "priceQuantity" : {
+                          "quantitySchedule" : {
+                            "address" : {
+                              "scope" : "DOCUMENT",
+                              "value" : "quantity-1"
+                            }
+                          },
+                          "meta" : {
+                            "globalKey" : "0"
+                          }
+                        },
+                        "settlementTerms" : {
+                          "settlementType" : "Cash",
+                          "settlementCurrency" : {
+                            "value" : "USD"
+                          },
+                          "meta" : {
+                            "globalKey" : "7610bbd9"
+                          }
+                        },
+                        "buyerSeller" : {
+                          "buyer" : "Party1",
+                          "seller" : "Party2"
+                        },
+                        "optionType" : "Call",
+                        "exerciseTerms" : {
+                          "optionStyle" : {
+                            "europeanExercise" : {
+                              "expirationDate" : [ {
+                                "adjustableDate" : {
+                                  "unadjustedDate" : "2019-05-17",
+                                  "meta" : {
+                                    "globalKey" : "3f1951"
+                                  }
+                                },
+                                "meta" : {
+                                  "globalKey" : "3f1951"
+                                }
+                              } ],
+                              "meta" : {
+                                "globalKey" : "3f1951"
+                              }
+                            }
+                          },
+                          "strike" : {
+                            "strikePrice" : {
+                              "value" : 70,
+                              "unit" : {
+                                "currency" : {
+                                  "value" : "USD"
+                                }
+                              },
+                              "perUnitOf" : {
+                                "financialUnit" : "Share"
+                              },
+                              "priceType" : "AssetPrice"
+                            }
+                          }
+                        },
+                        "underlier" : {
+                          "security" : {
+                            "productIdentifier" : [ {
+                              "address" : {
+                                "scope" : "DOCUMENT",
+                                "value" : "productIdentifier-1"
+                              }
+                            } ],
+                            "securityType" : "Equity"
+                          },
+                          "meta" : {
+                            "globalKey" : "7a5b92c5"
+                          }
+                        },
+                        "meta" : {
+                          "globalKey" : "853f069f"
+                        }
+                      } ],
+                      "meta" : {
+                        "globalKey" : "853f069f"
+                      }
+                    },
+                    "nonStandardisedTerms" : false
+                  },
+                  "meta" : {
+                    "globalKey" : "8d3b570f"
+                  }
+                },
+                "meta" : {
+                  "globalKey" : "8d3b570f"
+                }
+              },
+              "tradeLot" : [ {
+                "priceQuantity" : [ {
+                  "quantity" : [ {
+                    "value" : {
+                      "value" : 0,
+                      "unit" : {
+                        "financialUnit" : "Share"
+                      }
+                    },
+                    "meta" : {
+                      "location" : [ {
+                        "scope" : "DOCUMENT",
+                        "value" : "quantity-2"
+                      } ]
+                    }
+                  }, {
+                    "value" : {
+                      "value" : 86308.02,
+                      "unit" : {
+                        "currency" : {
+                          "value" : "USD"
+                        }
+                      }
+                    },
+                    "meta" : {
+                      "location" : [ {
+                        "scope" : "DOCUMENT",
+                        "value" : "quantity-3"
+                      } ]
+                    }
+                  }, {
+                    "value" : {
+                      "value" : 0,
+                      "unit" : {
+                        "financialUnit" : "Contract"
+                      },
+                      "multiplier" : {
+                        "unit" : {
+                          "financialUnit" : "Share"
+                        }
+                      }
+                    },
+                    "meta" : {
+                      "location" : [ {
+                        "scope" : "DOCUMENT",
+                        "value" : "quantity-1"
+                      } ]
+                    }
+                  } ],
+                  "observable" : {
+                    "productIdentifier" : [ {
+                      "value" : {
+                        "identifier" : {
+                          "value" : "US5949181045",
+                          "meta" : {
+                            "scheme" : "http://www.fpml.org/spec/2002/instrument-id-ISIN"
+                          }
+                        },
+                        "source" : "ISIN",
+                        "meta" : {
+                          "globalKey" : "6acd261e"
+                        }
+                      },
+                      "meta" : {
+                        "location" : [ {
+                          "scope" : "DOCUMENT",
+                          "value" : "productIdentifier-1"
+                        } ]
+                      }
+                    } ],
+                    "meta" : {
+                      "globalKey" : "eed79da2"
+                    }
+                  },
+                  "meta" : {
+                    "globalKey" : "158e7941"
+                  }
+                } ]
+              } ],
+              "counterparty" : [ {
+                "role" : "Party1",
+                "partyReference" : {
+                  "globalReference" : "63bc007e",
+                  "externalReference" : "party2"
+                }
+              }, {
+                "role" : "Party2",
+                "partyReference" : {
+                  "globalReference" : "ab6fd453",
+                  "externalReference" : "party1"
+                }
+              } ]
+            },
+            "party" : [ {
+              "partyId" : [ {
+                "identifier" : {
+                  "value" : "213800IV9PCAC364HN60",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                  }
+                },
+                "identifierType" : "LEI",
+                "meta" : {
+                  "globalKey" : "365954bc"
+                }
+              } ],
+              "name" : {
+                "value" : "Broadridge MessageAutomation"
+              },
+              "businessUnit" : [ {
+                "contactInformation" : {
+                  "address" : [ {
+                    "country" : {
+                      "value" : "GB"
+                    }
+                  } ]
+                },
+                "meta" : {
+                  "globalKey" : "8db"
+                }
+              } ],
+              "contactInformation" : {
+                "address" : [ {
+                  "country" : {
+                    "value" : "GB",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+                    }
+                  }
+                } ]
+              },
+              "meta" : {
+                "globalKey" : "ab6fd453",
+                "externalKey" : "party1"
+              }
+            }, {
+              "partyId" : [ {
+                "identifier" : {
+                  "value" : "213800WWTABZ1GOJHH37",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                  }
+                },
+                "identifierType" : "LEI",
+                "meta" : {
+                  "globalKey" : "fdb29bf2"
+                }
+              } ],
+              "name" : {
+                "value" : "Broadridge Financial Solutions Limited"
+              },
+              "businessUnit" : [ {
+                "contactInformation" : {
+                  "address" : [ {
+                    "country" : {
+                      "value" : "GB"
+                    }
+                  } ]
+                },
+                "meta" : {
+                  "globalKey" : "8db"
+                }
+              } ],
+              "contactInformation" : {
+                "address" : [ {
+                  "country" : {
+                    "value" : "GB",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+                    }
+                  }
+                } ]
+              },
+              "meta" : {
+                "globalKey" : "63bc007e",
+                "externalKey" : "party2"
+              }
+            } ],
+            "meta" : {
+              "globalKey" : "98d7cef5"
+            }
+          },
+          "transferHistory" : [ {
+            "transfer" : {
+              "quantity" : {
+                "value" : 86308.02,
+                "unit" : {
+                  "currency" : {
+                    "value" : "USD"
+                  }
+                }
+              },
+              "payerReceiver" : {
+                "payerPartyReference" : {
+                  "globalReference" : "63bc007e",
+                  "externalReference" : "party2"
+                },
+                "receiverPartyReference" : {
+                  "globalReference" : "ab6fd453",
+                  "externalReference" : "party1"
+                }
+              },
+              "settlementDate" : {
+                "unadjustedDate" : "2019-05-01"
+              },
+              "transferExpression" : {
+                "priceTransfer" : "Premium"
+              }
+            },
+            "meta" : {
+              "globalKey" : "c767c17c"
+            }
+          } ],
+          "meta" : {
+            "globalKey" : "b5750671"
+          }
+        }
+      }
+    } ],
+    "after" : [ {
+      "trade" : {
+        "tradeIdentifier" : [ {
+          "issuer" : {
+            "value" : "213800WWTABZ1GOJHH37",
+            "meta" : {
+              "scheme" : "http://www.fpml.org/coding-scheme/external/issuer-identifier"
+            }
+          },
+          "assignedIdentifier" : [ {
+            "identifier" : {
+              "value" : "EQUITYOPTIONPRICER02",
+              "meta" : {
+                "scheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+              }
+            }
+          } ],
+          "meta" : {
+            "globalKey" : "ddfffad1"
+          },
+          "identifierType" : "UniqueTransactionIdentifier"
+        }, {
+          "issuerReference" : {
+            "globalReference" : "ab6fd453",
+            "externalReference" : "party1"
+          },
+          "assignedIdentifier" : [ {
+            "identifier" : {
+              "value" : "EQUITYOPTIONPRICER01",
+              "meta" : {
+                "scheme" : "http://www.dtcc.com/internal_Referenceid"
+              }
+            }
+          } ],
+          "meta" : {
+            "globalKey" : "4cef0f99"
+          }
+        } ],
+        "tradeDate" : {
+          "value" : "2021-12-06",
+          "meta" : {
+            "globalKey" : "3f2b06"
+          }
+        },
+        "tradableProduct" : {
+          "product" : {
+            "contractualProduct" : {
+              "productTaxonomy" : [ {
+                "primaryAssetClass" : {
+                  "value" : "Equity"
+                }
+              }, {
+                "source" : "CFI",
+                "value" : {
+                  "name" : {
+                    "value" : "HESPXX",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/product-classification/iso10962"
+                    }
+                  }
+                }
+              }, {
+                "source" : "EMIR",
+                "value" : {
+                  "name" : {
+                    "value" : "OT",
+                    "meta" : {
+                      "scheme" : "http://www.dtcc.com/coding-scheme/external/product-classification/emir-contract-type"
+                    }
+                  }
+                }
+              }, {
+                "source" : "ISDA",
+                "productQualifier" : "EquityOption_PriceReturnBasicPerformance_SingleName"
+              } ],
+              "productIdentifier" : [ {
+                "value" : {
+                  "identifier" : {
+                    "value" : "Equity:Option:PriceReturnBasicPerformance:SingleName",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/product-taxonomy"
+                    }
+                  },
+                  "source" : "Other",
+                  "meta" : {
+                    "globalKey" : "b460058e"
+                  }
+                }
+              }, {
+                "value" : {
+                  "identifier" : {
+                    "value" : "US5949181045",
+                    "meta" : {
+                      "scheme" : "http://www.dtcc.com/coding-scheme/external/underlying-id/ISIN"
+                    }
+                  },
+                  "source" : "ISIN",
+                  "meta" : {
+                    "globalKey" : "6acd261e"
+                  }
+                }
+              } ],
+              "economicTerms" : {
+                "payout" : {
+                  "optionPayout" : [ {
+                    "payerReceiver" : {
+                      "payer" : "Party2",
+                      "receiver" : "Party1"
+                    },
+                    "priceQuantity" : {
+                      "quantitySchedule" : {
+                        "address" : {
+                          "scope" : "DOCUMENT",
+                          "value" : "quantity-1"
+                        }
+                      },
+                      "meta" : {
+                        "globalKey" : "0"
+                      }
+                    },
+                    "settlementTerms" : {
+                      "settlementType" : "Cash",
+                      "settlementCurrency" : {
+                        "value" : "USD"
+                      },
+                      "meta" : {
+                        "globalKey" : "7610bbd9"
+                      }
+                    },
+                    "buyerSeller" : {
+                      "buyer" : "Party1",
+                      "seller" : "Party2"
+                    },
+                    "optionType" : "Call",
+                    "exerciseTerms" : {
+                      "optionStyle" : {
+                        "europeanExercise" : {
+                          "expirationDate" : [ {
+                            "adjustableDate" : {
+                              "unadjustedDate" : "2019-05-17",
+                              "meta" : {
+                                "globalKey" : "3f1951"
+                              }
+                            },
+                            "meta" : {
+                              "globalKey" : "3f1951"
+                            }
+                          } ],
+                          "meta" : {
+                            "globalKey" : "3f1951"
+                          }
+                        }
+                      },
+                      "strike" : {
+                        "strikePrice" : {
+                          "value" : 70,
+                          "unit" : {
+                            "currency" : {
+                              "value" : "USD"
+                            }
+                          },
+                          "perUnitOf" : {
+                            "financialUnit" : "Share"
+                          },
+                          "priceType" : "AssetPrice"
+                        }
+                      }
+                    },
+                    "underlier" : {
+                      "security" : {
+                        "productIdentifier" : [ {
+                          "address" : {
+                            "scope" : "DOCUMENT",
+                            "value" : "productIdentifier-1"
+                          }
+                        } ],
+                        "securityType" : "Equity"
+                      },
+                      "meta" : {
+                        "globalKey" : "7a5b92c5"
+                      }
+                    },
+                    "meta" : {
+                      "globalKey" : "853f069f"
+                    }
+                  } ],
+                  "meta" : {
+                    "globalKey" : "853f069f"
+                  }
+                },
+                "nonStandardisedTerms" : false
+              },
+              "meta" : {
+                "globalKey" : "8d3b570f"
+              }
+            },
+            "meta" : {
+              "globalKey" : "8d3b570f"
+            }
+          },
+          "tradeLot" : [ {
+            "priceQuantity" : [ {
+              "quantity" : [ {
+                "value" : {
+                  "value" : 0,
+                  "unit" : {
+                    "financialUnit" : "Share"
+                  }
+                },
+                "meta" : {
+                  "location" : [ {
+                    "scope" : "DOCUMENT",
+                    "value" : "quantity-2"
+                  } ]
+                }
+              }, {
+                "value" : {
+                  "value" : 86308.02,
+                  "unit" : {
+                    "currency" : {
+                      "value" : "USD"
+                    }
+                  }
+                },
+                "meta" : {
+                  "location" : [ {
+                    "scope" : "DOCUMENT",
+                    "value" : "quantity-3"
+                  } ]
+                }
+              }, {
+                "value" : {
+                  "value" : 0,
+                  "unit" : {
+                    "financialUnit" : "Contract"
+                  },
+                  "multiplier" : {
+                    "unit" : {
+                      "financialUnit" : "Share"
+                    }
+                  }
+                },
+                "meta" : {
+                  "location" : [ {
+                    "scope" : "DOCUMENT",
+                    "value" : "quantity-1"
+                  } ]
+                }
+              } ],
+              "observable" : {
+                "productIdentifier" : [ {
+                  "value" : {
+                    "identifier" : {
+                      "value" : "US5949181045",
+                      "meta" : {
+                        "scheme" : "http://www.fpml.org/spec/2002/instrument-id-ISIN"
+                      }
+                    },
+                    "source" : "ISIN",
+                    "meta" : {
+                      "globalKey" : "6acd261e"
+                    }
+                  },
+                  "meta" : {
+                    "location" : [ {
+                      "scope" : "DOCUMENT",
+                      "value" : "productIdentifier-1"
+                    } ]
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "eed79da2"
+                }
+              },
+              "meta" : {
+                "globalKey" : "158e7941"
+              }
+            } ]
+          } ],
+          "counterparty" : [ {
+            "role" : "Party1",
+            "partyReference" : {
+              "globalReference" : "63bc007e",
+              "externalReference" : "party2"
+            }
+          }, {
+            "role" : "Party2",
+            "partyReference" : {
+              "globalReference" : "ab6fd453",
+              "externalReference" : "party1"
+            }
+          } ]
+        },
+        "party" : [ {
+          "partyId" : [ {
+            "identifier" : {
+              "value" : "213800IV9PCAC364HN60",
+              "meta" : {
+                "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+              }
+            },
+            "identifierType" : "LEI",
+            "meta" : {
+              "globalKey" : "365954bc"
+            }
+          } ],
+          "name" : {
+            "value" : "Broadridge MessageAutomation"
+          },
+          "businessUnit" : [ {
+            "contactInformation" : {
+              "address" : [ {
+                "country" : {
+                  "value" : "GB"
+                }
+              } ]
+            },
+            "meta" : {
+              "globalKey" : "8db"
+            }
+          } ],
+          "contactInformation" : {
+            "address" : [ {
+              "country" : {
+                "value" : "GB",
+                "meta" : {
+                  "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+                }
+              }
+            } ]
+          },
+          "meta" : {
+            "globalKey" : "ab6fd453",
+            "externalKey" : "party1"
+          }
+        }, {
+          "partyId" : [ {
+            "identifier" : {
+              "value" : "213800WWTABZ1GOJHH37",
+              "meta" : {
+                "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+              }
+            },
+            "identifierType" : "LEI",
+            "meta" : {
+              "globalKey" : "fdb29bf2"
+            }
+          } ],
+          "name" : {
+            "value" : "Broadridge Financial Solutions Limited"
+          },
+          "businessUnit" : [ {
+            "contactInformation" : {
+              "address" : [ {
+                "country" : {
+                  "value" : "GB"
+                }
+              } ]
+            },
+            "meta" : {
+              "globalKey" : "8db"
+            }
+          } ],
+          "contactInformation" : {
+            "address" : [ {
+              "country" : {
+                "value" : "GB",
+                "meta" : {
+                  "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+                }
+              }
+            } ]
+          },
+          "meta" : {
+            "globalKey" : "63bc007e",
+            "externalKey" : "party2"
+          }
+        } ],
+        "contractDetails" : {
+          "documentation" : [ {
+            "legalAgreementIdentification" : {
+              "agreementName" : {
+                "agreementType" : "MasterAgreement",
+                "masterAgreementType" : {
+                  "value" : "ISDAMaster"
+                }
+              },
+              "vintage" : 2002
+            },
+            "contractualParty" : [ {
+              "globalReference" : "63bc007e",
+              "externalReference" : "party2"
+            }, {
+              "globalReference" : "ab6fd453",
+              "externalReference" : "party1"
+            } ],
+            "meta" : {
+              "globalKey" : "55a4012a"
+            }
+          } ]
+        },
+        "meta" : {
+          "globalKey" : "98d7cef5"
+        }
+      },
+      "state" : {
+        "positionState" : "Formed"
+      },
+      "transferHistory" : [ {
+        "transfer" : {
+          "quantity" : {
+            "value" : 86308.02,
+            "unit" : {
+              "currency" : {
+                "value" : "USD"
+              }
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : {
+              "globalReference" : "63bc007e",
+              "externalReference" : "party2"
+            },
+            "receiverPartyReference" : {
+              "globalReference" : "ab6fd453",
+              "externalReference" : "party1"
+            }
+          },
+          "settlementDate" : {
+            "unadjustedDate" : "2019-05-01"
+          },
+          "transferExpression" : {
+            "priceTransfer" : "Premium"
+          }
+        },
+        "meta" : {
+          "globalKey" : "c767c17c"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "b5750671"
+      }
+    } ]
+  },
+  "previousWorkflowStep" : {
+    "globalReference" : "db597ad2"
+  },
+  "messageInformation" : {
+    "messageId" : {
+      "value" : "056282018555123459991234569BR777123456789",
+      "meta" : {
+        "scheme" : "http://www.fpml.org/coding-scheme/external/technical-record-id"
+      }
+    },
+    "sentBy" : {
+      "value" : "213800IV9PCAC364HN60"
+    },
+    "sentTo" : [ {
+      "value" : "DTCCUS3"
+    } ]
+  },
+  "timestamp" : [ {
+    "dateTime" : "2021-12-06T17:09:12Z",
+    "qualification" : "eventCreationDateTime"
+  }, {
+    "dateTime" : "2021-12-06T17:09:12Z",
+    "qualification" : "executionDateTime"
+  } ],
+  "eventIdentifier" : [ {
+    "assignedIdentifier" : [ {
+      "identifier" : {
+        "value" : "056282018555123459991234569BR777123456789"
+      }
+    } ],
+    "meta" : {
+      "globalKey" : "d639a945"
+    }
+  }, {
+    "issuerReference" : {
+      "globalReference" : "ab6fd453",
+      "externalReference" : "party1"
+    },
+    "assignedIdentifier" : [ {
+      "identifier" : {
+        "value" : "BDM-635937-635937"
+      }
+    } ],
+    "meta" : {
+      "globalKey" : "9d4312e0"
+    }
+  } ],
+  "action" : "New",
+  "party" : [ {
+    "partyId" : [ {
+      "identifier" : {
+        "value" : "213800IV9PCAC364HN60",
+        "meta" : {
+          "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+        }
+      },
+      "identifierType" : "LEI",
+      "meta" : {
+        "globalKey" : "365954bc"
+      }
+    } ],
+    "name" : {
+      "value" : "Broadridge MessageAutomation"
+    },
+    "businessUnit" : [ {
+      "contactInformation" : {
+        "address" : [ {
+          "country" : {
+            "value" : "GB"
+          }
+        } ]
+      },
+      "meta" : {
+        "globalKey" : "8db"
+      }
+    } ],
+    "contactInformation" : {
+      "address" : [ {
+        "country" : {
+          "value" : "GB",
+          "meta" : {
+            "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+          }
+        }
+      } ]
+    },
+    "meta" : {
+      "globalKey" : "ab6fd453",
+      "externalKey" : "party1"
+    }
+  }, {
+    "partyId" : [ {
+      "identifier" : {
+        "value" : "213800WWTABZ1GOJHH37",
+        "meta" : {
+          "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+        }
+      },
+      "identifierType" : "LEI",
+      "meta" : {
+        "globalKey" : "fdb29bf2"
+      }
+    } ],
+    "name" : {
+      "value" : "Broadridge Financial Solutions Limited"
+    },
+    "businessUnit" : [ {
+      "contactInformation" : {
+        "address" : [ {
+          "country" : {
+            "value" : "GB"
+          }
+        } ]
+      },
+      "meta" : {
+        "globalKey" : "8db"
+      }
+    } ],
+    "contactInformation" : {
+      "address" : [ {
+        "country" : {
+          "value" : "GB",
+          "meta" : {
+            "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+          }
+        }
+      } ]
+    },
+    "meta" : {
+      "globalKey" : "63bc007e",
+      "externalKey" : "party2"
+    }
+  } ]
+},
+  isoMessage: `<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:DRAFT1seev.031.002.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="urn:swift:xsd:envelope ./../XSDSchemas/MX_seev_031_002_15_enriched.xsd">
+<CorpActnNtfctn>
+  <NtfctnGnlInf>
+    <NtfctnTp>NEWM</NtfctnTp>
+    <PrcgSts>
+      <Cd>
+        <EvtCmpltnsSts>COMP</EvtCmpltnsSts>
+        <EvtConfSts>CONF</EvtConfSts>
+      </Cd>
+    </PrcgSts>
+  </NtfctnGnlInf>
+  <CorpActnGnlInf>
+    <CorpActnEvtId>DIVGLAX123234</CorpActnEvtId>
+    <OffclCorpActnEvtId>BI015932134564</OffclCorpActnEvtId>
+      <EvtTp>
+      <Cd>DVCA</Cd>
+    </EvtTp>
+    <MndtryVlntryEvtTp>
+      <Cd>MAND</Cd>
+    </MndtryVlntryEvtTp>
+    <UndrlygScty>
+      <FinInstrmId>
+        <ISIN>US30231G1022</ISIN> 
+        <OthrId>
+          <Id>XOM</Id>     
+          <Tp>
+            <Cd>BLOM</Cd>
+          </Tp>
+        </OthrId>
+      </FinInstrmId>
+    </UndrlygScty>
+  </CorpActnGnlInf>
+  <AcctDtls>
+    <ForAllAccts>
+      <IdCd>GENR</IdCd>
+    </ForAllAccts>
+  </AcctDtls>
+  <CorpActnDtls>
+    <DtDtls>
+      <ExDvddDt>
+        <Dt>2025-02-27</Dt>   
+      </ExDvddDt>
+      <PmtDt>
+        <Dt>2025-03-10</Dt> 
+      </PmtDt>
+    </DtDtls>
+    <RateAndAmtDtls>
+      <IntrstRate>
+        <Rate>3.87</Rate>
+      </IntrstRate>
+    </RateAndAmtDtls>
+  </CorpActnDtls>
+</CorpActnNtfctn>
+</Document>
+
+`,
+  proposedEvent: {
+      "proposedWorkflowStep":{
+    "proposedEvent" : {
+      "intent" : "CorporateActionAdjustment",
+      "corporateActionIntent" : "CashDividend",
+      "instruction" : [ {
+        "primitiveInstruction" : {
+          "observation" : {
+            "observationEvent" : {
+              "corporateAction" : {
+                "corporateActionType" : "CashDividend",
+                "exDate" : "2025-03-05",
+                "payDate" : "2025-03-20"
+              }
+            }
+          }
+        },
+        "before" : {
+          "value" : {
+            "trade" : {
+              "tradeIdentifier" : [ {
+                "issuer" : {
+                  "value" : "213800WWTABZ1GOJHH37",
+                  "meta" : {
+                    "scheme" : "http://www.fpml.org/coding-scheme/external/issuer-identifier"
+                  }
+                },
+                "assignedIdentifier" : [ {
+                  "identifier" : {
+                    "value" : "EQUITYOPTIONPRICER02",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+                    }
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "ddfffad1"
+                },
+                "identifierType" : "UniqueTransactionIdentifier"
+              }, {
+                "issuerReference" : {
+                  "globalReference" : "ab6fd453",
+                  "externalReference" : "party1"
+                },
+                "assignedIdentifier" : [ {
+                  "identifier" : {
+                    "value" : "EQUITYOPTIONPRICER01",
+                    "meta" : {
+                      "scheme" : "http://www.dtcc.com/internal_Referenceid"
+                    }
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "58e6826c"
+                }
+              } ],
+              "tradeDate" : {
+                "value" : "2021-12-06",
+                "meta" : {
+                  "globalKey" : "3f2b06"
+                }
+              },
+              "party" : [ {
+                "partyId" : [ {
+                  "identifier" : {
+                    "value" : "213800IV9PCAC364HN60",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                    }
+                  },
+                  "identifierType" : "LEI",
+                  "meta" : {
+                    "globalKey" : "365954bc"
+                  }
+                } ],
+                "name" : {
+                  "value" : "Broadridge MessageAutomation"
+                },
+                "businessUnit" : [ {
+                  "contactInformation" : {
+                    "address" : [ {
+                      "country" : {
+                        "value" : "GB"
+                      }
+                    } ]
+                  },
+                  "meta" : {
+                    "globalKey" : "8db"
+                  }
+                } ],
+                "contactInformation" : {
+                  "address" : [ {
+                    "country" : {
+                      "value" : "GB",
+                      "meta" : {
+                        "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+                      }
+                    }
+                  } ]
+                },
+                "meta" : {
+                  "globalKey" : "ab6fd453",
+                  "externalKey" : "party1"
+                }
+              }, {
+                "partyId" : [ {
+                  "identifier" : {
+                    "value" : "213800WWTABZ1GOJHH37",
+                    "meta" : {
+                      "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+                    }
+                  },
+                  "identifierType" : "LEI",
+                  "meta" : {
+                    "globalKey" : "fdb29bf2"
+                  }
+                } ],
+                "name" : {
+                  "value" : "Broadridge Financial Solutions Limited"
+                },
+                "businessUnit" : [ {
+                  "contactInformation" : {
+                    "address" : [ {
+                      "country" : {
+                        "value" : "GB"
+                      }
+                    } ]
+                  },
+                  "meta" : {
+                    "globalKey" : "8db"
+                  }
+                } ],
+                "contactInformation" : {
+                  "address" : [ {
+                    "country" : {
+                      "value" : "GB",
+                      "meta" : {
+                        "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+                      }
+                    }
+                  } ]
+                },
+                "meta" : {
+                  "globalKey" : "63bc007e",
+                  "externalKey" : "party2"
+                }
+              } ],
+              "contractDetails" : {
+                "documentation" : [ {
+                  "legalAgreementIdentification" : {
+                    "agreementName" : {
+                      "agreementType" : "MasterAgreement",
+                      "masterAgreementType" : {
+                        "value" : "ISDAMaster"
+                      }
+                    },
+                    "vintage" : 2002
+                  },
+                  "contractualParty" : [ {
+                    "globalReference" : "63bc007e",
+                    "externalReference" : "party2"
+                  }, {
+                    "globalReference" : "ab6fd453",
+                    "externalReference" : "party1"
+                  } ],
+                  "meta" : {
+                    "globalKey" : "e0400035"
+                  }
+                } ],
+                "meta" : {
+                  "globalKey" : "e0400035"
+                }
+              },
+              "meta" : {
+                "globalKey" : "707a33b"
+              }
+            },
+            "state" : {
+              "positionState" : "Formed"
+            },
+            "transferHistory" : [ {
+              "transfer" : {
+                "quantity" : {
+                  "value" : 86308.02,
+                  "unit" : {
+                    "currency" : {
+                      "value" : "USD"
+                    }
+                  }
+                },
+                "settlementDate" : {
+                  "unadjustedDate" : "2019-05-01"
+                },
+                "payerReceiver" : {
+                  "payerPartyReference" : {
+                    "globalReference" : "63bc007e",
+                    "externalReference" : "party2"
+                  },
+                  "receiverPartyReference" : {
+                    "globalReference" : "ab6fd453",
+                    "externalReference" : "party1"
+                  }
+                },
+                "transferExpression" : {
+                  "priceTransfer" : "Premium"
+                }
+              },
+              "meta" : {
+                "globalKey" : "95a312e9"
+              }
+            } ],
+            "meta" : {
+              "globalKey" : "8e0d4bc7"
+            }
+          }
+        }
+      } ]
+    },
+    "timestamp" : [ {
+      "dateTime" : "2021-12-06T17:09:12Z",
+      "qualification" : "eventCreationDateTime"
+    }, {
+      "dateTime" : "2021-12-06T17:09:12Z",
+      "qualification" : "executionDateTime"
+    } ],
+    "eventIdentifier" : [ {
+      "assignedIdentifier" : [ {
+        "identifier" : {
+          "value" : "DIVGLAX4598"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "fc5696ad"
+      }
+    }, {
+      "assignedIdentifier" : [ {
+        "identifier" : {
+          "value" : "BI0239587"
+        }
+      } ],
+      "meta" : {
+        "globalKey" : "1c413ae5"
+      }
+    } ],
+    "party" : [ {
+      "partyId" : [ {
+        "identifier" : {
+          "value" : "213800IV9PCAC364HN60",
+          "meta" : {
+            "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+          }
+        },
+        "identifierType" : "LEI",
+        "meta" : {
+          "globalKey" : "365954bc"
+        }
+      } ],
+      "name" : {
+        "value" : "Broadridge MessageAutomation"
+      },
+      "businessUnit" : [ {
+        "contactInformation" : {
+          "address" : [ {
+            "country" : {
+              "value" : "GB"
+            }
+          } ]
+        },
+        "meta" : {
+          "globalKey" : "8db"
+        }
+      } ],
+      "contactInformation" : {
+        "address" : [ {
+          "country" : {
+            "value" : "GB",
+            "meta" : {
+              "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+            }
+          }
+        } ]
+      },
+      "meta" : {
+        "globalKey" : "ab6fd453",
+        "externalKey" : "party1"
+      }
+    }, {
+      "partyId" : [ {
+        "identifier" : {
+          "value" : "213800WWTABZ1GOJHH37",
+          "meta" : {
+            "scheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+          }
+        },
+        "identifierType" : "LEI",
+        "meta" : {
+          "globalKey" : "fdb29bf2"
+        }
+      } ],
+      "name" : {
+        "value" : "Broadridge Financial Solutions Limited"
+      },
+      "businessUnit" : [ {
+        "contactInformation" : {
+          "address" : [ {
+            "country" : {
+              "value" : "GB"
+            }
+          } ]
+        },
+        "meta" : {
+          "globalKey" : "8db"
+        }
+      } ],
+      "contactInformation" : {
+        "address" : [ {
+          "country" : {
+            "value" : "GB",
+            "meta" : {
+              "scheme" : "http://www.fpml.org/coding-scheme/external/iso3166"
+            }
+          }
+        } ]
+      },
+      "meta" : {
+        "globalKey" : "63bc007e",
+        "externalKey" : "party2"
+      }
+    } ],
+    "meta" : {
+      "globalKey" : "5de48703"
+    }
+  }},
+  acceptedWorkflowStep: {},
 }
 ]
