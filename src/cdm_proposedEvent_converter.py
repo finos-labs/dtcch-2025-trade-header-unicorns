@@ -1,5 +1,5 @@
 from src.ai_model.call_claude import call_claude
-from src.utils import read_file
+from src.utils import read_file, cdm_trades_matching
 
 def lambda_handler(event, context):
     system_instruction_path_gpt2 = "data/instructions/instructions_gpt_cdm_mapper.txt"
@@ -19,6 +19,9 @@ def lambda_handler(event, context):
         user_instructions=user_iso_content,
         hyperparameters=hyperparameters
     )
+
+    trade_matching_path = cdm_trades_matching(user_iso_content)
+
 
     return {
         "statusCode": 200,
