@@ -30,7 +30,7 @@ This project aims to automate and optimize the corporate actions process, improv
 
 ## Usage Guide
 
-#### Creating the Python environment: written by tradeheader 
+#### Creating the Python environment:
 
 ##### In Windows:
 
