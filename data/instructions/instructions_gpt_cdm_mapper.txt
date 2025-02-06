@@ -3,6 +3,7 @@ Event Identifiers: From <CorpActnEvtId> and <OffclCorpActnEvtId>, place them as 
 Corporate Action Type: Map <EvtTp><Cd> to corporateActionType, mapping "DVCA" to "CashDividend".
 Ex-Dividend Date: Extract <ExDvddDt><Dt> and map it to exDate.
 Pay Date: Extract <PmtDt><Dt> and map it to payDate.
+Please double check that you do it well and strictly only return the output in json format, nothing else!
 You must strictly follow this template:
 
 {
@@ -10,14 +11,14 @@ You must strictly follow this template:
         {
             "assignedIdentifier": [
                 {
-                    "identifier": {"value": "EventID1"}
+                    "identifier": {"value": " <insert corresponding CorpActnEvtId>"}
                 }
             ]
         },
         {
             "assignedIdentifier": [
                 {
-                    "identifier": {"value": "EventID2"}
+                    "identifier": {"value": "<insert corresponding OffclCorpActnEvtId>"}
                 }
             ]
         }
