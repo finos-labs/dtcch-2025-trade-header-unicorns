@@ -1,36 +1,22 @@
-from src.ai_model.call_claude import call_claude
-from src.utils import read_file
+#Only for trying the lambda handlers in the terminal______________________________________________
 
-# From news to ISO________________________________________________________________________
-
-system_instruction_path = "data/instructions/instructions_gpt_iso_mapper.txt"
-user_news_path = "data/testing_news/news_testing2.txt"
-
-system_instruction_content = read_file(system_instruction_path)
-user_news_content = read_file(user_news_path)
-
-hyperparameters = {"max_tokens" : 1000,
-                    "temperature" : 0.1,
-                    "top_p" : 0.1}
-
-news_to_iso_response = call_claude(
-    system_instructions=system_instruction_content, 
-    user_instructions=user_news_content, 
-    hyperparameters=hyperparameters)
+from src.iso_message_converter import lambda_handler as lambda_handler_1
+from src.cdm_proposedEvent_converter import lambda_handler as lambda_handler_2
 
 
-# From ISO to CDM______________________________________________________________________
+event_1 = {}
+context = None 
 
-system_instruction_path_gpt2 = "data/instructions/instructions_gpt_cdm_mapper.txt"
-system_instruction_content_gpt2 = read_file(system_instruction_path_gpt2)
 
-user_iso_content = news_to_iso_response
+response_1 = lambda_handler_1(event_1, context)
 
-iso_to_cdm_response = call_claude(
-    system_instructions=system_instruction_content_gpt2, 
-    user_instructions=user_iso_content, 
-    hyperparameters=hyperparameters)
+event_2 = {
+    "body": response_1["body"]  
+}
 
-print(iso_to_cdm_response)
+response_2 = lambda_handler_2(event_2, context)
+
+#print("Output from second lambda: ", response_2["body"])
+
 
 

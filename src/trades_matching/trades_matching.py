@@ -17,17 +17,16 @@ def find_cdm_trades_matching_with_isin(isin, directory="data/cdm_trades_workflow
 
     matching_files = []
     
-    # Loop through all files in the specified directory
     for filename in os.listdir(directory):
         if filename.endswith(".json"):
             filepath = os.path.join(directory, filename)
             
-            # Open and read the JSON file
+
             with open(filepath, 'r') as file:
                 try:
                     data = json.load(file)
-                    # Check if ISIN appears anywhere in the file
-                    if isin in json.dumps(data):  # Convert JSON to string and check for ISIN
+
+                    if isin in json.dumps(data):  
                         matching_files.append(filepath)
                 except json.JSONDecodeError:
                     print(f"Error reading {filename}")

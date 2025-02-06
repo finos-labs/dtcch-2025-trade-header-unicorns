@@ -19,7 +19,6 @@ def lambda_handler(event, context):
         user_instructions=user_news_content, 
         hyperparameters=hyperparameters
     )
-    print(f"Fine tuned output {news_to_iso_response}")
 
     news_to_iso_enriched_response = isin_enrichment(news_to_iso_response)
 

@@ -1,5 +1,7 @@
+import json
 from src.ai_model.call_claude import call_claude
 from src.utils import read_file, cdm_trades_matching
+from src.cdm_api_functions import observation_call, execution_call, validation_call
 
 def lambda_handler(event, context):
     system_instruction_path_gpt2 = "data/instructions/instructions_gpt_cdm_mapper.txt"
@@ -14,16 +16,27 @@ def lambda_handler(event, context):
     # Retrieve the ISO message produced from a previous conversion step.
     user_iso_content = event.get("body", "")
 
+    # Calling GPT CDM Mapper_______________________________________________________________
     iso_to_cdm_response = call_claude(
         system_instructions=system_instruction_content_gpt2,
         user_instructions=user_iso_content,
         hyperparameters=hyperparameters
     )
-
+    iso_to_cdm_json = json.loads(iso_to_cdm_response)
     trade_matching_path = cdm_trades_matching(user_iso_content)
+
+    #Calling CDM API______________________________________________________________________
+    
+    proposedevent = observation_call(trade_matching_path[0], iso_to_cdm_json)['payload']
+    print(f"ProposedEvent: {proposedevent}")
+    acceptedworkflowstep = execution_call(proposedevent)['payload']
+    print(f"AcceptedWorkFlowStep: {acceptedworkflowstep}")
+    validation_result = validation_call(acceptedworkflowstep['acceptedStep'])
+    print(f"Validation Result: {validation_result['payload']}")
 
 
     return {
         "statusCode": 200,
-        "body": iso_to_cdm_response
+        "body": {"AcceptedWorkFlowStep" : acceptedworkflowstep,
+                 "ValidationResult" : validation_result}
     }
