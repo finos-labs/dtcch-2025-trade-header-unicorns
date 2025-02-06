@@ -3,13 +3,30 @@
 # FINOS DTCC Hackathon 
 
 
-## Project Name
+## TH CORPORATE ACTIONS SENTINEL
 
+The **TH Corporate Actions Sentinel** is an AI-powered platform developed for the DTCC AI Hackathon. This solution automates the end-to-end corporate action lifecycle, ensuring that corporate action events are structured in a standardized format, simplifying integration with trading systems, and reducing discrepancies. 
 
 ### Project Details
+- **Synthetic News Simulation:** Simulates corporate action events for testing and validation using synthetic news data. Future versions will integrate external news APIs.
+- **AI-Powered ISO20022 Generation:** Leverages NLP to generate ISO20022 corporate action notifications. Currently, it supports Cash Dividend events, with future plans to extend to other corporate actions.
+- **ISO20022 Validation Engine:** Ensures the generated messages are compliant with ISO standards and business constraints.
+- **ISIN Lookup & Enrichment:** Uses a simulated CSV-based lookup to enrich ISIN data. Future versions will incorporate an external ISIN API.
+- **AI-Powered JSON Transformation:** Converts corporate actions into a CDM-compatible JSON format for trade impact analysis.
+- **CDM Integration Layer:** Enables seamless ingestion and processing of corporate action data within the FINOS Common Domain Model (CDM).
+- **User Interface:** Provides real-time data visualization of corporate actions, trade impacts, and position changes.
 
+This project aims to automate and optimize the corporate actions process, improving accuracy and reducing manual interventions.
 
 ### Team Information
+
+- **Team Name:** TradeHeader Unicorns
+- **Team Members:**
+    - @arevillaTH
+    - @aollerTH
+    - @LuciaCortesTH
+    - @rperezTH
+    - @gtarres
 
 
 ## Using DCO to sign your commits
