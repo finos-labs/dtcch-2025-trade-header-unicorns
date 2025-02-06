@@ -5,7 +5,7 @@ interface NewsModalProps {
   isOpen: boolean
   onClose: () => void
   content: string
-  contentType: "xml" | "json" | "text"
+  contentType: "isoMessage" | "json" | "text"
 }
 
 export function NewsModal({ isOpen, onClose, content, contentType }: NewsModalProps) {
