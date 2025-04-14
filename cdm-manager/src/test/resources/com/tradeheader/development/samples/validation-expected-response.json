@@ -1,0 +1,7 @@
+{
+  "success": true,
+  "payload": {
+    "requiredField": "test_value"
+  },
+  "error": null
+}

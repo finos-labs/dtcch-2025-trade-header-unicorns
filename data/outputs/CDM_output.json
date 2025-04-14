@@ -1,0 +1,623 @@
+{
+    "acceptedStep": {
+        "businessEvent": {
+            "intent": "CorporateActionAdjustment",
+            "instruction": [
+                {
+                    "primitiveInstruction": {
+                        "observation": {
+                            "observationEvent": {
+                                "corporateAction": {
+                                    "corporateActionType": "CashDividend",
+                                    "exDate": "2019-12-16",
+                                    "payDate": "2019-12-27"
+                                }
+                            }
+                        }
+                    },
+                    "before": {
+                        "value": {
+                            "trade": {
+                                "tradeIdentifier": [
+                                    {
+                                        "issuer": {
+                                            "value": "213800WWTABZ1GOJHH37",
+                                            "meta": {
+                                                "scheme": "http://www.fpml.org/coding-scheme/external/issuer-identifier"
+                                            }
+                                        },
+                                        "assignedIdentifier": [
+                                            {
+                                                "identifier": {
+                                                    "value": "EQUITYOPTIONPRICER02",
+                                                    "meta": {
+                                                        "scheme": "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "meta": {
+                                            "globalKey": "ddfffad1"
+                                        },
+                                        "identifierType": "UniqueTransactionIdentifier"
+                                    },
+                                    {
+                                        "issuerReference": {
+                                            "globalReference": "ab6fd453",
+                                            "externalReference": "party1"
+                                        },
+                                        "assignedIdentifier": [
+                                            {
+                                                "identifier": {
+                                                    "value": "EQUITYOPTIONPRICER01",
+                                                    "meta": {
+                                                        "scheme": "http://www.dtcc.com/internal_Referenceid"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "meta": {
+                                            "globalKey": "4cef0f99"
+                                        }
+                                    }
+                                ],
+                                "tradeDate": {
+                                    "value": "2021-12-06",
+                                    "meta": {
+                                        "globalKey": "3f2b06"
+                                    }
+                                },
+                                "party": [
+                                    {
+                                        "partyId": [
+                                            {
+                                                "identifier": {
+                                                    "value": "213800IV9PCAC364HN60",
+                                                    "meta": {
+                                                        "scheme": "http://www.fpml.org/coding-scheme/external/iso17442"
+                                                    }
+                                                },
+                                                "identifierType": "LEI",
+                                                "meta": {
+                                                    "globalKey": "365954bc"
+                                                }
+                                            }
+                                        ],
+                                        "name": {
+                                            "value": "Broadridge MessageAutomation"
+                                        },
+                                        "businessUnit": [
+                                            {
+                                                "contactInformation": {
+                                                    "address": [
+                                                        {
+                                                            "country": {
+                                                                "value": "GB"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "meta": {
+                                                    "globalKey": "8db"
+                                                }
+                                            }
+                                        ],
+                                        "contactInformation": {
+                                            "address": [
+                                                {
+                                                    "country": {
+                                                        "value": "GB",
+                                                        "meta": {
+                                                            "scheme": "http://www.fpml.org/coding-scheme/external/iso3166"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "meta": {
+                                            "globalKey": "ab6fd453",
+                                            "externalKey": "party1"
+                                        }
+                                    },
+                                    {
+                                        "partyId": [
+                                            {
+                                                "identifier": {
+                                                    "value": "213800WWTABZ1GOJHH37",
+                                                    "meta": {
+                                                        "scheme": "http://www.fpml.org/coding-scheme/external/iso17442"
+                                                    }
+                                                },
+                                                "identifierType": "LEI",
+                                                "meta": {
+                                                    "globalKey": "fdb29bf2"
+                                                }
+                                            }
+                                        ],
+                                        "name": {
+                                            "value": "Broadridge Financial Solutions Limited"
+                                        },
+                                        "businessUnit": [
+                                            {
+                                                "contactInformation": {
+                                                    "address": [
+                                                        {
+                                                            "country": {
+                                                                "value": "GB"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "meta": {
+                                                    "globalKey": "8db"
+                                                }
+                                            }
+                                        ],
+                                        "contactInformation": {
+                                            "address": [
+                                                {
+                                                    "country": {
+                                                        "value": "GB",
+                                                        "meta": {
+                                                            "scheme": "http://www.fpml.org/coding-scheme/external/iso3166"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "meta": {
+                                            "globalKey": "63bc007e",
+                                            "externalKey": "party2"
+                                        }
+                                    }
+                                ],
+                                "contractDetails": {
+                                    "documentation": [
+                                        {
+                                            "legalAgreementIdentification": {
+                                                "agreementName": {
+                                                    "agreementType": "MasterAgreement",
+                                                    "masterAgreementType": {
+                                                        "value": "ISDAMaster"
+                                                    }
+                                                },
+                                                "vintage": 2002
+                                            },
+                                            "contractualParty": [
+                                                {
+                                                    "globalReference": "63bc007e",
+                                                    "externalReference": "party2"
+                                                },
+                                                {
+                                                    "globalReference": "ab6fd453",
+                                                    "externalReference": "party1"
+                                                }
+                                            ],
+                                            "meta": {
+                                                "globalKey": "55a4012a"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "meta": {
+                                    "globalKey": "98d7cef5"
+                                }
+                            },
+                            "state": {
+                                "positionState": "Formed"
+                            },
+                            "transferHistory": [
+                                {
+                                    "transfer": {
+                                        "quantity": {
+                                            "value": 86308.02,
+                                            "unit": {
+                                                "currency": {
+                                                    "value": "USD"
+                                                }
+                                            }
+                                        },
+                                        "settlementDate": {
+                                            "unadjustedDate": "2019-05-01"
+                                        },
+                                        "payerReceiver": {
+                                            "payerPartyReference": {
+                                                "globalReference": "63bc007e",
+                                                "externalReference": "party2"
+                                            },
+                                            "receiverPartyReference": {
+                                                "globalReference": "ab6fd453",
+                                                "externalReference": "party1"
+                                            }
+                                        },
+                                        "transferExpression": {
+                                            "priceTransfer": "Premium"
+                                        }
+                                    },
+                                    "meta": {
+                                        "globalKey": "c767c17c"
+                                    }
+                                }
+                            ],
+                            "meta": {
+                                "globalKey": "b5750671"
+                            }
+                        }
+                    }
+                }
+            ],
+            "after": [
+                {
+                    "trade": {
+                        "tradeIdentifier": [
+                            {
+                                "issuer": {
+                                    "value": "213800WWTABZ1GOJHH37",
+                                    "meta": {
+                                        "scheme": "http://www.fpml.org/coding-scheme/external/issuer-identifier"
+                                    }
+                                },
+                                "assignedIdentifier": [
+                                    {
+                                        "identifier": {
+                                            "value": "EQUITYOPTIONPRICER02",
+                                            "meta": {
+                                                "scheme": "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "meta": {
+                                    "globalKey": "ddfffad1"
+                                },
+                                "identifierType": "UniqueTransactionIdentifier"
+                            },
+                            {
+                                "issuerReference": {
+                                    "globalReference": "ab6fd453",
+                                    "externalReference": "party1"
+                                },
+                                "assignedIdentifier": [
+                                    {
+                                        "identifier": {
+                                            "value": "EQUITYOPTIONPRICER01",
+                                            "meta": {
+                                                "scheme": "http://www.dtcc.com/internal_Referenceid"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "meta": {
+                                    "globalKey": "4cef0f99"
+                                }
+                            }
+                        ],
+                        "tradeDate": {
+                            "value": "2021-12-06",
+                            "meta": {
+                                "globalKey": "3f2b06"
+                            }
+                        },
+                        "party": [
+                            {
+                                "partyId": [
+                                    {
+                                        "identifier": {
+                                            "value": "213800IV9PCAC364HN60",
+                                            "meta": {
+                                                "scheme": "http://www.fpml.org/coding-scheme/external/iso17442"
+                                            }
+                                        },
+                                        "identifierType": "LEI",
+                                        "meta": {
+                                            "globalKey": "365954bc"
+                                        }
+                                    }
+                                ],
+                                "name": {
+                                    "value": "Broadridge MessageAutomation"
+                                },
+                                "businessUnit": [
+                                    {
+                                        "contactInformation": {
+                                            "address": [
+                                                {
+                                                    "country": {
+                                                        "value": "GB"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "meta": {
+                                            "globalKey": "8db"
+                                        }
+                                    }
+                                ],
+                                "contactInformation": {
+                                    "address": [
+                                        {
+                                            "country": {
+                                                "value": "GB",
+                                                "meta": {
+                                                    "scheme": "http://www.fpml.org/coding-scheme/external/iso3166"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "meta": {
+                                    "globalKey": "ab6fd453",
+                                    "externalKey": "party1"
+                                }
+                            },
+                            {
+                                "partyId": [
+                                    {
+                                        "identifier": {
+                                            "value": "213800WWTABZ1GOJHH37",
+                                            "meta": {
+                                                "scheme": "http://www.fpml.org/coding-scheme/external/iso17442"
+                                            }
+                                        },
+                                        "identifierType": "LEI",
+                                        "meta": {
+                                            "globalKey": "fdb29bf2"
+                                        }
+                                    }
+                                ],
+                                "name": {
+                                    "value": "Broadridge Financial Solutions Limited"
+                                },
+                                "businessUnit": [
+                                    {
+                                        "contactInformation": {
+                                            "address": [
+                                                {
+                                                    "country": {
+                                                        "value": "GB"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "meta": {
+                                            "globalKey": "8db"
+                                        }
+                                    }
+                                ],
+                                "contactInformation": {
+                                    "address": [
+                                        {
+                                            "country": {
+                                                "value": "GB",
+                                                "meta": {
+                                                    "scheme": "http://www.fpml.org/coding-scheme/external/iso3166"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "meta": {
+                                    "globalKey": "63bc007e",
+                                    "externalKey": "party2"
+                                }
+                            }
+                        ],
+                        "contractDetails": {
+                            "documentation": [
+                                {
+                                    "legalAgreementIdentification": {
+                                        "agreementName": {
+                                            "agreementType": "MasterAgreement",
+                                            "masterAgreementType": {
+                                                "value": "ISDAMaster"
+                                            }
+                                        },
+                                        "vintage": 2002
+                                    },
+                                    "contractualParty": [
+                                        {
+                                            "globalReference": "63bc007e",
+                                            "externalReference": "party2"
+                                        },
+                                        {
+                                            "globalReference": "ab6fd453",
+                                            "externalReference": "party1"
+                                        }
+                                    ],
+                                    "meta": {
+                                        "globalKey": "55a4012a"
+                                    }
+                                }
+                            ]
+                        },
+                        "meta": {
+                            "globalKey": "98d7cef5"
+                        }
+                    },
+                    "state": {
+                        "positionState": "Formed"
+                    },
+                    "transferHistory": [
+                        {
+                            "transfer": {
+                                "quantity": {
+                                    "value": 86308.02,
+                                    "unit": {
+                                        "currency": {
+                                            "value": "USD"
+                                        }
+                                    }
+                                },
+                                "settlementDate": {
+                                    "unadjustedDate": "2019-05-01"
+                                },
+                                "payerReceiver": {
+                                    "payerPartyReference": {
+                                        "globalReference": "63bc007e",
+                                        "externalReference": "party2"
+                                    },
+                                    "receiverPartyReference": {
+                                        "globalReference": "ab6fd453",
+                                        "externalReference": "party1"
+                                    }
+                                },
+                                "transferExpression": {
+                                    "priceTransfer": "Premium"
+                                }
+                            },
+                            "meta": {
+                                "globalKey": "c767c17c"
+                            }
+                        }
+                    ],
+                    "observationHistory": [
+                        {
+                            "corporateAction": {
+                                "corporateActionType": "CashDividend",
+                                "exDate": "2019-12-16",
+                                "payDate": "2019-12-27"
+                            }
+                        }
+                    ],
+                    "meta": {
+                        "globalKey": "b5750671"
+                    }
+                }
+            ]
+        },
+        "timestamp": [
+            {
+                "dateTime": "2021-12-06T17:09:12Z",
+                "qualification": "eventCreationDateTime"
+            },
+            {
+                "dateTime": "2021-12-06T17:09:12Z",
+                "qualification": "executionDateTime"
+            }
+        ],
+        "eventIdentifier": [
+            {
+                "assignedIdentifier": [
+                    {
+                        "identifier": {
+                            "value": "MSFT123"
+                        }
+                    }
+                ]
+            },
+            {
+                "assignedIdentifier": [
+                    {
+                        "identifier": {
+                            "value": "MSFT456"
+                        }
+                    }
+                ]
+            }
+        ],
+        "party": [
+            {
+                "partyId": [
+                    {
+                        "identifier": {
+                            "value": "213800IV9PCAC364HN60",
+                            "meta": {
+                                "scheme": "http://www.fpml.org/coding-scheme/external/iso17442"
+                            }
+                        },
+                        "identifierType": "LEI",
+                        "meta": {
+                            "globalKey": "365954bc"
+                        }
+                    }
+                ],
+                "name": {
+                    "value": "Broadridge MessageAutomation"
+                },
+                "businessUnit": [
+                    {
+                        "contactInformation": {
+                            "address": [
+                                {
+                                    "country": {
+                                        "value": "GB"
+                                    }
+                                }
+                            ]
+                        },
+                        "meta": {
+                            "globalKey": "8db"
+                        }
+                    }
+                ],
+                "contactInformation": {
+                    "address": [
+                        {
+                            "country": {
+                                "value": "GB",
+                                "meta": {
+                                    "scheme": "http://www.fpml.org/coding-scheme/external/iso3166"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "meta": {
+                    "globalKey": "ab6fd453",
+                    "externalKey": "party1"
+                }
+            },
+            {
+                "partyId": [
+                    {
+                        "identifier": {
+                            "value": "213800WWTABZ1GOJHH37",
+                            "meta": {
+                                "scheme": "http://www.fpml.org/coding-scheme/external/iso17442"
+                            }
+                        },
+                        "identifierType": "LEI",
+                        "meta": {
+                            "globalKey": "fdb29bf2"
+                        }
+                    }
+                ],
+                "name": {
+                    "value": "Broadridge Financial Solutions Limited"
+                },
+                "businessUnit": [
+                    {
+                        "contactInformation": {
+                            "address": [
+                                {
+                                    "country": {
+                                        "value": "GB"
+                                    }
+                                }
+                            ]
+                        },
+                        "meta": {
+                            "globalKey": "8db"
+                        }
+                    }
+                ],
+                "contactInformation": {
+                    "address": [
+                        {
+                            "country": {
+                                "value": "GB",
+                                "meta": {
+                                    "scheme": "http://www.fpml.org/coding-scheme/external/iso3166"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "meta": {
+                    "globalKey": "63bc007e",
+                    "externalKey": "party2"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:DRAFT1seev.031.002.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="urn:swift:xsd:envelope ./../XSDSchemas/MX_seev_031_002_15_enriched.xsd">
+	<CorpActnNtfctn>
+		<NtfctnGnlInf>
+			<NtfctnTp>NEWM</NtfctnTp>
+			<PrcgSts>
+				<Cd>
+					<EvtCmpltnsSts>COMP</EvtCmpltnsSts>
+					<EvtConfSts>CONF</EvtConfSts>
+				</Cd>
+			</PrcgSts>
+		</NtfctnGnlInf>
+		<CorpActnGnlInf>
+			<CorpActnEvtId>DIVGLAX459844</CorpActnEvtId>
+			<OffclCorpActnEvtId>BI023958345</OffclCorpActnEvtId>
+				<EvtTp>
+				<Cd>DVCA</Cd>
+			</EvtTp>
+			<MndtryVlntryEvtTp>
+				<Cd>MAND</Cd>
+			</MndtryVlntryEvtTp>
+			<UndrlygScty>
+				<FinInstrmId>
+					<ISIN>US46625H1005</ISIN> 
+					<OthrId>
+						<Id>JPM</Id>     
+						<Tp>
+							<Cd>BLOM</Cd>
+						</Tp>
+					</OthrId>
+				</FinInstrmId>
+			</UndrlygScty>
+		</CorpActnGnlInf>
+		<AcctDtls>
+			<ForAllAccts>
+				<IdCd>GENR</IdCd>
+			</ForAllAccts>
+		</AcctDtls>
+		<CorpActnDtls>
+			<DtDtls>
+				<ExDvddDt>
+					<Dt>2025-03-14</Dt>   
+				</ExDvddDt>
+				<PmtDt>
+					<Dt>2025-04-01</Dt> 
+				</PmtDt>
+			</DtDtls>
+			<RateAndAmtDtls>
+				<IntrstRate>
+					<Rate>2.95</Rate>
+				</IntrstRate>
+			</RateAndAmtDtls>
+		</CorpActnDtls>
+	</CorpActnNtfctn>
+</Document>
+

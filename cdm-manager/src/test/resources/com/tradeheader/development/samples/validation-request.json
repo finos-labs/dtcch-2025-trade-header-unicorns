@@ -1,0 +1,6 @@
+{
+  "action": "VALIDATION",
+  "payload": {
+    "requiredField": "test_value"
+  }
+}

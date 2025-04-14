@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  == Copyright (C),2005-2015 HandCoded Software Ltd.
+  == All rights reserved.
+  ==
+  == This software is licensed in accordance with the terms of the 'Open Source
+  == License (OSL) Version 3.0'. Please see 'license.txt' for the details.
+  ==
+  == HANDCODED SOFTWARE LTD MAKES NO REPRESENTATIONS OR WARRANTIES ABOUT THE
+  == SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT
+  == LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+  == PARTICULAR PURPOSE, OR NON-INFRINGEMENT. HANDCODED SOFTWARE LTD SHALL NOT BE
+  == LIABLE FOR ANY DAMAGES SUFFERED BY LICENSE AS A RESULT OF USING, MODIFYING
+  == OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+  -->
+<rules
+		xmlns="urn:HandCoded:BusinessRules"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="urn:HandCoded:BusinessRules business-rules.xsd">
+	<forceLoad platform="Java" class="com.tradeheader.iso20022.validation.rule.definitions.Securities"/>
+
+	<ruleSet name="Seev_031_002_15_Rules">
+		<addRule name="Seev_031_CorporateActionNotificationV14_SafekeepingAccount1Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_SafekeepingAccount2Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_OtherEventRule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_IntermediateSecurity1Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_IntermediateSecurity2Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_NotificationIdentificationRule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_IntermediateSecuritiesDistribution1Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_InformationEventRule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_DeclaredRateRule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_FirstBidIncrementPrice1Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_FirstBidIncrementPrice2Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_LastBidIncrementPrice1Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_LastBidIncrementPrice2Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_FirstBidIncrementPriceEventType1Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_LastBidIncrementPriceEventType1Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_FirstBidIncrementPriceEventType2Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_LastBidIncrementPriceEventType2Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_MinimumPrice1Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_MinimumPrice2Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_MaximumPrice1Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_MaximumPrice2Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_BidInterval1Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_BidInterval2Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_BeneficialOwnerBreakdownRequestRule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_DissenterRights3Rule_1"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_DissenterRights3Rule_2"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_IncentivePremiumEventType1Rule"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_PaymentDateRule_1"/>
+		<addRule name="Seev_031_CorporateActionNotificationV14_PaymentDateRule_2"/>
+		<addRule name="Seev_031_SecurityIdentification19_DescriptionPresenceRule"/>
+		<addRule name="Seev_031_SecurityIdentification19_OtherIdentificationPresenceRule"/>
+		<addRule name="Seev_031_SecurityIdentification19_ISINPresenceRule"/>
+		<addRule name="Seev_031_AccountAndBalance55_SafekeepingAccountOrBlockChainAddress1Rule"/>
+		<addRule name="Seev_031_AccountAndBalance55_SafekeepingAccountOrBlockChainAddress2Rule"/>
+		<addRule name="Seev_031_AccountAndBalance55_SafekeepingAccountOrBlockChainAddress3Rule"/>
+		<addRule name="Seev_031_DissenterRights1Rule"/>
+		<addRule name="Seev_031_DissenterRights2Rule"/>
+		<addRule name="Seev_031_CorporateActionOption224_AdditionalTextRule"/>
+		<addRule name="Seev_031_CorporateActionOption224_InstructCashAmountRule"/>
+		<addRule name="Seev_031_CorporateActionRate104_SecondLevelTax3Rule"/>
+		<addRule name="Seev_031_SecuritiesOption102_IncomeType1Rule"/>
+		<addRule name="Seev_031_CashOption96_IncomeType2Rule"/>
+		<addRule name="Seev_031_Rate36_SecondLevelTax3Rule"/>
+	</ruleSet>
+</rules>
